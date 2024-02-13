@@ -385,7 +385,7 @@ class WiktionaryRomanization:
                                 a, b = re.match(r"^(ng%-?)(.?)$", junction) or re.match(r"^(.?%-?)(.*)$", junction)
                                 junction = ("".join([formatting_position.get(pos, "") for pos in range(pos_format_start, pos_format_end)]) + (a or "") + (b or "")) if re.match(r"^Ø?[ᄀ-ᄒ]$", syllable["final"] + next_syllable["initial"]) else ((a or "") + "".join([formatting_position.get(pos, "") for pos in range(pos_format_start, pos_format_end)]) + (b or ""))
 
-                        if len(p["l"]) > 0 and (p["l"].get(index, False) or (p["l"].get("y", False) and index == 1)):
+                        if len(p["l"]) > 0 and (p["l"].get(index, False) or (p["l"].get("y", False) and index == 0)):
                             # FIXME, verify this code still works with final/initial cons changes
                             if system_index == 0:
                                 if len(junction) == 0:
@@ -397,10 +397,10 @@ class WiktionaryRomanization:
 
                             elif system_index == 5:
                                 vowel += "ː"
-                                if index == 1:
+                                if index == 0:
                                     categories.append("Korean terms with long vowels in the first syllable")
 
-                        if len(p["l"]) > 0 and (p["l"]["y"] or p["l"][1]) and index == 0 and system_index == 5 and len(decomposed_syllables) > 1:
+                        if len(p["l"]) > 0 and (p["l"]["y"] or p["l"][1]) and index == -1 and system_index == 5 and len(decomposed_syllables) > 1:
                             vowel += "ˈ"
 
                         # TODO I think p["cap"]["y"] will likely have an exception. I think my change probably fixes it.
@@ -454,9 +454,7 @@ class WiktionaryRomanization:
                         temp_romanization = re.sub(r"(.)…(.)", lambda m: m.group(1) + ("." if WiktionaryRomanization.ambiguous_intersyllabic_yr.get(m.group(1) + m.group(2)) else "") + m.group(2), temp_romanization)
                         temp_romanization = re.sub(r"\.q", "q", temp_romanization)
                 elif system_index == 5:
-                    # temp_romanization = "[" + temp_romanization + "]"
-                    # Modification - pointless code of course, but it highlights the difference from the original (removing brackets)
-                    temp_romanization = temp_romanization
+                    temp_romanization = "[" + temp_romanization + "]"
 
                 if system_index in [0, 5]:
                     temp_romanization = re.sub(r"ː", "(ː)", temp_romanization)
@@ -464,6 +462,7 @@ class WiktionaryRomanization:
                 if p["cap"].get("y") and system_index in [1, 2, 3]:
                     temp_romanization = temp_romanization[0].upper() + temp_romanization[1:]
 
+                temp_romanization = unicodedata.normalize('NFC', temp_romanization)
                 word_set_romanizations.append(temp_romanization)
 
             text_param = re.sub(re.escape(the_original), WiktionaryRomanization.system_list[system_index]["separator"].join(word_set_romanizations), text_param, count=1)

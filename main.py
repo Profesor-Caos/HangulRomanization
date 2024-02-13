@@ -1,3 +1,4 @@
 from tests.romanization_tests import TestWikiRomanizations
 
-TestWikiRomanizations.wiki_test_cases()
+twr = TestWikiRomanizations()
+twr.wiki_test_cases()

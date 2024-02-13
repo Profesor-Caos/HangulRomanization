@@ -6,7 +6,7 @@ def parse_korean_text(input_text):
     ko_ipa_pattern = r"({{ko-ipa.*?}})\s*\n"
     phonetic_hangul_pattern  = r"Phonetic hangul:\s*\[([^]]+)\]"
     rom_pattern = r"Romanizations\s*Revised Romanization\?([^\n]+)\n\s*Revised Romanization \(translit\.\)\?([^\n]+)\n\s*McCune–Reischauer\?([^\n]+)\n\s*Yale Romanization\?([^\n]+)"
-    ipa_pattern = r"IPA\(key\):\s*\[([^]]+)\]"
+    ipa_pattern = r"IPA\(key\):\s*(\[.*\]\n)"
 
     # Extracting information using regular expressions
     title_match = re.search(title_pattern, input_text)
@@ -28,9 +28,7 @@ def parse_korean_text(input_text):
     yale_rom = rom_match.group(4).strip()
     ipa_key = ipa_match.group(1).strip()
 
-    # print f"run_test( {}, {}, {} {})"
-
-    return f"run_test{(title, ko_ipa, phonetic_hangul, revised_rom, revised_rom_translit, mccune_reischauer, yale_rom, ipa_key)}"
+    return f"self.run_test{(title, ko_ipa, phonetic_hangul, revised_rom, revised_rom_translit, mccune_reischauer, yale_rom, ipa_key)}"
 
 print(parse_korean_text('''법률학 (法律學, beomnyulhak)
 
