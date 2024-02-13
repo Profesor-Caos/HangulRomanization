@@ -218,8 +218,9 @@ class WiktionaryRomanization:
                     pre_length = len(word_set)
                     for i in range(pre_length):
                         item = list(word_set[i])
-                        item[variable - 1] = modification(item[variable - 1])
-                        item[variable] = modification2(item[variable])
+                        item[variable] = modification(item[variable])
+                        if (variable + 1 < len(item)):
+                            item[variable + 1] = modification2(item[variable + 1])
                         word_set.append("".join(item))
             
             add_respelling(vowel_ui_i, lambda x: "이")
