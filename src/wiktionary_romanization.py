@@ -87,17 +87,17 @@ class WiktionaryRomanization:
         16: 0,    # 귀→귀
     }
     allowed_vowel_scheme = {
-        "1-1": 1,
-        "1-6": 1,
-        "3-1": 1,
-        "3-6": 1,
-        "10-1": 1,
-        "10-6": 1,
-        "7-1": 1,
-        "7-6": 1,
-        "11-1": 1,
-        "11-6": 1,
-        "16-6": 1,
+        "1-0": 1,
+        "1-5": 1,
+        "3-0": 1,
+        "3-5": 1,
+        "10-0": 1,
+        "10-5": 1,
+        "7-0": 1,
+        "7-5": 1,
+        "11-0": 1,
+        "11-5": 1,
+        "16-5": 1,
     }
     ambiguous_intersyllabic_rr = {"oe": 1, "eo": 1, "eu": 1, "ae": 1, "ui": 1}
     ambiguous_intersyllabic_mr = {"oe": 1, "ae": 1}
@@ -304,13 +304,13 @@ class WiktionaryRomanization:
                         
                         vowel = RomanizationData.vowels[syllable["vowel"]][system_index]
 
-                        if len(p["nn"]) > 0 and p["nn"].get(next_index, False) and system_index in [0, 1, 3, 5]:
+                        if len(p["nn"]) > 0 and p["nn"].get(next_index + 1, False) and system_index in [0, 1, 3, 5]:
                             next_syllable["initial"] = "ᄂ"
                         
                         if len(p["com"]) > 0 and system_index in [0, 5]:
                             next_syllable["initial"] = WiktionaryRomanization.com_ph.get(next_syllable.get("initial", ""), next_syllable.get("initial", ""))
 
-                        if len(p["ni"]) > 0 and system_index != 2:
+                        if len(p["ni"]) > 0 and p["ni"].get(next_index + 1, False) and system_index != 2:
                             next_syllable["initial"] = "ᄅ" if system_index == 4 and syllable.get("final", "") == "ᆯ" else "ᄂ"
 
                         if system_index in [0, 1, 3, 5]:
