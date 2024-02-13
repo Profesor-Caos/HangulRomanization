@@ -315,7 +315,7 @@ class WiktionaryRomanization:
                             next_syllable["initial"] = "ᄅ" if system_index == 4 and syllable.get("final", "") == "ᆯ" else "ᄂ"
 
                         if system_index in [0, 1, 3, 5]:
-                            if batchim_reduce and int(batchim_reduce) == index:
+                            if batchim_reduce and int(batchim_reduce) == index + 1:
                                 syllable["final"] = RomanizationData.boundary.get(syllable["final"] + "-Ø", [""])[0]
 
                             if index != -1 and this_syllable_text == "밟" and next_syllable["initial"] not in "ᄋᄒ":
@@ -335,7 +335,7 @@ class WiktionaryRomanization:
                                 elif syllable["final"] in "ᆵᆹᇁ":
                                     syllable["final"] = "ᆸ"
 
-                            if not batchim_reduce or int(batchim_reduce) != index:
+                            if not batchim_reduce or int(batchim_reduce) - 1 != index:
                                 if syllable["final"] + next_syllable["initial"] in ["ᇀᄋ"]:
                                     if next_syllable["vowel"] == "ᅵ":
                                         syllable["final"] = "ᆾ"
@@ -366,9 +366,8 @@ class WiktionaryRomanization:
                                         next_syllable["vowel"] = "ᅥ"
                                 elif re.search(r"[ᆬᆽᆾ][ᄋᄒ]ᅧ", syllable["final"] + next_syllable["initial"] + next_syllable["vowel"]) :
                                     next_syllable["vowel"] = "ᅥ"
-                        
-                        if syllable["final"] + next_syllable["initial"] == "ᆺᄋ" and next_syllable_text not in "아았어었에으은을음읍의이인일임입있":
-                            syllable["final"] = "ᆮ"
+                            if syllable["final"] + next_syllable["initial"] == "ᆺᄋ" and next_syllable_text not in "아았어었에으은을음읍의이인일임입있":
+                                syllable["final"] = "ᆮ"
 
                         bound = syllable["final"] + "-" + next_syllable["initial"]
                         if bound not in RomanizationData.boundary:
@@ -495,7 +494,7 @@ class WiktionaryRomanization:
             "iot": {},
         }
 
-        args = WiktionaryRomanization.process_params(self.input_string, params)
+        args = self.process_params(self.input_string, params)
 
         current_word_dataset = []
         for system_index in WiktionaryRomanization.system_lookup.values():
@@ -504,7 +503,7 @@ class WiktionaryRomanization:
 
         return current_word_dataset
 
-    def process_params(pronunciation, params):
+    def process_params(self, pronunciation, params):
         pattern = r'\{\{\s*ko-ipa\s*(.*?)\s*\}\}'
         matches = re.findall(pattern, pronunciation, re.IGNORECASE)
 
@@ -516,5 +515,9 @@ class WiktionaryRomanization:
                 if '=' in param:
                     key, value = param.split('=')
                     params[key.strip()] = value.strip()
+                # elif param:
+                #     # parameter is the string to romanize
+                #     self.title = param
+                # TODO: make taking a different string to romanize as a parameter work
         
-        return params#
+        return params
