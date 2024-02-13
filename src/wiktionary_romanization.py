@@ -308,7 +308,7 @@ class WiktionaryRomanization:
                         if len(p["nn"]) > 0 and p["nn"].get(next_index + 1, False) and system_index in [0, 1, 3, 5]:
                             next_syllable["initial"] = "ᄂ"
                         
-                        if len(p["com"]) > 0 and system_index in [0, 5]:
+                        if len(p["com"]) > 0 and p["com"].get(index + 1, False) and system_index in [0, 5]:
                             next_syllable["initial"] = WiktionaryRomanization.com_ph.get(next_syllable.get("initial", ""), next_syllable.get("initial", ""))
 
                         if len(p["ni"]) > 0 and p["ni"].get(next_index + 1, False) and system_index != 2:
@@ -405,10 +405,10 @@ class WiktionaryRomanization:
                             vowel += "ˈ"
 
                         # TODO I think p["cap"]["y"] will likely have an exception. I think my change probably fixes it.
-                        if len(p["com"]) > 0 and p["com"].get(index, False):
+                        if len(p["com"]) > 0 and p["com"].get(index + 1, False):
                             junction = re.sub(r"(.)$", lambda m: ("q" if system_index == 4 else "") + (WiktionaryRomanization.com_mc.get((m.group(1) + (p.get("cap", {}).get("y", "") or "")), WiktionaryRomanization.com_mc.get(m.group(1), m.group(1))) if system_index == 3 else m.group(1)), junction)
 
-                        if len(p["com"]) > 0 and p.get("ni", {}).get(next_index, False) and system_index == 4:
+                        if len(p["ni"]) > 0 and p.get("ni", {}).get(next_index, False) and system_index == 4:
                             junction = re.sub(r"([nl])$", r"<sup>\1</sup>", junction)
 
                         final_cons, initial_cons = re.match(r"^(.*);(.*)$", junction).groups() if ";" in junction else (junction, "")
