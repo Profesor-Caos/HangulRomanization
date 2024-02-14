@@ -507,9 +507,29 @@ class WiktionaryRomanization:
 
         return current_word_dataset
 
-    def process_params(self, pronunciation, params):
+    def romanize_one(self, system_name):
+        params = {
+            1: {"default": self.title, "list": True},
+            "a": {},
+            "audio": {"alias_of": "a"},
+            "nn": {},
+            "l": {},
+            "com": {},
+            "cap": {},
+            "ui": {},
+            "uie": {},
+            "nobc": {},
+            "ni": {},
+            "bcred": {},
+            "svar": {},
+            "iot": {},
+        }
+        args = self.process_params(params)
+        return WiktionaryRomanization.romanize(self.title, self.system_lookup[system_name], args)
+
+    def process_params(self, params):
         pattern = r'\{\{\s*ko-ipa\s*(.*?)\s*\}\}'
-        matches = re.findall(pattern, pronunciation, re.IGNORECASE)
+        matches = re.findall(pattern, self.input_string, re.IGNORECASE)
 
         if matches:
             parameters_string = matches[0]

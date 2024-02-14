@@ -28,7 +28,10 @@ def parse_korean_text(input_text):
     yale_rom = rom_match.group(4).strip()
     ipa_key = ipa_match.group(1).strip()
 
-    return f"self.run_test{(title, ko_ipa, phonetic_hangul, revised_rom, revised_rom_translit, mccune_reischauer, yale_rom, ipa_key)}"
+    result_string = ""
+    for name, expected in zip(["ph", "rr", "rrr", "mr", "yr", "ipa"], [phonetic_hangul, revised_rom, revised_rom_translit, mccune_reischauer, yale_rom, ipa_key]):
+        result_string += f'''def test_{revised_rom.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\tself.run_test("{title}", "{ko_ipa}", "{expected}", "{name}")\n'''
+    return result_string
 
 print(parse_korean_text('''법률학 (法律學, beomnyulhak)
 
