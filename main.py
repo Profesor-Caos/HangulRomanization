@@ -1,4 +1,4 @@
-from tests.romanization_tests import TestWikiRomanizations
+from tests.test_wiki_romanizations import TestWikiRomanizations
 
 twr = TestWikiRomanizations()
 twr.wiki_test_cases()
