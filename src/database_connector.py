@@ -1,6 +1,6 @@
 import mysql.connector
 from mysql.connector import errorcode
-from config import database_config
+from src.config import database_config
 
 
 class DatabaseConnector:

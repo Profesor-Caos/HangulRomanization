@@ -1,4 +1,4 @@
-from database_connector import DatabaseConnector
+from src.database_connector import DatabaseConnector
 from typing import Iterable
 
 class KoArticle:
@@ -42,10 +42,10 @@ class KoArticles:
         else:
             raise StopIteration
 
-    def load_all(self):
+    def load_all(self, query = ''):
         try:
             self.db_connector.connect()
-            query = "SELECT * FROM ko_article"
+            if query == '': query = "SELECT * FROM ko_article"
             results = self.db_connector.execute_query(query)
             self.db_connector.disconnect()
             for result in results:

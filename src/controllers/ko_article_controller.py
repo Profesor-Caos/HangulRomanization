@@ -1,4 +1,4 @@
-from models.ko_article import KoArticle, KoArticles
+from src.models.ko_article import KoArticle, KoArticles
 import re
 
 class KoArticleController:

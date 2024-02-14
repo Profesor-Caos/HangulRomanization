@@ -37,5 +37,6 @@ ko_article_controller = KoArticleController()
 
 # Step 2, added another column for what's important in the pronunciation section and
 # writing that to the DB
-ko_article_controller.update_pronunciation()
+# ko_article_controller.update_pronunciation()
             
+# Step 3, finding all unique pronunciations
