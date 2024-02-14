@@ -8,7 +8,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "stopOnEntry": true,
-            "justMyCode": false
+            "justMyCode": false,
+            "env": {"PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}"}
         },
-    ]
+    ],
 }
