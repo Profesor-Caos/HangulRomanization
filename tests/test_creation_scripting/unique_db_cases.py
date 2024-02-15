@@ -46,7 +46,7 @@ def get_vals_from_pron_span(pronunciation_span):
 
 with open("tests/test_unique_db_cases.py", "w", encoding="utf-8") as f:
     print('''import sys
-pkg_dir = "C:\\Users\\Ryan\\Source\\MachineLearning\\HangulRomanization" # obviously hacky, but I just want to get debugging tests working
+pkg_dir = "C:\\\\Users\\\\Ryan\\\\Source\\\\MachineLearning\\\\HangulRomanization" # obviously hacky, but I just want to get debugging tests working
 sys.path.append(pkg_dir)
 
 import unittest
@@ -57,33 +57,34 @@ class TestUniqueDBCases(unittest.TestCase):
     # Now we need to scrape the actual wiki pages for each to see the results of the original wiki Lua romanization
     # to test ours against.
     for key, value in pronunciation_dict.items():
-        print(key, value["article"].page_title)
         url = "https://en.wiktionary.org/wiki/" + quote(value["article"].page_title)
         page = urlopen(url)
         html = page.read().decode("utf-8")
         soup = BeautifulSoup(html, 'html.parser')
-        # find the Korean h2
         korean_header = soup.find('span', id="Korean")
-        # find the pronunciation span with the right index
         vals = []
+        # I found this looking for this to be the most consistent way of finding pronunciations, as the labeling
+        # of headers was not consistent
+        ipa_span = korean_header.find_next('span', class_='IPA')
         for i in range(0, value["index"] + 1):
+            if i != 0:
+                ipa_span = ipa_span.find_next('span', class_='IPA')
+            # find the pronunciation span with the correct index
             if i != value["index"]:
                 continue
-            pronunciation_span = korean_header.find_next('span', text=re.compile(r"Pronunciation.*"))
-            ipa_text = pronunciation_span.find_next('span', class_='IPA').text
-            ph_li = pronunciation_span.find_next('li', class_='ko-pron__ph')
+            ph_li = ipa_span.find_next('li', class_='ko-pron__ph')
             ph_text = ph_li.find_next('span', class_="Kore").text.strip('[]')
-            romanizations_table = pronunciation_span.find_next('table', class_="ko-pron")
+            romanizations_table = ipa_span.find_next('table', class_="ko-pron")
             rr = romanizations_table.find_next("td", class_="IPA")
             rrr = rr.find_next("td", class_="IPA")
             mr = rrr.find_next("td", class_="IPA")
             yc = mr.find_next("td", class_="IPA")
-            for name, expected in zip(["ph", "rr", "rrr", "mr", "yr", "ipa"], [ph_text, rr.text, rrr.text, mr.text, yc.text, ipa_text]):
+            for name, expected in zip(["ph", "rr", "rrr", "mr", "yr", "ipa"], [ph_text, rr.text, rrr.text, mr.text, yc.text, ipa_span.text]):
                 print(f'''\tdef test_{rr.text.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\t\tself.run_test("{value["article"].page_title}", "{key}", "{expected}", "{name}")''', file=f)
         print("", file=f)
     print('''
-    def run_test(self, hangul, param_string, expected, system_name):
-        wr = WiktionaryRomanization(hangul, param_string)
-        value = wr.romanize_one(system_name)
-        self.assertEqual(value, expected)''', file=f)
+\tdef run_test(self, hangul, param_string, expected, system_name):
+\t\twr = WiktionaryRomanization(hangul, param_string)
+\t\tvalue = wr.romanize_one(system_name)
+\t\tself.assertEqual(value, expected)''', file=f)
 
