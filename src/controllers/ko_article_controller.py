@@ -20,11 +20,9 @@ class KoArticleController:
         for article in articles:
             pronunciation = article.pronunciation
             text = article.page_text
-            pattern = r'(\{\{ko-ipa.*\}\})(?![\s\S]*\1)'
-            # matches {{ko-ipa}} with anything between ipa and the closing }}, then looks ahead to make sure it doesn't appear again
-            # with a negative lookahead. This captures the last instance in the text of each distinct use of ko-ipa.
+            pattern = r'(\{\{ko-ipa.*\}\})'
             matches = re.findall(pattern, text, re.IGNORECASE)
-            new_pronunciation = ', '.join(matches)
+            new_pronunciation = ';;;'.join(matches)
             if (new_pronunciation == pronunciation):
                 continue
             if (pronunciation != '' and new_pronunciation != pronunciation):

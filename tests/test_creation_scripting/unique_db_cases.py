@@ -8,30 +8,15 @@ pronunciation_dict = {}
 articles = KoArticles()
 articles.load_all('select * from ko_article group by pronunciation')
 for article in articles:
-    pattern = r'(\{\{ko-ipa.*?(?=}})\}\})'
-    matches = re.findall(pattern, article.pronunciation, re.IGNORECASE)
-    trimmed_matches = []
-    for match in matches:
-        pattern = r'(\|a=[^|}]+)|(\|audio=[^|}]+)' # remove audio files
-        new_match = re.sub(pattern, '', match)
-        pattern = r'(\|[^=|}]+)(?=[|}])' # remove Hangul
-        hangul_matches = re.findall(pattern, new_match, re.IGNORECASE)
-        for hm in hangul_matches:
-            new_match = new_match.replace(hm, '')
-        if new_match not in pronunciation_dict:
-            pronunciation_dict[new_match] = { "article": article, "original": match, "index": -1 }
-
-# We need to figure out which instance of {{ko-ipa}} on our page our unique instance corresponds to.
-for key, value in pronunciation_dict.items():
-    page_text = value["article"].page_text
-    pattern = r'({{ko-ipa.*?}})'
-    matches = re.findall(pattern, page_text, re.IGNORECASE)
-    for i, match in enumerate(matches):
-        if (match == value["original"]):
-            value["index"] = i
-            break
-    if (value["index"] == -1):
-        raise Exception("something's gone wrong.")
+    for i, pronunciation in enumerate(article.pronunciation.split(';;;')):
+        if pronunciation not in pronunciation_dict:
+            pattern = r'(\|a=[^|}]+)|(\|audio=[^|}]+)' # remove audio files
+            stripped_pronunciation = re.sub(pattern, '', pronunciation)
+            pattern = r'(\|[^=|}]+)(?=[|}])' # remove Hangul
+            hangul_matches = re.findall(pattern, stripped_pronunciation, re.IGNORECASE)
+            for hm in hangul_matches:
+                stripped_pronunciation = stripped_pronunciation.replace(hm, '')
+            pronunciation_dict[stripped_pronunciation] = { "article": article, "original": pronunciation, "index": i }
 
 def get_vals_from_pron_span(pronunciation_span):
     ipa_text = pronunciation_span.find_next('span', class_='IPA').text
@@ -79,8 +64,9 @@ class TestUniqueDBCases(unittest.TestCase):
             rrr = rr.find_next("td", class_="IPA")
             mr = rrr.find_next("td", class_="IPA")
             yc = mr.find_next("td", class_="IPA")
+            original_params = value["article"].pronunciation.split(';;;')[value["index"]]
             for name, expected in zip(["ph", "rr", "rrr", "mr", "yr", "ipa"], [ph_text, rr.text, rrr.text, mr.text, yc.text, ipa_span.text]):
-                print(f'''\tdef test_{rr.text.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\t\tself.run_test("{value["article"].page_title}", "{key}", "{expected}", "{name}")''', file=f)
+                print(f'''\tdef test_{rr.text.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\t\tself.run_test("{value["article"].page_title}", "{original_params}", "{expected}", "{name}")''', file=f)
         print("", file=f)
     print('''
 \tdef run_test(self, hangul, param_string, expected, system_name):

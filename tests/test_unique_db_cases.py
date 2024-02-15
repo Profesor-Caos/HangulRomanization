@@ -7,83 +7,109 @@ from src.wiktionary_romanization import WiktionaryRomanization
 
 class TestUniqueDBCases(unittest.TestCase):
 
-	def test_yeoja_ph(self):
-		self.run_test("여자", "{{ko-IPA}}", "여자", "ph")
-	def test_yeoja_rr(self):
-		self.run_test("여자", "{{ko-IPA}}", "yeoja", "rr")
-	def test_yeoja_rrr(self):
-		self.run_test("여자", "{{ko-IPA}}", "yeoja", "rrr")
-	def test_yeoja_mr(self):
-		self.run_test("여자", "{{ko-IPA}}", "yŏja", "mr")
-	def test_yeoja_yr(self):
-		self.run_test("여자", "{{ko-IPA}}", "yeca", "yr")
-	def test_yeoja_ipa(self):
-		self.run_test("여자", "{{ko-IPA}}", "[jʌ̹d͡ʑa̠]", "ipa")
+	def test_koenihiseubereukeu_ph(self):
+		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "퀘니히스베르크/쾨니히스베르크", "ph")
+	def test_koenihiseubereukeu_rr(self):
+		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "koenihiseubereukeu", "rr")
+	def test_koenihiseubereukeu_rrr(self):
+		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "koenihiseubeleukeu", "rrr")
+	def test_koenihiseubereukeu_mr(self):
+		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "k'oenihisŭberŭk'ŭ", "mr")
+	def test_koenihiseubereukeu_yr(self):
+		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "khoynihisupeylu.khu", "yr")
+	def test_koenihiseubereukeu_ipa(self):
+		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "[kʰwe̞niʝisʰɯbe̞ɾɯkxɯ] ~ [kʰø̞niʝisʰɯbe̞ɾɯkxɯ]", "ipa")
 
-	def test_hangugeo_ph(self):
-		self.run_test("한국어", "{{ko-IPA|l=y}}", "한(ː)구거", "ph")
-	def test_hangugeo_rr(self):
-		self.run_test("한국어", "{{ko-IPA|l=y}}", "han'gugeo", "rr")
-	def test_hangugeo_rrr(self):
-		self.run_test("한국어", "{{ko-IPA|l=y}}", "hangug'eo", "rrr")
-	def test_hangugeo_mr(self):
-		self.run_test("한국어", "{{ko-IPA|l=y}}", "han'gugŏ", "mr")
-	def test_hangugeo_yr(self):
-		self.run_test("한국어", "{{ko-IPA|l=y}}", "hānkwuk.e", "yr")
-	def test_hangugeo_ipa(self):
-		self.run_test("한국어", "{{ko-IPA|l=y}}", "[ˈha̠(ː)nɡuɡʌ̹]", "ipa")
+	def test_boon_jangchi_ph(self):
+		self.run_test("보온장치", "{{ko-IPA|보온 장치|l=y}}", "보(ː)온 장치", "ph")
+	def test_boon_jangchi_rr(self):
+		self.run_test("보온장치", "{{ko-IPA|보온 장치|l=y}}", "boon jangchi", "rr")
+	def test_boon_jangchi_rrr(self):
+		self.run_test("보온장치", "{{ko-IPA|보온 장치|l=y}}", "boon jangchi", "rrr")
+	def test_boon_jangchi_mr(self):
+		self.run_test("보온장치", "{{ko-IPA|보온 장치|l=y}}", "poon changch'i", "mr")
+	def test_boon_jangchi_yr(self):
+		self.run_test("보온장치", "{{ko-IPA|보온 장치|l=y}}", "pōon cangchi", "yr")
+	def test_boon_jangchi_ipa(self):
+		self.run_test("보온장치", "{{ko-IPA|보온 장치|l=y}}", "[ˈpo̞(ː)o̞n t͡ɕa̠ŋt͡ɕʰi]", "ipa")
 
-	def test_pisibang_ph(self):
-		self.run_test("PC방", "{{ko-IPA|com=1}}", "피씨방", "ph")
-	def test_pisibang_rr(self):
-		self.run_test("PC방", "{{ko-IPA|com=1}}", "pisibang", "rr")
-	def test_pisibang_rrr(self):
-		self.run_test("PC방", "{{ko-IPA|com=1}}", "pisibang", "rrr")
-	def test_pisibang_mr(self):
-		self.run_test("PC방", "{{ko-IPA|com=1}}", "p'issibang", "mr")
-	def test_pisibang_yr(self):
-		self.run_test("PC방", "{{ko-IPA|com=1}}", "phiqsipang", "yr")
-	def test_pisibang_ipa(self):
-		self.run_test("PC방", "{{ko-IPA|com=1}}", "[pʰiɕ͈iba̠ŋ]", "ipa")
+	def test_kyual_kodeu_ph(self):
+		self.run_test("QR 코드", "{{ko-IPA|큐알 코드|com=1}}", "큐알 코드", "ph")
+	def test_kyual_kodeu_rr(self):
+		self.run_test("QR 코드", "{{ko-IPA|큐알 코드|com=1}}", "kyual kodeu", "rr")
+	def test_kyual_kodeu_rrr(self):
+		self.run_test("QR 코드", "{{ko-IPA|큐알 코드|com=1}}", "kyual kodeu", "rrr")
+	def test_kyual_kodeu_mr(self):
+		self.run_test("QR 코드", "{{ko-IPA|큐알 코드|com=1}}", "k'yual k'odŭ", "mr")
+	def test_kyual_kodeu_yr(self):
+		self.run_test("QR 코드", "{{ko-IPA|큐알 코드|com=1}}", "khyuqal khotu", "yr")
+	def test_kyual_kodeu_ipa(self):
+		self.run_test("QR 코드", "{{ko-IPA|큐알 코드|com=1}}", "[cçua̠ɭ kʰo̞dɯ]", "ipa")
 
-	def test_Ilbon_ph(self):
-		self.run_test("일본", "{{ko-IPA|cap=y}}", "일본", "ph")
-	def test_Ilbon_rr(self):
-		self.run_test("일본", "{{ko-IPA|cap=y}}", "Ilbon", "rr")
-	def test_Ilbon_rrr(self):
-		self.run_test("일본", "{{ko-IPA|cap=y}}", "Ilbon", "rrr")
-	def test_Ilbon_mr(self):
-		self.run_test("일본", "{{ko-IPA|cap=y}}", "Ilbon", "mr")
-	def test_Ilbon_yr(self):
-		self.run_test("일본", "{{ko-IPA|cap=y}}", "il.pon", "yr")
-	def test_Ilbon_ipa(self):
-		self.run_test("일본", "{{ko-IPA|cap=y}}", "[iɭbo̞n]", "ipa")
+	def test_gabot_ph(self):
+		self.run_test("갑옷", "{{ko-ipa|a=Ko-갑옷.ogg}}", "가볻", "ph")
+	def test_gabot_rr(self):
+		self.run_test("갑옷", "{{ko-ipa|a=Ko-갑옷.ogg}}", "gabot", "rr")
+	def test_gabot_rrr(self):
+		self.run_test("갑옷", "{{ko-ipa|a=Ko-갑옷.ogg}}", "gab'os", "rrr")
+	def test_gabot_mr(self):
+		self.run_test("갑옷", "{{ko-ipa|a=Ko-갑옷.ogg}}", "kabot", "mr")
+	def test_gabot_yr(self):
+		self.run_test("갑옷", "{{ko-ipa|a=Ko-갑옷.ogg}}", "kap.os", "yr")
+	def test_gabot_ipa(self):
+		self.run_test("갑옷", "{{ko-ipa|a=Ko-갑옷.ogg}}", "[ka̠bo̞t̚]", "ipa")
 
-	def test_I_ph(self):
-		self.run_test("이", "{{ko-IPA|l=y|cap=y}}", "이(ː)", "ph")
-	def test_I_rr(self):
-		self.run_test("이", "{{ko-IPA|l=y|cap=y}}", "I", "rr")
-	def test_I_rrr(self):
-		self.run_test("이", "{{ko-IPA|l=y|cap=y}}", "I", "rrr")
-	def test_I_mr(self):
-		self.run_test("이", "{{ko-IPA|l=y|cap=y}}", "I", "mr")
-	def test_I_yr(self):
-		self.run_test("이", "{{ko-IPA|l=y|cap=y}}", "ī", "yr")
-	def test_I_ipa(self):
-		self.run_test("이", "{{ko-IPA|l=y|cap=y}}", "[i(ː)]", "ipa")
+	def test_Bakgeunhye_ph(self):
+		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "박끈혜/박끈헤", "ph")
+	def test_Bakgeunhye_rr(self):
+		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "Bakgeunhye", "rr")
+	def test_Bakgeunhye_rrr(self):
+		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "Baggeunhye", "rrr")
+	def test_Bakgeunhye_mr(self):
+		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "Pakkŭnhye", "mr")
+	def test_Bakgeunhye_yr(self):
+		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "pak.kun.hyey", "yr")
+	def test_Bakgeunhye_ipa(self):
+		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "[pa̠k̚k͈ɯnʝe̞] ~ [pa̠k̚k͈ɯnɦe̞]", "ipa")
 
-	def test_ilda_ph(self):
-		self.run_test("읽다", "{{ko-IPA|l=y|com=1}}", "일(ː)따", "ph")
-	def test_ilda_rr(self):
-		self.run_test("읽다", "{{ko-IPA|l=y|com=1}}", "ilda", "rr")
-	def test_ilda_rrr(self):
-		self.run_test("읽다", "{{ko-IPA|l=y|com=1}}", "ilda", "rrr")
-	def test_ilda_mr(self):
-		self.run_test("읽다", "{{ko-IPA|l=y|com=1}}", "ilta", "mr")
-	def test_ilda_yr(self):
-		self.run_test("읽다", "{{ko-IPA|l=y|com=1}}", "īlqta", "yr")
-	def test_ilda_ipa(self):
-		self.run_test("읽다", "{{ko-IPA|l=y|com=1}}", "[ˈi(ː)ɭt͈a̠]", "ipa")
+	def test_cheolgapsangeo_ph(self):
+		self.run_test("철갑 상어", "", "철갑쌍어", "ph")
+	def test_cheolgapsangeo_rr(self):
+		self.run_test("철갑 상어", "", "cheolgapsang'eo", "rr")
+	def test_cheolgapsangeo_rrr(self):
+		self.run_test("철갑 상어", "", "cheolgabsang'eo", "rrr")
+	def test_cheolgapsangeo_mr(self):
+		self.run_test("철갑 상어", "", "ch'ŏlgapsangŏ", "mr")
+	def test_cheolgapsangeo_yr(self):
+		self.run_test("철갑 상어", "", "chel.kap.sange", "yr")
+	def test_cheolgapsangeo_ipa(self):
+		self.run_test("철갑 상어", "", "[t͡ɕʰʌ̹ɭɡa̠ps͈a̠ŋʌ̹]", "ipa")
+
+	def test_Buhwal_juil_ph(self):
+		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "부(ː)활 주일", "ph")
+	def test_Buhwal_juil_rr(self):
+		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "Buhwal ju'il", "rr")
+	def test_Buhwal_juil_rrr(self):
+		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "Buhwal ju'il", "rrr")
+	def test_Buhwal_juil_mr(self):
+		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "Puhwal chuil", "mr")
+	def test_Buhwal_juil_yr(self):
+		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "pūhwal cwuil", "yr")
+	def test_Buhwal_juil_ipa(self):
+		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "[ˈpu(ː)βwa̠ɭ t͡ɕuiɭ]", "ipa")
+
+	def test_anda_ph(self):
+		self.run_test("안다", "{{ko-IPA|l=y|com=1|a=Ko-안따.ogg}}", "안(ː)따", "ph")
+	def test_anda_rr(self):
+		self.run_test("안다", "{{ko-IPA|l=y|com=1|a=Ko-안따.ogg}}", "anda", "rr")
+	def test_anda_rrr(self):
+		self.run_test("안다", "{{ko-IPA|l=y|com=1|a=Ko-안따.ogg}}", "anda", "rrr")
+	def test_anda_mr(self):
+		self.run_test("안다", "{{ko-IPA|l=y|com=1|a=Ko-안따.ogg}}", "anta", "mr")
+	def test_anda_yr(self):
+		self.run_test("안다", "{{ko-IPA|l=y|com=1|a=Ko-안따.ogg}}", "ānqta", "yr")
+	def test_anda_ipa(self):
+		self.run_test("안다", "{{ko-IPA|l=y|com=1|a=Ko-안따.ogg}}", "[ˈa̠(ː)nt͈a̠]", "ipa")
 
 	def test_ganeungseong_ph(self):
 		self.run_test("가능성", "{{ko-IPA|l=y|com=2}}", "가(ː)능썽", "ph")
@@ -97,6 +123,19 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("가능성", "{{ko-IPA|l=y|com=2}}", "kānungqseng", "yr")
 	def test_ganeungseong_ipa(self):
 		self.run_test("가능성", "{{ko-IPA|l=y|com=2}}", "[ˈka̠(ː)nɯŋs͈ʌ̹ŋ]", "ipa")
+
+	def test_gom_ph(self):
+		self.run_test("곰", "{{ko-ipa|l=y|a=곰.wav}}", "곰(ː)", "ph")
+	def test_gom_rr(self):
+		self.run_test("곰", "{{ko-ipa|l=y|a=곰.wav}}", "gom", "rr")
+	def test_gom_rrr(self):
+		self.run_test("곰", "{{ko-ipa|l=y|a=곰.wav}}", "gom", "rrr")
+	def test_gom_mr(self):
+		self.run_test("곰", "{{ko-ipa|l=y|a=곰.wav}}", "kom", "mr")
+	def test_gom_yr(self):
+		self.run_test("곰", "{{ko-ipa|l=y|a=곰.wav}}", "kōm", "yr")
+	def test_gom_ipa(self):
+		self.run_test("곰", "{{ko-ipa|l=y|a=곰.wav}}", "[ko̞(ː)m]", "ipa")
 
 	def test_sin_ph(self):
 		self.run_test("신", "{{ko-IPA|com=0}}", "씬", "ph")
@@ -124,18 +163,31 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_jeotgarak_ipa(self):
 		self.run_test("젓가락", "{{ko-IPA|nobc=1}}", "[t͡ɕʌ̹t̚k͈a̠ɾa̠k̚] ~ [t͡ɕʌ̹k͈a̠ɾa̠k̚]", "ipa")
 
-	def test_Wiki_nanmal_sajeon_ph(self):
-		self.run_test("위키낱말사전", "{{ko-IPA|l=4|cap=y}}", "위키 난(ː)말 사전", "ph")
-	def test_Wiki_nanmal_sajeon_rr(self):
-		self.run_test("위키낱말사전", "{{ko-IPA|l=4|cap=y}}", "Wiki nanmal sajeon", "rr")
-	def test_Wiki_nanmal_sajeon_rrr(self):
-		self.run_test("위키낱말사전", "{{ko-IPA|l=4|cap=y}}", "Wiki natmal sajeon", "rrr")
-	def test_Wiki_nanmal_sajeon_mr(self):
-		self.run_test("위키낱말사전", "{{ko-IPA|l=4|cap=y}}", "Wik'i nanmal sajŏn", "mr")
-	def test_Wiki_nanmal_sajeon_yr(self):
-		self.run_test("위키낱말사전", "{{ko-IPA|l=4|cap=y}}", "wi.khi nāthmal sacen", "yr")
-	def test_Wiki_nanmal_sajeon_ipa(self):
-		self.run_test("위키낱말사전", "{{ko-IPA|l=4|cap=y}}", "[ɥicçi na̠(ː)nma̠ɭ sʰa̠d͡ʑʌ̹n] ~ [ycçi na̠(ː)nma̠ɭ sʰa̠d͡ʑʌ̹n]", "ipa")
+	def test_Pyeongyang_ph(self):
+		self.run_test("평양", "{{ko-IPA|cap=y|a=Ko-{{PAGENAME}}.oga}}", "평양", "ph")
+	def test_Pyeongyang_rr(self):
+		self.run_test("평양", "{{ko-IPA|cap=y|a=Ko-{{PAGENAME}}.oga}}", "Pyeong'yang", "rr")
+	def test_Pyeongyang_rrr(self):
+		self.run_test("평양", "{{ko-IPA|cap=y|a=Ko-{{PAGENAME}}.oga}}", "Pyeong'yang", "rrr")
+	def test_Pyeongyang_mr(self):
+		self.run_test("평양", "{{ko-IPA|cap=y|a=Ko-{{PAGENAME}}.oga}}", "P'yŏngyang", "mr")
+	def test_Pyeongyang_yr(self):
+		self.run_test("평양", "{{ko-IPA|cap=y|a=Ko-{{PAGENAME}}.oga}}", "phyengyang", "yr")
+	def test_Pyeongyang_ipa(self):
+		self.run_test("평양", "{{ko-IPA|cap=y|a=Ko-{{PAGENAME}}.oga}}", "[pʰjʌ̹ŋja̠ŋ]", "ipa")
+
+	def test_Seoul_gonghwaguk_ph(self):
+		self.run_test("서울공화국", "{{ko-IPA|서울 공화국|l=4|cap=y}}", "서울 공(ː)화국", "ph")
+	def test_Seoul_gonghwaguk_rr(self):
+		self.run_test("서울공화국", "{{ko-IPA|서울 공화국|l=4|cap=y}}", "Seoul gonghwaguk", "rr")
+	def test_Seoul_gonghwaguk_rrr(self):
+		self.run_test("서울공화국", "{{ko-IPA|서울 공화국|l=4|cap=y}}", "Seoul gonghwagug", "rrr")
+	def test_Seoul_gonghwaguk_mr(self):
+		self.run_test("서울공화국", "{{ko-IPA|서울 공화국|l=4|cap=y}}", "Sŏul konghwaguk", "mr")
+	def test_Seoul_gonghwaguk_yr(self):
+		self.run_test("서울공화국", "{{ko-IPA|서울 공화국|l=4|cap=y}}", "sewul kōnghwakwuk", "yr")
+	def test_Seoul_gonghwaguk_ipa(self):
+		self.run_test("서울공화국", "{{ko-IPA|서울 공화국|l=4|cap=y}}", "[sʰʌ̹uɭ ko̞(ː)ŋβwa̠ɡuk̚]", "ipa")
 
 	def test_sagwa_ph(self):
 		self.run_test("사과", "{{ko-IPA|l=ˈsʰa̠gwa̠}}", "사과", "ph")
@@ -163,19 +215,6 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_naui_ipa(self):
 		self.run_test("나의", "{{ko-IPA|ui=2}}", "[na̠ɰi] ~ [na̠i]", "ipa")
 
-	def test_jang_ph(self):
-		self.run_test("장", "{{ko-ipa|l=y}}", "장(ː)", "ph")
-	def test_jang_rr(self):
-		self.run_test("장", "{{ko-ipa|l=y}}", "jang", "rr")
-	def test_jang_rrr(self):
-		self.run_test("장", "{{ko-ipa|l=y}}", "jang", "rrr")
-	def test_jang_mr(self):
-		self.run_test("장", "{{ko-ipa|l=y}}", "chang", "mr")
-	def test_jang_yr(self):
-		self.run_test("장", "{{ko-ipa|l=y}}", "cāng", "yr")
-	def test_jang_ipa(self):
-		self.run_test("장", "{{ko-ipa|l=y}}", "[t͡ɕa̠(ː)ŋ]", "ipa")
-
 	def test_Jang_ph(self):
 		self.run_test("장", "{{ko-ipa|cap=y}}", "장", "ph")
 	def test_Jang_rr(self):
@@ -202,18 +241,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_yeogwon_ipa(self):
 		self.run_test("여권", "{{ko-IPA|com=1|l=y}}", "[ˈjɘ(ː)k͈wʌ̹n]", "ipa")
 
-	def test_gwangubyeong_ph(self):
-		self.run_test("광우병", "{{ko-IPA|com=2}}", "광우뼝", "ph")
-	def test_gwangubyeong_rr(self):
-		self.run_test("광우병", "{{ko-IPA|com=2}}", "gwang'ubyeong", "rr")
-	def test_gwangubyeong_rrr(self):
-		self.run_test("광우병", "{{ko-IPA|com=2}}", "gwang'ubyeong", "rrr")
-	def test_gwangubyeong_mr(self):
-		self.run_test("광우병", "{{ko-IPA|com=2}}", "kwangupyŏng", "mr")
-	def test_gwangubyeong_yr(self):
-		self.run_test("광우병", "{{ko-IPA|com=2}}", "kwangwuqpyeng", "yr")
-	def test_gwangubyeong_ipa(self):
-		self.run_test("광우병", "{{ko-IPA|com=2}}", "[kwa̠ŋup͈jʌ̹ŋ]", "ipa")
+	def test_jungibyeong_ph(self):
+		self.run_test("중2병", "{{ko-IPA|중이병|com=2}}", "중이뼝", "ph")
+	def test_jungibyeong_rr(self):
+		self.run_test("중2병", "{{ko-IPA|중이병|com=2}}", "jung'ibyeong", "rr")
+	def test_jungibyeong_rrr(self):
+		self.run_test("중2병", "{{ko-IPA|중이병|com=2}}", "jung'ibyeong", "rrr")
+	def test_jungibyeong_mr(self):
+		self.run_test("중2병", "{{ko-IPA|중이병|com=2}}", "chungipyŏng", "mr")
+	def test_jungibyeong_yr(self):
+		self.run_test("중2병", "{{ko-IPA|중이병|com=2}}", "cwungiqpyeng", "yr")
+	def test_jungibyeong_ipa(self):
+		self.run_test("중2병", "{{ko-IPA|중이병|com=2}}", "[t͡ɕuŋip͈jʌ̹ŋ]", "ipa")
 
 	def test_gongsanjuui_ph(self):
 		self.run_test("공산주의", "{{ko-IPA|l=y|ui=4}}", "공(ː)산주의/공(ː)산주이", "ph")
@@ -241,19 +280,6 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_dwitdari_ipa(self):
 		self.run_test("뒷다리", "{{ko-IPA|l=y|nobc=1}}", "[ˈtɥi(ː)t̚t͈a̠ɾi] ~ [ˈtɥi(ː)t͈a̠ɾi] ~ [ˈty(ː)t̚t͈a̠ɾi] ~ [ˈty(ː)t͈a̠ɾi]", "ipa")
 
-	def test_gabot_ph(self):
-		self.run_test("갑옷", "{{ko-ipa}}", "가볻", "ph")
-	def test_gabot_rr(self):
-		self.run_test("갑옷", "{{ko-ipa}}", "gabot", "rr")
-	def test_gabot_rrr(self):
-		self.run_test("갑옷", "{{ko-ipa}}", "gab'os", "rrr")
-	def test_gabot_mr(self):
-		self.run_test("갑옷", "{{ko-ipa}}", "kabot", "mr")
-	def test_gabot_yr(self):
-		self.run_test("갑옷", "{{ko-ipa}}", "kap.os", "yr")
-	def test_gabot_ipa(self):
-		self.run_test("갑옷", "{{ko-ipa}}", "[ka̠bo̞t̚]", "ipa")
-
 	def test_nakcheonjuuija_ph(self):
 		self.run_test("낙천주의자", "{{ko-IPA|ui=4}}", "낙천주의자/낙천주이자", "ph")
 	def test_nakcheonjuuija_rr(self):
@@ -280,18 +306,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_huinnimagireogi_ipa(self):
 		self.run_test("흰이마기러기", "{{ko-IPA|ni=2}}", "[çinnima̠ɡiɾʌ̹ɡi]", "ipa")
 
-	def test_miguk_ori_ph(self):
-		self.run_test("미국오리", "{{ko-IPA|l=4}}", "미국 오(ː)리", "ph")
-	def test_miguk_ori_rr(self):
-		self.run_test("미국오리", "{{ko-IPA|l=4}}", "miguk ori", "rr")
-	def test_miguk_ori_rrr(self):
-		self.run_test("미국오리", "{{ko-IPA|l=4}}", "migug oli", "rrr")
-	def test_miguk_ori_mr(self):
-		self.run_test("미국오리", "{{ko-IPA|l=4}}", "miguk ori", "mr")
-	def test_miguk_ori_yr(self):
-		self.run_test("미국오리", "{{ko-IPA|l=4}}", "mikwuk ōli", "yr")
-	def test_miguk_ori_ipa(self):
-		self.run_test("미국오리", "{{ko-IPA|l=4}}", "[miɡuk̚ o̞(ː)ɾi]", "ipa")
+	def test_hangon_dongmul_ph(self):
+		self.run_test("항온동물", "{{ko-IPA|항온 동물|l=4}}", "항온 동(ː)물", "ph")
+	def test_hangon_dongmul_rr(self):
+		self.run_test("항온동물", "{{ko-IPA|항온 동물|l=4}}", "hang'on dongmul", "rr")
+	def test_hangon_dongmul_rrr(self):
+		self.run_test("항온동물", "{{ko-IPA|항온 동물|l=4}}", "hang'on dongmul", "rrr")
+	def test_hangon_dongmul_mr(self):
+		self.run_test("항온동물", "{{ko-IPA|항온 동물|l=4}}", "hangon tongmul", "mr")
+	def test_hangon_dongmul_yr(self):
+		self.run_test("항온동물", "{{ko-IPA|항온 동물|l=4}}", "hangon tōngmul", "yr")
+	def test_hangon_dongmul_ipa(self):
+		self.run_test("항온동물", "{{ko-IPA|항온 동물|l=4}}", "[ha̠ŋo̞n to̞(ː)ŋmuɭ]", "ipa")
 
 	def test_badanmulgogi_ph(self):
 		self.run_test("바닷물고기", "{{ko-IPA|com=3}}", "바단물꼬기", "ph")
@@ -305,6 +331,19 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("바닷물고기", "{{ko-IPA|com=3}}", "patasmulqkoki", "yr")
 	def test_badanmulgogi_ipa(self):
 		self.run_test("바닷물고기", "{{ko-IPA|com=3}}", "[pa̠da̠nmuɭk͈o̞ɡi]", "ipa")
+
+	def test_siseutem_ph(self):
+		self.run_test("시스템", "{{ko-IPA|com=0}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "씨스템", "ph")
+	def test_siseutem_rr(self):
+		self.run_test("시스템", "{{ko-IPA|com=0}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "siseutem", "rr")
+	def test_siseutem_rrr(self):
+		self.run_test("시스템", "{{ko-IPA|com=0}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "siseutem", "rrr")
+	def test_siseutem_mr(self):
+		self.run_test("시스템", "{{ko-IPA|com=0}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "ssisŭt'em", "mr")
+	def test_siseutem_yr(self):
+		self.run_test("시스템", "{{ko-IPA|com=0}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "qsisu.theym", "yr")
+	def test_siseutem_ipa(self):
+		self.run_test("시스템", "{{ko-IPA|com=0}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "[ɕ͈isʰɯtʰe̞m]", "ipa")
 
 	def test_musinnon_ph(self):
 		self.run_test("무신론", "{{ko-IPA|nn=3}}", "무신논", "ph")
@@ -358,18 +397,31 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_Roseuaenjelleseu_ipa(self):
 		self.run_test("로스앤젤레스", "{{ko-IPA|cap=y|com=1,5}}", "[ɾo̞s͈ɯɛɲd͡ʑe̞ɭɭe̞s͈ɯ] ~ [ɾo̞s͈ɯe̞ɲd͡ʑe̞ɭɭe̞s͈ɯ]", "ipa")
 
-	def test_Somallia_ph(self):
-		self.run_test("소말리아", "{{ko-IPA|cap=y|com=0}}", "쏘말리아", "ph")
-	def test_Somallia_rr(self):
-		self.run_test("소말리아", "{{ko-IPA|cap=y|com=0}}", "Somallia", "rr")
-	def test_Somallia_rrr(self):
-		self.run_test("소말리아", "{{ko-IPA|cap=y|com=0}}", "Somallia", "rrr")
-	def test_Somallia_mr(self):
-		self.run_test("소말리아", "{{ko-IPA|cap=y|com=0}}", "Ssomallia", "mr")
-	def test_Somallia_yr(self):
-		self.run_test("소말리아", "{{ko-IPA|cap=y|com=0}}", "qsomallia", "yr")
-	def test_Somallia_ipa(self):
-		self.run_test("소말리아", "{{ko-IPA|cap=y|com=0}}", "[s͈o̞ma̠ʎʎia̠]", "ipa")
+	def test_imiji_ph(self):
+		self.run_test("이미지", "{{ko-IPA|a=Ko-{{PAGENAME}}.oga}}", "이미지", "ph")
+	def test_imiji_rr(self):
+		self.run_test("이미지", "{{ko-IPA|a=Ko-{{PAGENAME}}.oga}}", "imiji", "rr")
+	def test_imiji_rrr(self):
+		self.run_test("이미지", "{{ko-IPA|a=Ko-{{PAGENAME}}.oga}}", "imiji", "rrr")
+	def test_imiji_mr(self):
+		self.run_test("이미지", "{{ko-IPA|a=Ko-{{PAGENAME}}.oga}}", "imiji", "mr")
+	def test_imiji_yr(self):
+		self.run_test("이미지", "{{ko-IPA|a=Ko-{{PAGENAME}}.oga}}", "imici", "yr")
+	def test_imiji_ipa(self):
+		self.run_test("이미지", "{{ko-IPA|a=Ko-{{PAGENAME}}.oga}}", "[imid͡ʑi]", "ipa")
+
+	def test_Saudi_ph(self):
+		self.run_test("사우디", "{{ko-IPA|사우디|cap=y|com=0}}", "싸우디", "ph")
+	def test_Saudi_rr(self):
+		self.run_test("사우디", "{{ko-IPA|사우디|cap=y|com=0}}", "Saudi", "rr")
+	def test_Saudi_rrr(self):
+		self.run_test("사우디", "{{ko-IPA|사우디|cap=y|com=0}}", "Saudi", "rrr")
+	def test_Saudi_mr(self):
+		self.run_test("사우디", "{{ko-IPA|사우디|cap=y|com=0}}", "Ssaudi", "mr")
+	def test_Saudi_yr(self):
+		self.run_test("사우디", "{{ko-IPA|사우디|cap=y|com=0}}", "qsawuti", "yr")
+	def test_Saudi_ipa(self):
+		self.run_test("사우디", "{{ko-IPA|사우디|cap=y|com=0}}", "[s͈a̠udi]", "ipa")
 
 	def test_Ulsan_ph(self):
 		self.run_test("울산", "{{ko-IPA|cap=y|com=1}}", "울싼", "ph")
@@ -398,17 +450,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("방글라데시", "{{ko-IPA|cap=y|com=4}}", "[pa̠ŋɡɯɭɭa̠de̞ɕ͈i]", "ipa")
 
 	def test_beoseu_ph(self):
-		self.run_test("버스", "{{ko-IPA|com=0,1}}", "뻐쓰", "ph")
+		self.run_test("버스", "{{ko-IPA|com=0,1|a=Ko-버스.ogg}}", "뻐쓰", "ph")
 	def test_beoseu_rr(self):
-		self.run_test("버스", "{{ko-IPA|com=0,1}}", "beoseu", "rr")
+		self.run_test("버스", "{{ko-IPA|com=0,1|a=Ko-버스.ogg}}", "beoseu", "rr")
 	def test_beoseu_rrr(self):
-		self.run_test("버스", "{{ko-IPA|com=0,1}}", "beoseu", "rrr")
+		self.run_test("버스", "{{ko-IPA|com=0,1|a=Ko-버스.ogg}}", "beoseu", "rrr")
 	def test_beoseu_mr(self):
-		self.run_test("버스", "{{ko-IPA|com=0,1}}", "pŏssŭ", "mr")
+		self.run_test("버스", "{{ko-IPA|com=0,1|a=Ko-버스.ogg}}", "pŏssŭ", "mr")
 	def test_beoseu_yr(self):
-		self.run_test("버스", "{{ko-IPA|com=0,1}}", "qpeqsu", "yr")
+		self.run_test("버스", "{{ko-IPA|com=0,1|a=Ko-버스.ogg}}", "qpeqsu", "yr")
 	def test_beoseu_ipa(self):
-		self.run_test("버스", "{{ko-IPA|com=0,1}}", "[p͈ʌ̹s͈ɯ]", "ipa")
+		self.run_test("버스", "{{ko-IPA|com=0,1|a=Ko-버스.ogg}}", "[p͈ʌ̹s͈ɯ]", "ipa")
 
 	def test_seobiseu_ph(self):
 		self.run_test("서비스", "{{ko-IPA|com=0,2}}", "써비쓰", "ph")
@@ -423,31 +475,31 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_seobiseu_ipa(self):
 		self.run_test("서비스", "{{ko-IPA|com=0,2}}", "[s͈ʌ̹bis͈ɯ]", "ipa")
 
-	def test_uijon_ph(self):
-		self.run_test("의존", "{{ko-IPA|}}", "의존", "ph")
-	def test_uijon_rr(self):
-		self.run_test("의존", "{{ko-IPA|}}", "uijon", "rr")
-	def test_uijon_rrr(self):
-		self.run_test("의존", "{{ko-IPA|}}", "uijon", "rrr")
-	def test_uijon_mr(self):
-		self.run_test("의존", "{{ko-IPA|}}", "ŭijon", "mr")
-	def test_uijon_yr(self):
-		self.run_test("의존", "{{ko-IPA|}}", "uycon", "yr")
-	def test_uijon_ipa(self):
-		self.run_test("의존", "{{ko-IPA|}}", "[ɰid͡ʑo̞n]", "ipa")
+	def test_bamsae_bamssae_ph(self):
+		self.run_test("밤새", "{{ko-IPA||밤쌔}}", "밤새/밤세/밤쌔/밤쎄", "ph")
+	def test_bamsae_bamssae_rr(self):
+		self.run_test("밤새", "{{ko-IPA||밤쌔}}", "bamsae/bamssae", "rr")
+	def test_bamsae_bamssae_rrr(self):
+		self.run_test("밤새", "{{ko-IPA||밤쌔}}", "bamsae/bamssae", "rrr")
+	def test_bamsae_bamssae_mr(self):
+		self.run_test("밤새", "{{ko-IPA||밤쌔}}", "pamsae/pamssae", "mr")
+	def test_bamsae_bamssae_yr(self):
+		self.run_test("밤새", "{{ko-IPA||밤쌔}}", "pamsay/pamssay", "yr")
+	def test_bamsae_bamssae_ipa(self):
+		self.run_test("밤새", "{{ko-IPA||밤쌔}}", "[pa̠msʰɛ] ~ [pa̠msʰe̞] ~ [pa̠ms͈ɛ] ~ [pa̠ms͈e̞]", "ipa")
 
 	def test_modeun_ph(self):
-		self.run_test("모든", "{{ko-IPA|l=y|}}", "모(ː)든", "ph")
+		self.run_test("모든", "{{ko-IPA|l=y||a=y}}", "모(ː)든", "ph")
 	def test_modeun_rr(self):
-		self.run_test("모든", "{{ko-IPA|l=y|}}", "modeun", "rr")
+		self.run_test("모든", "{{ko-IPA|l=y||a=y}}", "modeun", "rr")
 	def test_modeun_rrr(self):
-		self.run_test("모든", "{{ko-IPA|l=y|}}", "modeun", "rrr")
+		self.run_test("모든", "{{ko-IPA|l=y||a=y}}", "modeun", "rrr")
 	def test_modeun_mr(self):
-		self.run_test("모든", "{{ko-IPA|l=y|}}", "modŭn", "mr")
+		self.run_test("모든", "{{ko-IPA|l=y||a=y}}", "modŭn", "mr")
 	def test_modeun_yr(self):
-		self.run_test("모든", "{{ko-IPA|l=y|}}", "mōtun", "yr")
+		self.run_test("모든", "{{ko-IPA|l=y||a=y}}", "mōtun", "yr")
 	def test_modeun_ipa(self):
-		self.run_test("모든", "{{ko-IPA|l=y|}}", "[ˈmo̞(ː)dɯn]", "ipa")
+		self.run_test("모든", "{{ko-IPA|l=y||a=y}}", "[ˈmo̞(ː)dɯn]", "ipa")
 
 	def test_hoeui_ph(self):
 		self.run_test("회의", "{{ko-IPA|l=y|ui=2}}", "훼(ː)의/훼(ː)의/회(ː)의/회(ː)이", "ph")
@@ -475,18 +527,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_imgeum_ipa(self):
 		self.run_test("임금", "{{ko-IPA|l=n}}", "[imɡɯm]", "ipa")
 
-	def test_masitda_ph(self):
-		self.run_test("맛있다", "{{ko-IPA|svar=1}}", "마싣따/마딛따", "ph")
-	def test_masitda_rr(self):
-		self.run_test("맛있다", "{{ko-IPA|svar=1}}", "masitda", "rr")
-	def test_masitda_rrr(self):
-		self.run_test("맛있다", "{{ko-IPA|svar=1}}", "mas'issda", "rrr")
-	def test_masitda_mr(self):
-		self.run_test("맛있다", "{{ko-IPA|svar=1}}", "masitta", "mr")
-	def test_masitda_yr(self):
-		self.run_test("맛있다", "{{ko-IPA|svar=1}}", "mas.issta", "yr")
-	def test_masitda_ipa(self):
-		self.run_test("맛있다", "{{ko-IPA|svar=1}}", "[ma̠ɕʰit̚t͈a̠] ~ [ma̠dit̚t͈a̠]", "ipa")
+	def test_masitge_deuseyo_ph(self):
+		self.run_test("맛있게 드세요", "{{ko-IPA|svar=1|a=맛있게 드세요.ogg}}", "마싣께 드세요/마딛께 드세요", "ph")
+	def test_masitge_deuseyo_rr(self):
+		self.run_test("맛있게 드세요", "{{ko-IPA|svar=1|a=맛있게 드세요.ogg}}", "masitge deuseyo", "rr")
+	def test_masitge_deuseyo_rrr(self):
+		self.run_test("맛있게 드세요", "{{ko-IPA|svar=1|a=맛있게 드세요.ogg}}", "mas'issge deuseyo", "rrr")
+	def test_masitge_deuseyo_mr(self):
+		self.run_test("맛있게 드세요", "{{ko-IPA|svar=1|a=맛있게 드세요.ogg}}", "masitke tŭseyo", "mr")
+	def test_masitge_deuseyo_yr(self):
+		self.run_test("맛있게 드세요", "{{ko-IPA|svar=1|a=맛있게 드세요.ogg}}", "mas.isskey tuseyyo", "yr")
+	def test_masitge_deuseyo_ipa(self):
+		self.run_test("맛있게 드세요", "{{ko-IPA|svar=1|a=맛있게 드세요.ogg}}", "[ma̠ɕʰit̚k͈e̞ tɯsʰe̞jo] ~ [ma̠dit̚k͈e̞ tɯsʰe̞jo]", "ipa")
 
 	def test_badatga_ph(self):
 		self.run_test("바닷가", "{{ko-IPA|nobc=2}}", "바닫까/바다까", "ph")
@@ -500,6 +552,19 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("바닷가", "{{ko-IPA|nobc=2}}", "pataska", "yr")
 	def test_badatga_ipa(self):
 		self.run_test("바닷가", "{{ko-IPA|nobc=2}}", "[pa̠da̠t̚k͈a̠] ~ [pa̠da̠k͈a̠]", "ipa")
+
+	def test_seuteureseu_ph(self):
+		self.run_test("스트레스", "{{ko-IPA|com=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "스트레쓰", "ph")
+	def test_seuteureseu_rr(self):
+		self.run_test("스트레스", "{{ko-IPA|com=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "seuteureseu", "rr")
+	def test_seuteureseu_rrr(self):
+		self.run_test("스트레스", "{{ko-IPA|com=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "seuteuleseu", "rrr")
+	def test_seuteureseu_mr(self):
+		self.run_test("스트레스", "{{ko-IPA|com=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "sŭt'ŭressŭ", "mr")
+	def test_seuteureseu_yr(self):
+		self.run_test("스트레스", "{{ko-IPA|com=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "su.thuleyqsu", "yr")
+	def test_seuteureseu_ipa(self):
+		self.run_test("스트레스", "{{ko-IPA|com=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "[sʰɯtʰɯɾe̞s͈ɯ]", "ipa")
 
 	def test_ttwieonada_ph(self):
 		self.run_test("뛰어나다", "{{ko-IPA|iot=2}}", "뛰어나다/뛰여나다", "ph")
@@ -554,30 +619,43 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("사상의 지평선", "{{ko-IPA|l=y|uie=3}}", "[ˈsʰa̠(ː)sʰa̠ŋɰi t͡ɕipʰjʌ̹ŋsʰʌ̹n] ~ [ˈsʰa̠(ː)sʰa̠ŋe̞ t͡ɕipʰjʌ̹ŋsʰʌ̹n]", "ipa")
 
 	def test_jeongsin_bunyeoljeung_ph(self):
-		self.run_test("정신분열증", "{{ko-IPA|com=5}}", "정신 부녈쯩", "ph")
+		self.run_test("정신분열증", "{{ko-IPA|정신 분열증|com=5}}", "정신 부녈쯩", "ph")
 	def test_jeongsin_bunyeoljeung_rr(self):
-		self.run_test("정신분열증", "{{ko-IPA|com=5}}", "jeongsin bunyeoljeung", "rr")
+		self.run_test("정신분열증", "{{ko-IPA|정신 분열증|com=5}}", "jeongsin bunyeoljeung", "rr")
 	def test_jeongsin_bunyeoljeung_rrr(self):
-		self.run_test("정신분열증", "{{ko-IPA|com=5}}", "jeongsin bun'yeoljeung", "rrr")
+		self.run_test("정신분열증", "{{ko-IPA|정신 분열증|com=5}}", "jeongsin bun'yeoljeung", "rrr")
 	def test_jeongsin_bunyeoljeung_mr(self):
-		self.run_test("정신분열증", "{{ko-IPA|com=5}}", "chŏngsin punyŏlchŭng", "mr")
+		self.run_test("정신분열증", "{{ko-IPA|정신 분열증|com=5}}", "chŏngsin punyŏlchŭng", "mr")
 	def test_jeongsin_bunyeoljeung_yr(self):
-		self.run_test("정신분열증", "{{ko-IPA|com=5}}", "cengsin pun.yelqcung", "yr")
+		self.run_test("정신분열증", "{{ko-IPA|정신 분열증|com=5}}", "cengsin pun.yelqcung", "yr")
 	def test_jeongsin_bunyeoljeung_ipa(self):
-		self.run_test("정신분열증", "{{ko-IPA|com=5}}", "[t͡ɕʌ̹ŋɕʰin puɲʌ̹ʎt͡ɕ͈ɯŋ]", "ipa")
+		self.run_test("정신분열증", "{{ko-IPA|정신 분열증|com=5}}", "[t͡ɕʌ̹ŋɕʰin puɲʌ̹ʎt͡ɕ͈ɯŋ]", "ipa")
 
-	def test_aiseukeurim_ph(self):
-		self.run_test("아이스크림", "{{ko-IPA|l=5}}", "아이스크림(ː)", "ph")
-	def test_aiseukeurim_rr(self):
-		self.run_test("아이스크림", "{{ko-IPA|l=5}}", "aiseukeurim", "rr")
-	def test_aiseukeurim_rrr(self):
-		self.run_test("아이스크림", "{{ko-IPA|l=5}}", "aiseukeulim", "rrr")
-	def test_aiseukeurim_mr(self):
-		self.run_test("아이스크림", "{{ko-IPA|l=5}}", "aisŭk'ŭrim", "mr")
-	def test_aiseukeurim_yr(self):
-		self.run_test("아이스크림", "{{ko-IPA|l=5}}", "aisu.khulīm", "yr")
-	def test_aiseukeurim_ipa(self):
-		self.run_test("아이스크림", "{{ko-IPA|l=5}}", "[a̠isʰɯkxɯɾi(ː)m]", "ipa")
+	def test_mokjeokgyeok_josa_ph(self):
+		self.run_test("목적격조사", "{{ko-IPA|목적격 조사|l=5}}", "목쩍껵 조(ː)사", "ph")
+	def test_mokjeokgyeok_josa_rr(self):
+		self.run_test("목적격조사", "{{ko-IPA|목적격 조사|l=5}}", "mokjeokgyeok josa", "rr")
+	def test_mokjeokgyeok_josa_rrr(self):
+		self.run_test("목적격조사", "{{ko-IPA|목적격 조사|l=5}}", "mogjeoggyeog josa", "rrr")
+	def test_mokjeokgyeok_josa_mr(self):
+		self.run_test("목적격조사", "{{ko-IPA|목적격 조사|l=5}}", "mokchŏkkyŏk chosa", "mr")
+	def test_mokjeokgyeok_josa_yr(self):
+		self.run_test("목적격조사", "{{ko-IPA|목적격 조사|l=5}}", "mokcek.kyek cōsa", "yr")
+	def test_mokjeokgyeok_josa_ipa(self):
+		self.run_test("목적격조사", "{{ko-IPA|목적격 조사|l=5}}", "[mo̞k̚t͡ɕ͈ʌ̹k̚k͈jʌ̹k̚ t͡ɕo̞(ː)sʰa̠]", "ipa")
+
+	def test_dakeuseokeul_ph(self):
+		self.run_test("다크서클", "{{ko-IPA|com=2}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "다크써클", "ph")
+	def test_dakeuseokeul_rr(self):
+		self.run_test("다크서클", "{{ko-IPA|com=2}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "dakeuseokeul", "rr")
+	def test_dakeuseokeul_rrr(self):
+		self.run_test("다크서클", "{{ko-IPA|com=2}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "dakeuseokeul", "rrr")
+	def test_dakeuseokeul_mr(self):
+		self.run_test("다크서클", "{{ko-IPA|com=2}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "tak'ŭssŏk'ŭl", "mr")
+	def test_dakeuseokeul_yr(self):
+		self.run_test("다크서클", "{{ko-IPA|com=2}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "ta.khuqse.khul", "yr")
+	def test_dakeuseokeul_ipa(self):
+		self.run_test("다크서클", "{{ko-IPA|com=2}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "[ta̠kxɯs͈ʌ̹kxɯɭ]", "ipa")
 
 	def test_Ijipteu_arap_gonghwaguk_ph(self):
 		self.run_test("이집트 아랍 공화국", "{{ko-IPA|cap=y|l=8}}", "이집트 아랍 공(ː)화국", "ph")
@@ -632,17 +710,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("태평양", "{{ko-IPA|cap=y|ni=3}}", "[tʰɛpʰjʌ̹ŋɲa̠ŋ] ~ [tʰe̞pʰjʌ̹ŋɲa̠ŋ]", "ipa")
 
 	def test_Joseon_minjujuui_inmin_gonghwaguk_ph(self):
-		self.run_test("조선민주주의인민공화국", "{{ko-IPA|ui=7|l=12|cap=y}}", "조선 민주주의 인민 공(ː)화국/조선 민주주이 인민 공(ː)화국", "ph")
+		self.run_test("조선민주주의인민공화국", "{{ko-IPA|조선 민주주의 인민 공화국|ui=7|l=12|cap=y}}", "조선 민주주의 인민 공(ː)화국/조선 민주주이 인민 공(ː)화국", "ph")
 	def test_Joseon_minjujuui_inmin_gonghwaguk_rr(self):
-		self.run_test("조선민주주의인민공화국", "{{ko-IPA|ui=7|l=12|cap=y}}", "Joseon minjujuui inmin gonghwaguk", "rr")
+		self.run_test("조선민주주의인민공화국", "{{ko-IPA|조선 민주주의 인민 공화국|ui=7|l=12|cap=y}}", "Joseon minjujuui inmin gonghwaguk", "rr")
 	def test_Joseon_minjujuui_inmin_gonghwaguk_rrr(self):
-		self.run_test("조선민주주의인민공화국", "{{ko-IPA|ui=7|l=12|cap=y}}", "Joseon minjujuui inmin gonghwagug", "rrr")
+		self.run_test("조선민주주의인민공화국", "{{ko-IPA|조선 민주주의 인민 공화국|ui=7|l=12|cap=y}}", "Joseon minjujuui inmin gonghwagug", "rrr")
 	def test_Joseon_minjujuui_inmin_gonghwaguk_mr(self):
-		self.run_test("조선민주주의인민공화국", "{{ko-IPA|ui=7|l=12|cap=y}}", "Chosŏn minjujuŭi inmin konghwaguk", "mr")
+		self.run_test("조선민주주의인민공화국", "{{ko-IPA|조선 민주주의 인민 공화국|ui=7|l=12|cap=y}}", "Chosŏn minjujuŭi inmin konghwaguk", "mr")
 	def test_Joseon_minjujuui_inmin_gonghwaguk_yr(self):
-		self.run_test("조선민주주의인민공화국", "{{ko-IPA|ui=7|l=12|cap=y}}", "cosen min.cwucwuuy inmin kōnghwakwuk", "yr")
+		self.run_test("조선민주주의인민공화국", "{{ko-IPA|조선 민주주의 인민 공화국|ui=7|l=12|cap=y}}", "cosen min.cwucwuuy inmin kōnghwakwuk", "yr")
 	def test_Joseon_minjujuui_inmin_gonghwaguk_ipa(self):
-		self.run_test("조선민주주의인민공화국", "{{ko-IPA|ui=7|l=12|cap=y}}", "[t͡ɕo̞sʰʌ̹n miɲd͡ʑud͡ʑuɰi inmin ko̞(ː)ŋβwa̠ɡuk̚] ~ [t͡ɕo̞sʰʌ̹n miɲd͡ʑud͡ʑui inmin ko̞(ː)ŋβwa̠ɡuk̚]", "ipa")
+		self.run_test("조선민주주의인민공화국", "{{ko-IPA|조선 민주주의 인민 공화국|ui=7|l=12|cap=y}}", "[t͡ɕo̞sʰʌ̹n miɲd͡ʑud͡ʑuɰi inmin ko̞(ː)ŋβwa̠ɡuk̚] ~ [t͡ɕo̞sʰʌ̹n miɲd͡ʑud͡ʑui inmin ko̞(ː)ŋβwa̠ɡuk̚]", "ipa")
 
 	def test_keurim_ph(self):
 		self.run_test("크림", "{{ko-IPA|l=2}}", "크림(ː)", "ph")
@@ -683,18 +761,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_maikeuropeuroseseo_ipa(self):
 		self.run_test("마이크로프로세서", "{{ko-IPA|com=6,7}}", "[ma̠ikxɯɾo̞pʰɯɾo̞s͈e̞s͈ʌ̹]", "ipa")
 
-	def test_sintak_tongchi_ph(self):
-		self.run_test("신탁통치", "{{ko-IPA|l=1,4}}", "신(ː)탁 통(ː)치", "ph")
-	def test_sintak_tongchi_rr(self):
-		self.run_test("신탁통치", "{{ko-IPA|l=1,4}}", "sintak tongchi", "rr")
-	def test_sintak_tongchi_rrr(self):
-		self.run_test("신탁통치", "{{ko-IPA|l=1,4}}", "sintag tongchi", "rrr")
-	def test_sintak_tongchi_mr(self):
-		self.run_test("신탁통치", "{{ko-IPA|l=1,4}}", "sint'ak t'ongch'i", "mr")
-	def test_sintak_tongchi_yr(self):
-		self.run_test("신탁통치", "{{ko-IPA|l=1,4}}", "sīnthak thōngchi", "yr")
-	def test_sintak_tongchi_ipa(self):
-		self.run_test("신탁통치", "{{ko-IPA|l=1,4}}", "[ˈɕʰi(ː)ntʰa̠k̚ tʰo̞(ː)ŋt͡ɕʰi]", "ipa")
+	def test_yasaeng_dongmul_ph(self):
+		self.run_test("야생동물", "{{ko-IPA|야생 동물|l=1,4}}", "야(ː)생 동(ː)물/야(ː)셍 동(ː)물", "ph")
+	def test_yasaeng_dongmul_rr(self):
+		self.run_test("야생동물", "{{ko-IPA|야생 동물|l=1,4}}", "yasaeng dongmul", "rr")
+	def test_yasaeng_dongmul_rrr(self):
+		self.run_test("야생동물", "{{ko-IPA|야생 동물|l=1,4}}", "yasaeng dongmul", "rrr")
+	def test_yasaeng_dongmul_mr(self):
+		self.run_test("야생동물", "{{ko-IPA|야생 동물|l=1,4}}", "yasaeng tongmul", "mr")
+	def test_yasaeng_dongmul_yr(self):
+		self.run_test("야생동물", "{{ko-IPA|야생 동물|l=1,4}}", "yāsayng tōngmul", "yr")
+	def test_yasaeng_dongmul_ipa(self):
+		self.run_test("야생동물", "{{ko-IPA|야생 동물|l=1,4}}", "[ˈja̠(ː)sʰɛŋ to̞(ː)ŋmuɭ] ~ [ˈja̠(ː)sʰe̞ŋ to̞(ː)ŋmuɭ]", "ipa")
 
 	def test_jat_ph(self):
 		self.run_test("잣", "{{ko-IPA||l=y}}", "잗(ː)", "ph")
@@ -710,17 +788,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("잣", "{{ko-IPA||l=y}}", "[t͡ɕa̠(ː)t̚]", "ipa")
 
 	def test_yuga_jeunggwon_ph(self):
-		self.run_test("유가증권", "{{ko-IPA|l=y|com=1,4}}", "유(ː)까 증꿘", "ph")
+		self.run_test("유가증권", "{{ko-IPA|유가 증권|l=y|com=1,4}}", "유(ː)까 증꿘", "ph")
 	def test_yuga_jeunggwon_rr(self):
-		self.run_test("유가증권", "{{ko-IPA|l=y|com=1,4}}", "yuga jeunggwon", "rr")
+		self.run_test("유가증권", "{{ko-IPA|유가 증권|l=y|com=1,4}}", "yuga jeunggwon", "rr")
 	def test_yuga_jeunggwon_rrr(self):
-		self.run_test("유가증권", "{{ko-IPA|l=y|com=1,4}}", "yuga jeunggwon", "rrr")
+		self.run_test("유가증권", "{{ko-IPA|유가 증권|l=y|com=1,4}}", "yuga jeunggwon", "rrr")
 	def test_yuga_jeunggwon_mr(self):
-		self.run_test("유가증권", "{{ko-IPA|l=y|com=1,4}}", "yuka chŭngkwŏn", "mr")
+		self.run_test("유가증권", "{{ko-IPA|유가 증권|l=y|com=1,4}}", "yuka chŭngkwŏn", "mr")
 	def test_yuga_jeunggwon_yr(self):
-		self.run_test("유가증권", "{{ko-IPA|l=y|com=1,4}}", "yūqka cungqkwen", "yr")
+		self.run_test("유가증권", "{{ko-IPA|유가 증권|l=y|com=1,4}}", "yūqka cungqkwen", "yr")
 	def test_yuga_jeunggwon_ipa(self):
-		self.run_test("유가증권", "{{ko-IPA|l=y|com=1,4}}", "[ˈju(ː)k͈a̠ t͡ɕɯŋk͈wʌ̹n]", "ipa")
+		self.run_test("유가증권", "{{ko-IPA|유가 증권|l=y|com=1,4}}", "[ˈju(ː)k͈a̠ t͡ɕɯŋk͈wʌ̹n]", "ipa")
 
 	def test_seworeun_sarameul_gidaryeo_juji_anneunda_ph(self):
 		self.run_test("세월은 사람을 기다려 주지 않는다", "{{ko-ipa|l=1,5}}", "세(ː)워른 사(ː)라믈 기다려 주지 안는다", "ph")
@@ -774,31 +852,31 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_Seuwiseu_ipa(self):
 		self.run_test("스위스", "{{ko-IPA|cap=y|com=2}}", "[sʰɯɥis͈ɯ] ~ [sʰɯys͈ɯ]", "ipa")
 
-	def test_wangogeobeop_ph(self):
-		self.run_test("완곡어법", "{{ko-IPA|l=y|com=3}}", "완(ː)고거뻡", "ph")
-	def test_wangogeobeop_rr(self):
-		self.run_test("완곡어법", "{{ko-IPA|l=y|com=3}}", "wan'gogeobeop", "rr")
-	def test_wangogeobeop_rrr(self):
-		self.run_test("완곡어법", "{{ko-IPA|l=y|com=3}}", "wangog'eobeob", "rrr")
-	def test_wangogeobeop_mr(self):
-		self.run_test("완곡어법", "{{ko-IPA|l=y|com=3}}", "wan'gogŏpŏp", "mr")
-	def test_wangogeobeop_yr(self):
-		self.run_test("완곡어법", "{{ko-IPA|l=y|com=3}}", "wānkok.eqpep", "yr")
-	def test_wangogeobeop_ipa(self):
-		self.run_test("완곡어법", "{{ko-IPA|l=y|com=3}}", "[ˈwa̠(ː)nɡo̞ɡʌ̹p͈ʌ̹p̚]", "ipa")
+	def test_motae_sollo_ph(self):
+		self.run_test("모태솔로", "{{ko-IPA|모태 솔로|l=y|com=3}}", "모(ː)태 쏠로/모(ː)테 쏠로", "ph")
+	def test_motae_sollo_rr(self):
+		self.run_test("모태솔로", "{{ko-IPA|모태 솔로|l=y|com=3}}", "motae sollo", "rr")
+	def test_motae_sollo_rrr(self):
+		self.run_test("모태솔로", "{{ko-IPA|모태 솔로|l=y|com=3}}", "motae sollo", "rrr")
+	def test_motae_sollo_mr(self):
+		self.run_test("모태솔로", "{{ko-IPA|모태 솔로|l=y|com=3}}", "mot'ae ssollo", "mr")
+	def test_motae_sollo_yr(self):
+		self.run_test("모태솔로", "{{ko-IPA|모태 솔로|l=y|com=3}}", "mō.thay qsollo", "yr")
+	def test_motae_sollo_ipa(self):
+		self.run_test("모태솔로", "{{ko-IPA|모태 솔로|l=y|com=3}}", "[ˈmo̞(ː)tʰɛ s͈o̞ɭɭo̞] ~ [ˈmo̞(ː)tʰe̞ s͈o̞ɭɭo̞]", "ipa")
 
-	def test_Konggo_minju_gonghwaguk_ph(self):
-		self.run_test("콩고 민주 공화국", "{{ko-IPA|cap=y|l=7}}", "콩고 민주 공(ː)화국", "ph")
-	def test_Konggo_minju_gonghwaguk_rr(self):
-		self.run_test("콩고 민주 공화국", "{{ko-IPA|cap=y|l=7}}", "Konggo minju gonghwaguk", "rr")
-	def test_Konggo_minju_gonghwaguk_rrr(self):
-		self.run_test("콩고 민주 공화국", "{{ko-IPA|cap=y|l=7}}", "Konggo minju gonghwagug", "rrr")
-	def test_Konggo_minju_gonghwaguk_mr(self):
-		self.run_test("콩고 민주 공화국", "{{ko-IPA|cap=y|l=7}}", "K'onggo minju konghwaguk", "mr")
-	def test_Konggo_minju_gonghwaguk_yr(self):
-		self.run_test("콩고 민주 공화국", "{{ko-IPA|cap=y|l=7}}", "khongko min.cwu kōnghwakwuk", "yr")
-	def test_Konggo_minju_gonghwaguk_ipa(self):
-		self.run_test("콩고 민주 공화국", "{{ko-IPA|cap=y|l=7}}", "[kʰo̞ŋɡo̞ miɲd͡ʑu ko̞(ː)ŋβwa̠ɡuk̚]", "ipa")
+	def test_Namapeurika_gonghwaguk_ph(self):
+		self.run_test("남아프리카공화국", "{{ko-IPA|남아프리카 공화국|cap=y|l=7}}", "나마프리카 공(ː)화국", "ph")
+	def test_Namapeurika_gonghwaguk_rr(self):
+		self.run_test("남아프리카공화국", "{{ko-IPA|남아프리카 공화국|cap=y|l=7}}", "Namapeurika gonghwaguk", "rr")
+	def test_Namapeurika_gonghwaguk_rrr(self):
+		self.run_test("남아프리카공화국", "{{ko-IPA|남아프리카 공화국|cap=y|l=7}}", "Nam'apeulika gonghwagug", "rrr")
+	def test_Namapeurika_gonghwaguk_mr(self):
+		self.run_test("남아프리카공화국", "{{ko-IPA|남아프리카 공화국|cap=y|l=7}}", "Namap'ŭrik'a konghwaguk", "mr")
+	def test_Namapeurika_gonghwaguk_yr(self):
+		self.run_test("남아프리카공화국", "{{ko-IPA|남아프리카 공화국|cap=y|l=7}}", "nam.a.phuli.kha kōnghwakwuk", "yr")
+	def test_Namapeurika_gonghwaguk_ipa(self):
+		self.run_test("남아프리카공화국", "{{ko-IPA|남아프리카 공화국|cap=y|l=7}}", "[na̠ma̠pʰɯɾikʰa̠ ko̞(ː)ŋβwa̠ɡuk̚]", "ipa")
 
 	def test_Konggo_gonghwaguk_ph(self):
 		self.run_test("콩고 공화국", "{{ko-IPA|cap=y|l=4}}", "콩고 공(ː)화국", "ph")
@@ -1061,56 +1139,56 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("솔로몬의 지혜", "{{ko-IPA|cap=y|uie=4}}", "[sʰo̞ɭɭo̞mo̞nɰi t͡ɕiʝe̞] ~ [sʰo̞ɭɭo̞mo̞ne̞ t͡ɕiʝe̞] ~ [sʰo̞ɭɭo̞mo̞nɰi t͡ɕiɦe̞] ~ [sʰo̞ɭɭo̞mo̞ne̞ t͡ɕiɦe̞]", "ipa")
 
 	def test_deobeullyu_ph(self):
-		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}", "떠블류", "ph")
+		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "떠블류", "ph")
 	def test_deobeullyu_rr(self):
-		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}", "deobeullyu", "rr")
+		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "deobeullyu", "rr")
 	def test_deobeullyu_rrr(self):
-		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}", "deobeul'yu", "rrr")
+		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "deobeul'yu", "rrr")
 	def test_deobeullyu_mr(self):
-		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}", "tŏbŭllyu", "mr")
+		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "tŏbŭllyu", "mr")
 	def test_deobeullyu_yr(self):
-		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}", "qtepullyu", "yr")
+		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "qtepullyu", "yr")
 	def test_deobeullyu_ipa(self):
-		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}", "[t͈ʌ̹bɯʎʎu]", "ipa")
+		self.run_test("더블유", "{{ko-IPA|com=0|ni=3}}<ref>{{smallcaps|Jo}} Hyeong-Il and {{smallcaps|Nam}} Ju-Hye, {{lang|ko|외래어와 외국어 표현 3300}}, 2012, {{ISBN|978-89-5556-986-5}}", "[t͈ʌ̹bɯʎʎu]", "ipa")
 
 	def test_hwahak_jeondal_muljil_ph(self):
-		self.run_test("화학전달물질", "{{ko-IPA|com=7|l=y}}", "화(ː)학 전달 물찔", "ph")
+		self.run_test("화학전달물질", "{{ko-IPA|화학 전달 물질|com=7|l=y}}", "화(ː)학 전달 물찔", "ph")
 	def test_hwahak_jeondal_muljil_rr(self):
-		self.run_test("화학전달물질", "{{ko-IPA|com=7|l=y}}", "hwahak jeondal muljil", "rr")
+		self.run_test("화학전달물질", "{{ko-IPA|화학 전달 물질|com=7|l=y}}", "hwahak jeondal muljil", "rr")
 	def test_hwahak_jeondal_muljil_rrr(self):
-		self.run_test("화학전달물질", "{{ko-IPA|com=7|l=y}}", "hwahag jeondal muljil", "rrr")
+		self.run_test("화학전달물질", "{{ko-IPA|화학 전달 물질|com=7|l=y}}", "hwahag jeondal muljil", "rrr")
 	def test_hwahak_jeondal_muljil_mr(self):
-		self.run_test("화학전달물질", "{{ko-IPA|com=7|l=y}}", "hwahak chŏndal mulchil", "mr")
+		self.run_test("화학전달물질", "{{ko-IPA|화학 전달 물질|com=7|l=y}}", "hwahak chŏndal mulchil", "mr")
 	def test_hwahak_jeondal_muljil_yr(self):
-		self.run_test("화학전달물질", "{{ko-IPA|com=7|l=y}}", "hwāhak cental mulqcil", "yr")
+		self.run_test("화학전달물질", "{{ko-IPA|화학 전달 물질|com=7|l=y}}", "hwāhak cental mulqcil", "yr")
 	def test_hwahak_jeondal_muljil_ipa(self):
-		self.run_test("화학전달물질", "{{ko-IPA|com=7|l=y}}", "[ˈɸwa̠(ː)ɦa̠k̚ t͡ɕʌ̹nda̠ɭ muʎt͡ɕ͈iɭ]", "ipa")
+		self.run_test("화학전달물질", "{{ko-IPA|화학 전달 물질|com=7|l=y}}", "[ˈɸwa̠(ː)ɦa̠k̚ t͡ɕʌ̹nda̠ɭ muʎt͡ɕ͈iɭ]", "ipa")
 
 	def test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ph(self):
-		self.run_test("화석 연료", "{{ko-IPA|l=y||}}", "화(ː)석 열료/화(ː)서결료/화(ː)성녈료", "ph")
+		self.run_test("화석 연료", "{{ko-IPA|l=y||화석연료||화석년료}}", "화(ː)석 열료/화(ː)서결료/화(ː)성녈료", "ph")
 	def test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rr(self):
-		self.run_test("화석 연료", "{{ko-IPA|l=y||}}", "hwaseok yeollyo/hwaseogyeollyo/hwaseongnyeollyo", "rr")
+		self.run_test("화석 연료", "{{ko-IPA|l=y||화석연료||화석년료}}", "hwaseok yeollyo/hwaseogyeollyo/hwaseongnyeollyo", "rr")
 	def test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rrr(self):
-		self.run_test("화석 연료", "{{ko-IPA|l=y||}}", "hwaseog yeonlyo/hwaseog'yeonlyo/hwaseognyeonlyo", "rrr")
+		self.run_test("화석 연료", "{{ko-IPA|l=y||화석연료||화석년료}}", "hwaseog yeonlyo/hwaseog'yeonlyo/hwaseognyeonlyo", "rrr")
 	def test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_mr(self):
-		self.run_test("화석 연료", "{{ko-IPA|l=y||}}", "hwasŏk yŏllyo/hwasŏgyŏllyo/hwasŏngnyŏllyo", "mr")
+		self.run_test("화석 연료", "{{ko-IPA|l=y||화석연료||화석년료}}", "hwasŏk yŏllyo/hwasŏgyŏllyo/hwasŏngnyŏllyo", "mr")
 	def test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_yr(self):
-		self.run_test("화석 연료", "{{ko-IPA|l=y||}}", "hwāsek yenlyo/hwāsek.yenlyo/hwāseknyenlyo", "yr")
+		self.run_test("화석 연료", "{{ko-IPA|l=y||화석연료||화석년료}}", "hwāsek yenlyo/hwāsek.yenlyo/hwāseknyenlyo", "yr")
 	def test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ipa(self):
-		self.run_test("화석 연료", "{{ko-IPA|l=y||}}", "[ˈɸwa̠(ː)sʰʌ̹k̚ jʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ɡjʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ŋɲʌ̹ʎʎo]", "ipa")
+		self.run_test("화석 연료", "{{ko-IPA|l=y||화석연료||화석년료}}", "[ˈɸwa̠(ː)sʰʌ̹k̚ jʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ɡjʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ŋɲʌ̹ʎʎo]", "ipa")
 
 	def test_Guyak_seonggyeong_ph(self):
-		self.run_test("구약성경", "{{ko-IPA|l=1,4|cap=y}}", "구(ː)약 성(ː)경", "ph")
+		self.run_test("구약성경", "{{ko-IPA|구약 성경|l=1,4|cap=y}}", "구(ː)약 성(ː)경", "ph")
 	def test_Guyak_seonggyeong_rr(self):
-		self.run_test("구약성경", "{{ko-IPA|l=1,4|cap=y}}", "Guyak seonggyeong", "rr")
+		self.run_test("구약성경", "{{ko-IPA|구약 성경|l=1,4|cap=y}}", "Guyak seonggyeong", "rr")
 	def test_Guyak_seonggyeong_rrr(self):
-		self.run_test("구약성경", "{{ko-IPA|l=1,4|cap=y}}", "Guyag seonggyeong", "rrr")
+		self.run_test("구약성경", "{{ko-IPA|구약 성경|l=1,4|cap=y}}", "Guyag seonggyeong", "rrr")
 	def test_Guyak_seonggyeong_mr(self):
-		self.run_test("구약성경", "{{ko-IPA|l=1,4|cap=y}}", "Kuyak sŏnggyŏng", "mr")
+		self.run_test("구약성경", "{{ko-IPA|구약 성경|l=1,4|cap=y}}", "Kuyak sŏnggyŏng", "mr")
 	def test_Guyak_seonggyeong_yr(self):
-		self.run_test("구약성경", "{{ko-IPA|l=1,4|cap=y}}", "kwū.yak sēngkyeng", "yr")
+		self.run_test("구약성경", "{{ko-IPA|구약 성경|l=1,4|cap=y}}", "kwū.yak sēngkyeng", "yr")
 	def test_Guyak_seonggyeong_ipa(self):
-		self.run_test("구약성경", "{{ko-IPA|l=1,4|cap=y}}", "[ˈku(ː)ja̠k̚ sʰɘ(ː)ŋɡjʌ̹ŋ]", "ipa")
+		self.run_test("구약성경", "{{ko-IPA|구약 성경|l=1,4|cap=y}}", "[ˈku(ː)ja̠k̚ sʰɘ(ː)ŋɡjʌ̹ŋ]", "ipa")
 
 	def test_Reunesangseu_ph(self):
 		self.run_test("르네상스", "{{ko-IPA|cap=y|com=2,3}}", "르네쌍쓰", "ph")
@@ -1151,18 +1229,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_selpeu_diseu_ipa(self):
 		self.run_test("셀프 디스", "{{ko-IPA|com=0,4}}", "[s͈e̞ɭpʰɯ tis͈ɯ]", "ipa")
 
-	def test_Gatollik_gyohoe_ph(self):
-		self.run_test("가톨릭교회", "{{ko-IPA|cap=y|l=5}}", "가톨릭 교(ː)훼/가톨릭 교(ː)회", "ph")
-	def test_Gatollik_gyohoe_rr(self):
-		self.run_test("가톨릭교회", "{{ko-IPA|cap=y|l=5}}", "Gatollik gyohoe", "rr")
-	def test_Gatollik_gyohoe_rrr(self):
-		self.run_test("가톨릭교회", "{{ko-IPA|cap=y|l=5}}", "Gatollig gyohoe", "rrr")
-	def test_Gatollik_gyohoe_mr(self):
-		self.run_test("가톨릭교회", "{{ko-IPA|cap=y|l=5}}", "Kat'ollik kyohoe", "mr")
-	def test_Gatollik_gyohoe_yr(self):
-		self.run_test("가톨릭교회", "{{ko-IPA|cap=y|l=5}}", "ka.thollik kyōhoy", "yr")
-	def test_Gatollik_gyohoe_ipa(self):
-		self.run_test("가톨릭교회", "{{ko-IPA|cap=y|l=5}}", "[ka̠tʰo̞ʎʎik̚ kjo(ː)βwe̞] ~ [ka̠tʰo̞ʎʎik̚ kjo(ː)ɦø̞]", "ipa")
+	def test_Yugio_jeonjaeng_ph(self):
+		self.run_test("육이오전쟁", "{{ko-IPA|cap=y|육이오 전쟁|l=5}}", "유기오 전(ː)쟁/유기오 전(ː)젱", "ph")
+	def test_Yugio_jeonjaeng_rr(self):
+		self.run_test("육이오전쟁", "{{ko-IPA|cap=y|육이오 전쟁|l=5}}", "Yugio jeonjaeng", "rr")
+	def test_Yugio_jeonjaeng_rrr(self):
+		self.run_test("육이오전쟁", "{{ko-IPA|cap=y|육이오 전쟁|l=5}}", "Yug'io jeonjaeng", "rrr")
+	def test_Yugio_jeonjaeng_mr(self):
+		self.run_test("육이오전쟁", "{{ko-IPA|cap=y|육이오 전쟁|l=5}}", "Yugio chŏnjaeng", "mr")
+	def test_Yugio_jeonjaeng_yr(self):
+		self.run_test("육이오전쟁", "{{ko-IPA|cap=y|육이오 전쟁|l=5}}", "yuk.io cēn.cayng", "yr")
+	def test_Yugio_jeonjaeng_ipa(self):
+		self.run_test("육이오전쟁", "{{ko-IPA|cap=y|육이오 전쟁|l=5}}", "[juɡio̞ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [juɡio̞ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ]", "ipa")
 
 	def test_Geuriseudoui_jeok_ph(self):
 		self.run_test("그리스도의 적", "{{ko-IPA|cap=y|uie=5}}", "그리스도의 적/그리스도에 적", "ph")
@@ -1334,17 +1412,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("미제 사건", "{{ko-IPA|l=1,4|com=4}}", "[ˈmi(ː)d͡ʑe̞ sʰa̠(ː)k͈ʌ̹n]", "ipa")
 
 	def test_Joguk_haebang_jeonjaeng_ph(self):
-		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|l=4,7}}", "조국 해(ː)방 전(ː)쟁/조국 헤(ː)방 전(ː)젱", "ph")
+		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|조국 해방 전쟁|l=4,7}}", "조국 해(ː)방 전(ː)쟁/조국 헤(ː)방 전(ː)젱", "ph")
 	def test_Joguk_haebang_jeonjaeng_rr(self):
-		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|l=4,7}}", "Joguk haebang jeonjaeng", "rr")
+		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|조국 해방 전쟁|l=4,7}}", "Joguk haebang jeonjaeng", "rr")
 	def test_Joguk_haebang_jeonjaeng_rrr(self):
-		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|l=4,7}}", "Jogug haebang jeonjaeng", "rrr")
+		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|조국 해방 전쟁|l=4,7}}", "Jogug haebang jeonjaeng", "rrr")
 	def test_Joguk_haebang_jeonjaeng_mr(self):
-		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|l=4,7}}", "Choguk haebang chŏnjaeng", "mr")
+		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|조국 해방 전쟁|l=4,7}}", "Choguk haebang chŏnjaeng", "mr")
 	def test_Joguk_haebang_jeonjaeng_yr(self):
-		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|l=4,7}}", "cokwuk hāypang cēn.cayng", "yr")
+		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|조국 해방 전쟁|l=4,7}}", "cokwuk hāypang cēn.cayng", "yr")
 	def test_Joguk_haebang_jeonjaeng_ipa(self):
-		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|l=4,7}}", "[t͡ɕo̞ɡuk̚ hɛ(ː)ba̠ŋ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [t͡ɕo̞ɡuk̚ he̞(ː)ba̠ŋ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ]", "ipa")
+		self.run_test("조국해방전쟁", "{{ko-IPA|cap=y|조국 해방 전쟁|l=4,7}}", "[t͡ɕo̞ɡuk̚ hɛ(ː)ba̠ŋ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [t͡ɕo̞ɡuk̚ he̞(ː)ba̠ŋ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ]", "ipa")
 
 	def test_onsil_sogui_hwacho_ph(self):
 		self.run_test("온실 속의 화초", "{{ko-IPA|uie=5}}", "온실 소긔 화초/온실 소게 화초", "ph")
@@ -1399,17 +1477,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("니콜라스", "{{ko-IPA|cap=y|com=3}}", "[nikʰo̞ɭɭa̠s͈ɯ]", "ipa")
 
 	def test_goui_sagu_ph(self):
-		self.run_test("고의사구", "{{ko-IPA|ui=2|l=1,4}}", "고(ː)의 사(ː)구/고(ː)이 사(ː)구", "ph")
+		self.run_test("고의사구", "{{ko-IPA|고의 사구|ui=2|l=1,4}}", "고(ː)의 사(ː)구/고(ː)이 사(ː)구", "ph")
 	def test_goui_sagu_rr(self):
-		self.run_test("고의사구", "{{ko-IPA|ui=2|l=1,4}}", "goui sagu", "rr")
+		self.run_test("고의사구", "{{ko-IPA|고의 사구|ui=2|l=1,4}}", "goui sagu", "rr")
 	def test_goui_sagu_rrr(self):
-		self.run_test("고의사구", "{{ko-IPA|ui=2|l=1,4}}", "goui sagu", "rrr")
+		self.run_test("고의사구", "{{ko-IPA|고의 사구|ui=2|l=1,4}}", "goui sagu", "rrr")
 	def test_goui_sagu_mr(self):
-		self.run_test("고의사구", "{{ko-IPA|ui=2|l=1,4}}", "koŭi sagu", "mr")
+		self.run_test("고의사구", "{{ko-IPA|고의 사구|ui=2|l=1,4}}", "koŭi sagu", "mr")
 	def test_goui_sagu_yr(self):
-		self.run_test("고의사구", "{{ko-IPA|ui=2|l=1,4}}", "kōuy sākwu", "yr")
+		self.run_test("고의사구", "{{ko-IPA|고의 사구|ui=2|l=1,4}}", "kōuy sākwu", "yr")
 	def test_goui_sagu_ipa(self):
-		self.run_test("고의사구", "{{ko-IPA|ui=2|l=1,4}}", "[ˈko̞(ː)ɰi sʰa̠(ː)ɡu] ~ [ˈko̞(ː)i sʰa̠(ː)ɡu]", "ipa")
+		self.run_test("고의사구", "{{ko-IPA|고의 사구|ui=2|l=1,4}}", "[ˈko̞(ː)ɰi sʰa̠(ː)ɡu] ~ [ˈko̞(ː)i sʰa̠(ː)ɡu]", "ipa")
 
 	def test_sarangui_mae_ph(self):
 		self.run_test("사랑의 매", "{{ko-IPA|uie=3}}", "사랑의 매/사랑에 매/사랑의 메/사랑에 메", "ph")
@@ -1425,17 +1503,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("사랑의 매", "{{ko-IPA|uie=3}}", "[sʰa̠ɾa̠ŋɰi mɛ] ~ [sʰa̠ɾa̠ŋe̞ mɛ] ~ [sʰa̠ɾa̠ŋɰi me̞] ~ [sʰa̠ɾa̠ŋe̞ me̞]", "ipa")
 
 	def test_Hanguk_jeonjaeng_ph(self):
-		self.run_test("한국전쟁", "{{ko-IPA|cap=y|l=1,4}}", "한(ː)국 전(ː)쟁/한(ː)국 전(ː)젱", "ph")
+		self.run_test("한국전쟁", "{{ko-IPA|cap=y|한국 전쟁|l=1,4}}", "한(ː)국 전(ː)쟁/한(ː)국 전(ː)젱", "ph")
 	def test_Hanguk_jeonjaeng_rr(self):
-		self.run_test("한국전쟁", "{{ko-IPA|cap=y|l=1,4}}", "Han'guk jeonjaeng", "rr")
+		self.run_test("한국전쟁", "{{ko-IPA|cap=y|한국 전쟁|l=1,4}}", "Han'guk jeonjaeng", "rr")
 	def test_Hanguk_jeonjaeng_rrr(self):
-		self.run_test("한국전쟁", "{{ko-IPA|cap=y|l=1,4}}", "Hangug jeonjaeng", "rrr")
+		self.run_test("한국전쟁", "{{ko-IPA|cap=y|한국 전쟁|l=1,4}}", "Hangug jeonjaeng", "rrr")
 	def test_Hanguk_jeonjaeng_mr(self):
-		self.run_test("한국전쟁", "{{ko-IPA|cap=y|l=1,4}}", "Han'guk chŏnjaeng", "mr")
+		self.run_test("한국전쟁", "{{ko-IPA|cap=y|한국 전쟁|l=1,4}}", "Han'guk chŏnjaeng", "mr")
 	def test_Hanguk_jeonjaeng_yr(self):
-		self.run_test("한국전쟁", "{{ko-IPA|cap=y|l=1,4}}", "hānkwuk cēn.cayng", "yr")
+		self.run_test("한국전쟁", "{{ko-IPA|cap=y|한국 전쟁|l=1,4}}", "hānkwuk cēn.cayng", "yr")
 	def test_Hanguk_jeonjaeng_ipa(self):
-		self.run_test("한국전쟁", "{{ko-IPA|cap=y|l=1,4}}", "[ˈha̠(ː)nɡuk̚ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [ˈha̠(ː)nɡuk̚ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ]", "ipa")
+		self.run_test("한국전쟁", "{{ko-IPA|cap=y|한국 전쟁|l=1,4}}", "[ˈha̠(ː)nɡuk̚ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [ˈha̠(ː)nɡuk̚ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ]", "ipa")
 
 	def test_Ellijabeseu_ph(self):
 		self.run_test("엘리자베스", "{{ko-IPA|cap=y|com=5}}", "엘리자베스", "ph")
@@ -1542,17 +1620,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("반신반의", "{{ko-IPA|l=1,3|ui=4}}", "[ˈpa̠(ː)nɕʰinba̠(ː)nɰi] ~ [ˈpa̠(ː)nɕʰinba̠(ː)ni]", "ipa")
 
 	def test_hoheup_gyetong_ph(self):
-		self.run_test("호흡계통", "{{ko-ipa|l=4}}", "호흡 계(ː)통/호흡 게(ː)통", "ph")
+		self.run_test("호흡계통", "{{ko-ipa|호흡 계통|l=4}}", "호흡 계(ː)통/호흡 게(ː)통", "ph")
 	def test_hoheup_gyetong_rr(self):
-		self.run_test("호흡계통", "{{ko-ipa|l=4}}", "hoheup gyetong", "rr")
+		self.run_test("호흡계통", "{{ko-ipa|호흡 계통|l=4}}", "hoheup gyetong", "rr")
 	def test_hoheup_gyetong_rrr(self):
-		self.run_test("호흡계통", "{{ko-ipa|l=4}}", "hoheub gyetong", "rrr")
+		self.run_test("호흡계통", "{{ko-ipa|호흡 계통|l=4}}", "hoheub gyetong", "rrr")
 	def test_hoheup_gyetong_mr(self):
-		self.run_test("호흡계통", "{{ko-ipa|l=4}}", "hohŭp kyet'ong", "mr")
+		self.run_test("호흡계통", "{{ko-ipa|호흡 계통|l=4}}", "hohŭp kyet'ong", "mr")
 	def test_hoheup_gyetong_yr(self):
-		self.run_test("호흡계통", "{{ko-ipa|l=4}}", "hohup kyēy.thong", "yr")
+		self.run_test("호흡계통", "{{ko-ipa|호흡 계통|l=4}}", "hohup kyēy.thong", "yr")
 	def test_hoheup_gyetong_ipa(self):
-		self.run_test("호흡계통", "{{ko-ipa|l=4}}", "[ɸʷo̞ɣɯp̚ kje̞(ː)tʰo̞ŋ] ~ [ɸʷo̞ɣɯp̚ ke̞(ː)tʰo̞ŋ]", "ipa")
+		self.run_test("호흡계통", "{{ko-ipa|호흡 계통|l=4}}", "[ɸʷo̞ɣɯp̚ kje̞(ː)tʰo̞ŋ] ~ [ɸʷo̞ɣɯp̚ ke̞(ː)tʰo̞ŋ]", "ipa")
 
 	def test_gwigatgil_ph(self):
 		self.run_test("귀갓길", "{{ko-IPA|com=2|l=y|nobc=2}}", "귀(ː)갇낄/귀(ː)가낄", "ph")
@@ -1632,18 +1710,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_Hwaiteuhoseu_ipa(self):
 		self.run_test("화이트호스", "{{ko-IPA|com=4|cap=y}}", "[ɸwa̠itʰɯβo̞s͈ɯ]", "ipa")
 
-	def test_sido_ttaedo_eopsi_ph(self):
-		self.run_test("시도 때도 없이", "{{ko-IPA|l=7}}", "시도 때도 업(ː)씨/시도 떼도 업(ː)씨", "ph")
-	def test_sido_ttaedo_eopsi_rr(self):
-		self.run_test("시도 때도 없이", "{{ko-IPA|l=7}}", "sido ttaedo eopsi", "rr")
-	def test_sido_ttaedo_eopsi_rrr(self):
-		self.run_test("시도 때도 없이", "{{ko-IPA|l=7}}", "sido ttaedo eobs'i", "rrr")
-	def test_sido_ttaedo_eopsi_mr(self):
-		self.run_test("시도 때도 없이", "{{ko-IPA|l=7}}", "sido ttaedo ŏpsi", "mr")
-	def test_sido_ttaedo_eopsi_yr(self):
-		self.run_test("시도 때도 없이", "{{ko-IPA|l=7}}", "sito ttayto ēps.i", "yr")
-	def test_sido_ttaedo_eopsi_ipa(self):
-		self.run_test("시도 때도 없이", "{{ko-IPA|l=7}}", "[ɕʰido̞ t͈ɛdo̞ ɘ(ː)pɕ͈i] ~ [ɕʰido̞ t͈e̞do̞ ɘ(ː)pɕ͈i]", "ipa")
+	def test_sangho_hwaksil_pagoe_ph(self):
+		self.run_test("상호확실파괴", "{{ko-IPA|상호 확실 파괴|l=7}}", "상호 확씰 파(ː)궤/상호 확씰 파(ː)괴", "ph")
+	def test_sangho_hwaksil_pagoe_rr(self):
+		self.run_test("상호확실파괴", "{{ko-IPA|상호 확실 파괴|l=7}}", "sangho hwaksil pagoe", "rr")
+	def test_sangho_hwaksil_pagoe_rrr(self):
+		self.run_test("상호확실파괴", "{{ko-IPA|상호 확실 파괴|l=7}}", "sangho hwagsil pagoe", "rrr")
+	def test_sangho_hwaksil_pagoe_mr(self):
+		self.run_test("상호확실파괴", "{{ko-IPA|상호 확실 파괴|l=7}}", "sangho hwaksil p'agoe", "mr")
+	def test_sangho_hwaksil_pagoe_yr(self):
+		self.run_test("상호확실파괴", "{{ko-IPA|상호 확실 파괴|l=7}}", "sangho hwak.sil phākoy", "yr")
+	def test_sangho_hwaksil_pagoe_ipa(self):
+		self.run_test("상호확실파괴", "{{ko-IPA|상호 확실 파괴|l=7}}", "[sʰa̠ŋβo̞ ɸwa̠kɕ͈iɭ pʰa̠(ː)ɡwe̞] ~ [sʰa̠ŋβo̞ ɸwa̠kɕ͈iɭ pʰa̠(ː)ɡø̞]", "ipa")
 
 	def test_hando_kkeutdo_eopda_ph(self):
 		self.run_test("한도 끝도 없다", "{{ko-IPA|l=1,7}}", "한(ː)도 끋또 업(ː)따", "ph")
@@ -1711,30 +1789,30 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("군기훈련", "{{ko-IPA|l=3}}", "[kunɡiβu(ː)ʎʎʌ̹n]", "ipa")
 
 	def test_hubang_juui_ph(self):
-		self.run_test("후방주의", "{{ko-IPA|l=1,4|ui=5}}", "후(ː)방 주(ː)의/후(ː)방 주(ː)이", "ph")
+		self.run_test("후방주의", "{{ko-IPA|후방 주의|l=1,4|ui=5}}", "후(ː)방 주(ː)의/후(ː)방 주(ː)이", "ph")
 	def test_hubang_juui_rr(self):
-		self.run_test("후방주의", "{{ko-IPA|l=1,4|ui=5}}", "hubang juui", "rr")
+		self.run_test("후방주의", "{{ko-IPA|후방 주의|l=1,4|ui=5}}", "hubang juui", "rr")
 	def test_hubang_juui_rrr(self):
-		self.run_test("후방주의", "{{ko-IPA|l=1,4|ui=5}}", "hubang juui", "rrr")
+		self.run_test("후방주의", "{{ko-IPA|후방 주의|l=1,4|ui=5}}", "hubang juui", "rrr")
 	def test_hubang_juui_mr(self):
-		self.run_test("후방주의", "{{ko-IPA|l=1,4|ui=5}}", "hubang chuŭi", "mr")
+		self.run_test("후방주의", "{{ko-IPA|후방 주의|l=1,4|ui=5}}", "hubang chuŭi", "mr")
 	def test_hubang_juui_yr(self):
-		self.run_test("후방주의", "{{ko-IPA|l=1,4|ui=5}}", "hwūpang cwūuy", "yr")
+		self.run_test("후방주의", "{{ko-IPA|후방 주의|l=1,4|ui=5}}", "hwūpang cwūuy", "yr")
 	def test_hubang_juui_ipa(self):
-		self.run_test("후방주의", "{{ko-IPA|l=1,4|ui=5}}", "[ˈɸʷu(ː)ba̠ŋ t͡ɕu(ː)ɰi] ~ [ˈɸʷu(ː)ba̠ŋ t͡ɕu(ː)i]", "ipa")
+		self.run_test("후방주의", "{{ko-IPA|후방 주의|l=1,4|ui=5}}", "[ˈɸʷu(ː)ba̠ŋ t͡ɕu(ː)ɰi] ~ [ˈɸʷu(ː)ba̠ŋ t͡ɕu(ː)i]", "ipa")
 
 	def test_choejeo_imgeum_ph(self):
-		self.run_test("최저임금", "{{ko-ipa|l=1,4}}", "췌(ː)저 임(ː)금/최(ː)저 임(ː)금", "ph")
+		self.run_test("최저임금", "{{ko-ipa|최저 임금|l=1,4}}", "췌(ː)저 임(ː)금/최(ː)저 임(ː)금", "ph")
 	def test_choejeo_imgeum_rr(self):
-		self.run_test("최저임금", "{{ko-ipa|l=1,4}}", "choejeo imgeum", "rr")
+		self.run_test("최저임금", "{{ko-ipa|최저 임금|l=1,4}}", "choejeo imgeum", "rr")
 	def test_choejeo_imgeum_rrr(self):
-		self.run_test("최저임금", "{{ko-ipa|l=1,4}}", "choejeo imgeum", "rrr")
+		self.run_test("최저임금", "{{ko-ipa|최저 임금|l=1,4}}", "choejeo imgeum", "rrr")
 	def test_choejeo_imgeum_mr(self):
-		self.run_test("최저임금", "{{ko-ipa|l=1,4}}", "ch'oejŏ imgŭm", "mr")
+		self.run_test("최저임금", "{{ko-ipa|최저 임금|l=1,4}}", "ch'oejŏ imgŭm", "mr")
 	def test_choejeo_imgeum_yr(self):
-		self.run_test("최저임금", "{{ko-ipa|l=1,4}}", "chōyce īmkum", "yr")
+		self.run_test("최저임금", "{{ko-ipa|최저 임금|l=1,4}}", "chōyce īmkum", "yr")
 	def test_choejeo_imgeum_ipa(self):
-		self.run_test("최저임금", "{{ko-ipa|l=1,4}}", "[ˈt͡ɕʰwe̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] ~ [ˈt͡ɕʰø̞(ː)d͡ʑʌ̹ i(ː)mɡɯm]", "ipa")
+		self.run_test("최저임금", "{{ko-ipa|최저 임금|l=1,4}}", "[ˈt͡ɕʰwe̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] ~ [ˈt͡ɕʰø̞(ː)d͡ʑʌ̹ i(ː)mɡɯm]", "ipa")
 
 	def test_jeongsingwaui_ph(self):
 		self.run_test("정신과의", "{{ko-IPA|com=2|ui=4}}", "정신꽈의/정신꽈이", "ph")
@@ -1763,17 +1841,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("저의", "{{ko-IPA|uie=2}}", "[t͡ɕʌ̹ɰi] ~ [t͡ɕʌ̹e̞]", "ipa")
 
 	def test_goso_gongpojeung_ph(self):
-		self.run_test("고소공포증", "{{ko-IPA|l=4|com=5}}", "고소 공(ː)포쯩", "ph")
+		self.run_test("고소공포증", "{{ko-IPA|고소 공포증|l=4|com=5}}", "고소 공(ː)포쯩", "ph")
 	def test_goso_gongpojeung_rr(self):
-		self.run_test("고소공포증", "{{ko-IPA|l=4|com=5}}", "goso gongpojeung", "rr")
+		self.run_test("고소공포증", "{{ko-IPA|고소 공포증|l=4|com=5}}", "goso gongpojeung", "rr")
 	def test_goso_gongpojeung_rrr(self):
-		self.run_test("고소공포증", "{{ko-IPA|l=4|com=5}}", "goso gongpojeung", "rrr")
+		self.run_test("고소공포증", "{{ko-IPA|고소 공포증|l=4|com=5}}", "goso gongpojeung", "rrr")
 	def test_goso_gongpojeung_mr(self):
-		self.run_test("고소공포증", "{{ko-IPA|l=4|com=5}}", "koso kongp'ochŭng", "mr")
+		self.run_test("고소공포증", "{{ko-IPA|고소 공포증|l=4|com=5}}", "koso kongp'ochŭng", "mr")
 	def test_goso_gongpojeung_yr(self):
-		self.run_test("고소공포증", "{{ko-IPA|l=4|com=5}}", "koso kōngphoqcung", "yr")
+		self.run_test("고소공포증", "{{ko-IPA|고소 공포증|l=4|com=5}}", "koso kōngphoqcung", "yr")
 	def test_goso_gongpojeung_ipa(self):
-		self.run_test("고소공포증", "{{ko-IPA|l=4|com=5}}", "[ko̞sʰo̞ ko̞(ː)ŋpʰo̞t͡ɕ͈ɯŋ]", "ipa")
+		self.run_test("고소공포증", "{{ko-IPA|고소 공포증|l=4|com=5}}", "[ko̞sʰo̞ ko̞(ː)ŋpʰo̞t͡ɕ͈ɯŋ]", "ipa")
 
 	def test_jeongjeom_ph(self):
 		self.run_test("정점", "{{ko-IPA|l=n|com=1}}", "정쩜", "ph")
@@ -1840,18 +1918,18 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_banjiseongjuui_ipa(self):
 		self.run_test("반지성주의", "{{ko-IPA|l=y|ui=5}}", "[ˈpa̠(ː)ɲd͡ʑisʰʌ̹ŋd͡ʑuɰi] ~ [ˈpa̠(ː)ɲd͡ʑisʰʌ̹ŋd͡ʑui]", "ipa")
 
-	def test_pageup_hyogwa_ph(self):
-		self.run_test("파급 효과", "{{ko-IPA|l=4|com=4}}", "파급 효(ː)꽈", "ph")
-	def test_pageup_hyogwa_rr(self):
-		self.run_test("파급 효과", "{{ko-IPA|l=4|com=4}}", "pageup hyogwa", "rr")
-	def test_pageup_hyogwa_rrr(self):
-		self.run_test("파급 효과", "{{ko-IPA|l=4|com=4}}", "pageub hyogwa", "rrr")
-	def test_pageup_hyogwa_mr(self):
-		self.run_test("파급 효과", "{{ko-IPA|l=4|com=4}}", "p'agŭp hyokwa", "mr")
-	def test_pageup_hyogwa_yr(self):
-		self.run_test("파급 효과", "{{ko-IPA|l=4|com=4}}", "phakup hyōqkwa", "yr")
-	def test_pageup_hyogwa_ipa(self):
-		self.run_test("파급 효과", "{{ko-IPA|l=4|com=4}}", "[pʰa̠ɡɯp̚ ço(ː)k͈wa̠]", "ipa")
+	def test_suhaeng_pyeongga_ph(self):
+		self.run_test("수행평가", "{{ko-IPA|수행 평가|l=4|com=4}}", "수행 평(ː)까/수헹 평(ː)까", "ph")
+	def test_suhaeng_pyeongga_rr(self):
+		self.run_test("수행평가", "{{ko-IPA|수행 평가|l=4|com=4}}", "suhaeng pyeongga", "rr")
+	def test_suhaeng_pyeongga_rrr(self):
+		self.run_test("수행평가", "{{ko-IPA|수행 평가|l=4|com=4}}", "suhaeng pyeongga", "rrr")
+	def test_suhaeng_pyeongga_mr(self):
+		self.run_test("수행평가", "{{ko-IPA|수행 평가|l=4|com=4}}", "suhaeng p'yŏngka", "mr")
+	def test_suhaeng_pyeongga_yr(self):
+		self.run_test("수행평가", "{{ko-IPA|수행 평가|l=4|com=4}}", "swuhayng phyēngqka", "yr")
+	def test_suhaeng_pyeongga_ipa(self):
+		self.run_test("수행평가", "{{ko-IPA|수행 평가|l=4|com=4}}", "[sʰuɦɛŋ pʰjɘ(ː)ŋk͈a̠] ~ [sʰuɦe̞ŋ pʰjɘ(ː)ŋk͈a̠]", "ipa")
 
 	def test_pyouimunja_ph(self):
 		self.run_test("표의문자", "{{ko-IPA|ui=2|com=3}}", "표의문짜/표이문짜", "ph")
@@ -1958,17 +2036,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("데인로", "{{ko-IPA|cap=y|nn=3}}", "[te̞inno̞]", "ipa")
 
 	def test_geongang_yeomnyeojeung_ph(self):
-		self.run_test("건강염려증", "{{ko-ipa|l=1,4|com=5}}", "건(ː)강 염(ː)녀쯩", "ph")
+		self.run_test("건강염려증", "{{ko-ipa|건강 염려증|l=1,4|com=5}}", "건(ː)강 염(ː)녀쯩", "ph")
 	def test_geongang_yeomnyeojeung_rr(self):
-		self.run_test("건강염려증", "{{ko-ipa|l=1,4|com=5}}", "geon'gang yeomnyeojeung", "rr")
+		self.run_test("건강염려증", "{{ko-ipa|건강 염려증|l=1,4|com=5}}", "geon'gang yeomnyeojeung", "rr")
 	def test_geongang_yeomnyeojeung_rrr(self):
-		self.run_test("건강염려증", "{{ko-ipa|l=1,4|com=5}}", "geongang yeomlyeojeung", "rrr")
+		self.run_test("건강염려증", "{{ko-ipa|건강 염려증|l=1,4|com=5}}", "geongang yeomlyeojeung", "rrr")
 	def test_geongang_yeomnyeojeung_mr(self):
-		self.run_test("건강염려증", "{{ko-ipa|l=1,4|com=5}}", "kŏn'gang yŏmnyŏchŭng", "mr")
+		self.run_test("건강염려증", "{{ko-ipa|건강 염려증|l=1,4|com=5}}", "kŏn'gang yŏmnyŏchŭng", "mr")
 	def test_geongang_yeomnyeojeung_yr(self):
-		self.run_test("건강염려증", "{{ko-ipa|l=1,4|com=5}}", "kēnkang yēmlyeqcung", "yr")
+		self.run_test("건강염려증", "{{ko-ipa|건강 염려증|l=1,4|com=5}}", "kēnkang yēmlyeqcung", "yr")
 	def test_geongang_yeomnyeojeung_ipa(self):
-		self.run_test("건강염려증", "{{ko-ipa|l=1,4|com=5}}", "[ˈkɘ(ː)nɡa̠ŋ jɘ(ː)mɲʌ̹t͡ɕ͈ɯŋ]", "ipa")
+		self.run_test("건강염려증", "{{ko-ipa|건강 염려증|l=1,4|com=5}}", "[ˈkɘ(ː)nɡa̠ŋ jɘ(ː)mɲʌ̹t͡ɕ͈ɯŋ]", "ipa")
 
 	def test_jeoneun_hanguk_saramieyo_ph(self):
 		self.run_test("저는 한국 사람이에요", "{{ko-IPA|l=4,7}}", "저는 한(ː)국 사(ː)라미에요", "ph")
@@ -2049,17 +2127,17 @@ class TestUniqueDBCases(unittest.TestCase):
 		self.run_test("야구 동영상", "{{ko-IPA|l=1,4|ni=5}}", "[ˈja̠(ː)ɡu to̞(ː)ŋɲʌ̹ŋsʰa̠ŋ]", "ipa")
 
 	def test_Jeicha_segye_daejeon_ph(self):
-		self.run_test("제2차 세계 대전", "{{ko-IPA|cap=y|l=1,5,8}}", "제(ː)이차 세(ː)계 대(ː)전/제(ː)이차 세(ː)게 대(ː)전/제(ː)이차 세(ː)계 데(ː)전/제(ː)이차 세(ː)게 데(ː)전", "ph")
+		self.run_test("제2차 세계 대전", "{{ko-IPA|제이차 세계 대전|cap=y|l=1,5,8}}", "제(ː)이차 세(ː)계 대(ː)전/제(ː)이차 세(ː)게 대(ː)전/제(ː)이차 세(ː)계 데(ː)전/제(ː)이차 세(ː)게 데(ː)전", "ph")
 	def test_Jeicha_segye_daejeon_rr(self):
-		self.run_test("제2차 세계 대전", "{{ko-IPA|cap=y|l=1,5,8}}", "Jeicha segye daejeon", "rr")
+		self.run_test("제2차 세계 대전", "{{ko-IPA|제이차 세계 대전|cap=y|l=1,5,8}}", "Jeicha segye daejeon", "rr")
 	def test_Jeicha_segye_daejeon_rrr(self):
-		self.run_test("제2차 세계 대전", "{{ko-IPA|cap=y|l=1,5,8}}", "Jeicha segye daejeon", "rrr")
+		self.run_test("제2차 세계 대전", "{{ko-IPA|제이차 세계 대전|cap=y|l=1,5,8}}", "Jeicha segye daejeon", "rrr")
 	def test_Jeicha_segye_daejeon_mr(self):
-		self.run_test("제2차 세계 대전", "{{ko-IPA|cap=y|l=1,5,8}}", "Cheich'a segye taejŏn", "mr")
+		self.run_test("제2차 세계 대전", "{{ko-IPA|제이차 세계 대전|cap=y|l=1,5,8}}", "Cheich'a segye taejŏn", "mr")
 	def test_Jeicha_segye_daejeon_yr(self):
-		self.run_test("제2차 세계 대전", "{{ko-IPA|cap=y|l=1,5,8}}", "cēyi.cha sēykyey tāycen", "yr")
+		self.run_test("제2차 세계 대전", "{{ko-IPA|제이차 세계 대전|cap=y|l=1,5,8}}", "cēyi.cha sēykyey tāycen", "yr")
 	def test_Jeicha_segye_daejeon_ipa(self):
-		self.run_test("제2차 세계 대전", "{{ko-IPA|cap=y|l=1,5,8}}", "[ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n]", "ipa")
+		self.run_test("제2차 세계 대전", "{{ko-IPA|제이차 세계 대전|cap=y|l=1,5,8}}", "[ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n]", "ipa")
 
 
 	def run_test(self, hangul, param_string, expected, system_name):
