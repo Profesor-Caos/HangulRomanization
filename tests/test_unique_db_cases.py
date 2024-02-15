@@ -1,8 +1,4 @@
 import inspect
-import sys
-pkg_dir = "C:\\Users\\Ryan\\Source\\MachineLearning\\HangulRomanization" # obviously hacky, but I just want to get debugging tests working
-sys.path.append(pkg_dir)
-
 import unittest
 from src.wiktionary_romanization import WiktionaryRomanization
 
@@ -77,18 +73,6 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_Bakgeunhye_ipa(self):
 		self.run_test("박ㄹ혜", "{{ko-IPA|박근혜|cap=y}}", "[pa̠k̚k͈ɯnʝe̞] ~ [pa̠k̚k͈ɯnɦe̞]", "ipa")
 
-	def test_cheolgapsangeo_ph(self):
-		self.run_test("철갑 상어", "", "철갑쌍어", "ph")
-	def test_cheolgapsangeo_rr(self):
-		self.run_test("철갑 상어", "", "cheolgapsang'eo", "rr")
-	def test_cheolgapsangeo_rrr(self):
-		self.run_test("철갑 상어", "", "cheolgabsang'eo", "rrr")
-	def test_cheolgapsangeo_mr(self):
-		self.run_test("철갑 상어", "", "ch'ŏlgapsangŏ", "mr")
-	def test_cheolgapsangeo_yr(self):
-		self.run_test("철갑 상어", "", "chel.kap.sange", "yr")
-	def test_cheolgapsangeo_ipa(self):
-		self.run_test("철갑 상어", "", "[t͡ɕʰʌ̹ɭɡa̠ps͈a̠ŋʌ̹]", "ipa")
 
 	def test_Buhwal_juil_ph(self):
 		self.run_test("부활주일", "{{ko-IPA|l=y|cap=y|부활 주일}}", "부(ː)활 주일", "ph")

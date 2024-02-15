@@ -30,14 +30,15 @@ def get_vals_from_pron_span(pronunciation_span):
     return (ipa_text, ph_text, rr.text, rrr.text, mr.text, yc.text)
 
 with open("tests/test_unique_db_cases.py", "w", encoding="utf-8") as f:
-    print('''import sys
-pkg_dir = "C:\\\\Users\\\\Ryan\\\\Source\\\\MachineLearning\\\\HangulRomanization" # obviously hacky, but I just want to get debugging tests working
-sys.path.append(pkg_dir)
-
+    print('''import inspect
 import unittest
 from src.wiktionary_romanization import WiktionaryRomanization
 
 class TestUniqueDBCases(unittest.TestCase):
+\tfile = ''
+
+\tdef set_file(self, file):
+\t\tself.file = file
 ''', file=f)
     # Now we need to scrape the actual wiki pages for each to see the results of the original wiki Lua romanization
     # to test ours against.
@@ -73,6 +74,13 @@ class TestUniqueDBCases(unittest.TestCase):
     print('''
 \tdef run_test(self, hangul, param_string, expected, system_name):
 \t\twr = WiktionaryRomanization(hangul, param_string)
-\t\tvalue = wr.romanize_one(system_name)
-\t\tself.assertEqual(value, expected)''', file=f)
+\t\tif (self.file):
+\t\t\ttry:
+\t\t\t\tvalue = wr.romanize_one(system_name)
+\t\t\t\tprint(f"{inspect.stack()[1].frame.f_code.co_name}: { 'success' if value == expected else f'fail expected {expected} but received {value}'}", file=self.file)
+\t\t\texcept Exception as e:
+\t\t\t\tprint(f"{inspect.stack()[1].frame.f_code.co_name}: fail {e}", file=self.file)
+\t\telse:
+\t\t\tvalue = wr.romanize_one(system_name)
+\t\t\tself.assertEqual(value, expected)''', file=f)
 

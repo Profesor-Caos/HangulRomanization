@@ -1,7 +1,3 @@
-import sys
-pkg_dir = "C:\\Users\\Ryan\\Source\\MachineLearning\\HangulRomanization" # obviously hacky, but I just want to get debugging tests working
-sys.path.append(pkg_dir)
-
 import unittest
 from src.wiktionary_romanization import WiktionaryRomanization
 
