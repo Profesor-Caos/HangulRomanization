@@ -65,6 +65,8 @@ class TestUniqueDBCases(unittest.TestCase):
             mr = rrr.find_next("td", class_="IPA")
             yc = mr.find_next("td", class_="IPA")
             original_params = value["article"].pronunciation.split(';;;')[value["index"]]
+            if not original_params:
+                continue # This is probably a redirect page
             for name, expected in zip(["ph", "rr", "rrr", "mr", "yr", "ipa"], [ph_text, rr.text, rrr.text, mr.text, yc.text, ipa_span.text]):
                 print(f'''\tdef test_{rr.text.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\t\tself.run_test("{value["article"].page_title}", "{original_params}", "{expected}", "{name}")''', file=f)
         print("", file=f)

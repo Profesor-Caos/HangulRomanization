@@ -175,12 +175,9 @@ class WiktionaryRomanization:
         
         return ipa
 
-    def romanize(text_param, system_index, args):
-        if isinstance(text_param, list):
-            args = text_param.getParent().args
-            system_index = args[2] or 1
-            text_param = args[1]
-        
+    def romanize(system_index, args):
+        text_param = args[1]
+
         p, optional_params = {}, ["nn", "l", "com", "cap", "ni"]
         for pm in optional_params:
             p[pm] = {}
@@ -502,14 +499,14 @@ class WiktionaryRomanization:
 
         current_word_dataset = []
         for system_index in WiktionaryRomanization.system_lookup.values():
-            romanized = WiktionaryRomanization.romanize(self.title, system_index, args)
+            romanized = WiktionaryRomanization.romanize(system_index, args)
             current_word_dataset.append(romanized)
 
         return current_word_dataset
 
     def romanize_one(self, system_name):
         params = {
-            1: {"default": self.title, "list": True},
+            1: self.title,
             "a": {},
             "audio": {"alias_of": "a"},
             "nn": {},
@@ -525,7 +522,7 @@ class WiktionaryRomanization:
             "iot": {},
         }
         args = self.process_params(params)
-        return WiktionaryRomanization.romanize(self.title, self.system_lookup[system_name], args)
+        return WiktionaryRomanization.romanize(self.system_lookup[system_name], args)
 
     def process_params(self, params):
         pattern = r'\{\{\s*ko-ipa\s*(.*?)\s*\}\}'
@@ -539,9 +536,9 @@ class WiktionaryRomanization:
                 if '=' in param:
                     key, value = param.split('=')
                     params[key.strip()] = value.strip()
-                # elif param:
-                #     # parameter is the string to romanize
-                #     self.title = param
+                elif param:
+                    # parameter is the string to romanize
+                    params[1] = param
                 # TODO: make taking a different string to romanize as a parameter work
         
         return params
