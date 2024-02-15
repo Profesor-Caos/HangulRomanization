@@ -1,3 +1,4 @@
+import inspect
 import sys
 pkg_dir = "C:\\Users\\Ryan\\Source\\MachineLearning\\HangulRomanization" # obviously hacky, but I just want to get debugging tests working
 sys.path.append(pkg_dir)
@@ -6,6 +7,10 @@ import unittest
 from src.wiktionary_romanization import WiktionaryRomanization
 
 class TestUniqueDBCases(unittest.TestCase):
+	file = ''
+
+	def set_file(self, file):
+		self.file = file
 
 	def test_koenihiseubereukeu_ph(self):
 		self.run_test("쾨니히스베르크", "{{ko-IPA|쾨니히스베르크}}", "퀘니히스베르크/쾨니히스베르크", "ph")
@@ -2142,5 +2147,12 @@ class TestUniqueDBCases(unittest.TestCase):
 
 	def run_test(self, hangul, param_string, expected, system_name):
 		wr = WiktionaryRomanization(hangul, param_string)
-		value = wr.romanize_one(system_name)
-		self.assertEqual(value, expected)
+		if (self.file):
+			try:
+				value = wr.romanize_one(system_name)
+				print(f"{inspect.stack()[1].frame.f_code.co_name}: { 'success' if value == expected else f'fail expected {expected} but received {value}'}", file=self.file)
+			except Exception as e:
+				print(f"{inspect.stack()[1].frame.f_code.co_name}: fail {e}", file=self.file)
+		else:
+			value = wr.romanize_one(system_name)
+			self.assertEqual(value, expected)

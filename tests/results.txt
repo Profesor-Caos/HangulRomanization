@@ -1,0 +1,984 @@
+test_Apeurikaui_ppul_ipa: success
+test_Apeurikaui_ppul_mr: success
+test_Apeurikaui_ppul_ph: success
+test_Apeurikaui_ppul_rr: success
+test_Apeurikaui_ppul_rrr: success
+test_Apeurikaui_ppul_yr: success
+test_Bakgeunhye_ipa: success
+test_Bakgeunhye_mr: success
+test_Bakgeunhye_ph: success
+test_Bakgeunhye_rr: success
+test_Bakgeunhye_rrr: success
+test_Bakgeunhye_yr: success
+test_Banggeulladesi_ipa: success
+test_Banggeulladesi_mr: fail can only concatenate str (not "int") to str
+test_Banggeulladesi_ph: success
+test_Banggeulladesi_rr: success
+test_Banggeulladesi_rrr: success
+test_Banggeulladesi_yr: success
+test_Buhwal_juil_ipa: success
+test_Buhwal_juil_mr: success
+test_Buhwal_juil_ph: success
+test_Buhwal_juil_rr: success
+test_Buhwal_juil_rrr: success
+test_Buhwal_juil_yr: success
+test_Buhwaljeol_ipa: success
+test_Buhwaljeol_mr: fail can only concatenate str (not "int") to str
+test_Buhwaljeol_ph: success
+test_Buhwaljeol_rr: success
+test_Buhwaljeol_rrr: success
+test_Buhwaljeol_yr: success
+test_Cheorui_jangmak_ipa: success
+test_Cheorui_jangmak_mr: success
+test_Cheorui_jangmak_ph: success
+test_Cheorui_jangmak_rr: success
+test_Cheorui_jangmak_rrr: success
+test_Cheorui_jangmak_yr: success
+test_Deinno_ipa: success
+test_Deinno_mr: success
+test_Deinno_ph: success
+test_Deinno_rr: success
+test_Deinno_rrr: success
+test_Deinno_yr: success
+test_Dominika_gonghwaguk_ipa: fail 'y'
+test_Dominika_gonghwaguk_mr: fail 'y'
+test_Dominika_gonghwaguk_ph: fail 'y'
+test_Dominika_gonghwaguk_rr: fail 'y'
+test_Dominika_gonghwaguk_rrr: fail 'y'
+test_Dominika_gonghwaguk_yr: fail 'y'
+test_Ellijabeseu_ipa: success
+test_Ellijabeseu_mr: success
+test_Ellijabeseu_ph: success
+test_Ellijabeseu_rr: success
+test_Ellijabeseu_rrr: success
+test_Ellijabeseu_yr: success
+test_Gangwondo_posu_ipa: fail 'y'
+test_Gangwondo_posu_mr: fail 'y'
+test_Gangwondo_posu_ph: fail 'y'
+test_Gangwondo_posu_rr: fail 'y'
+test_Gangwondo_posu_rrr: fail 'y'
+test_Gangwondo_posu_yr: fail 'y'
+test_Geumgangsan_ipa: fail 'y'
+test_Geumgangsan_mr: fail 'y'
+test_Geumgangsan_ph: fail 'y'
+test_Geumgangsan_rr: fail 'y'
+test_Geumgangsan_rrr: fail 'y'
+test_Geumgangsan_yr: fail 'y'
+test_Geuriseudoui_jeok_ipa: success
+test_Geuriseudoui_jeok_mr: success
+test_Geuriseudoui_jeok_ph: success
+test_Geuriseudoui_jeok_rr: success
+test_Geuriseudoui_jeok_rrr: success
+test_Geuriseudoui_jeok_yr: success
+test_Guyak_seonggyeong_ipa: fail 'y'
+test_Guyak_seonggyeong_mr: fail 'y'
+test_Guyak_seonggyeong_ph: fail 'y'
+test_Guyak_seonggyeong_rr: fail 'y'
+test_Guyak_seonggyeong_rrr: fail 'y'
+test_Guyak_seonggyeong_yr: fail 'y'
+test_Guyugoseullabia_makedonia_gonghwaguk_ipa: fail 'y'
+test_Guyugoseullabia_makedonia_gonghwaguk_mr: fail 'y'
+test_Guyugoseullabia_makedonia_gonghwaguk_ph: fail 'y'
+test_Guyugoseullabia_makedonia_gonghwaguk_rr: fail 'y'
+test_Guyugoseullabia_makedonia_gonghwaguk_rrr: fail 'y'
+test_Guyugoseullabia_makedonia_gonghwaguk_yr: fail 'y'
+test_Hanguk_jeonjaeng_ipa: fail 'y'
+test_Hanguk_jeonjaeng_mr: fail 'y'
+test_Hanguk_jeonjaeng_ph: fail 'y'
+test_Hanguk_jeonjaeng_rr: fail 'y'
+test_Hanguk_jeonjaeng_rrr: fail 'y'
+test_Hanguk_jeonjaeng_yr: fail 'y'
+test_Hwaiteuhoseu_ipa: success
+test_Hwaiteuhoseu_mr: fail can only concatenate str (not "int") to str
+test_Hwaiteuhoseu_ph: success
+test_Hwaiteuhoseu_rr: success
+test_Hwaiteuhoseu_rrr: success
+test_Hwaiteuhoseu_yr: success
+test_Ijipteu_arap_gonghwaguk_ipa: fail 'y'
+test_Ijipteu_arap_gonghwaguk_mr: fail 'y'
+test_Ijipteu_arap_gonghwaguk_ph: fail 'y'
+test_Ijipteu_arap_gonghwaguk_rr: fail 'y'
+test_Ijipteu_arap_gonghwaguk_rrr: fail 'y'
+test_Ijipteu_arap_gonghwaguk_yr: fail 'y'
+test_Jang_ipa: success
+test_Jang_mr: success
+test_Jang_ph: success
+test_Jang_rr: success
+test_Jang_rrr: success
+test_Jang_yr: success
+test_Jeicha_segye_daejeon_ipa: fail 'y'
+test_Jeicha_segye_daejeon_mr: fail 'y'
+test_Jeicha_segye_daejeon_ph: fail 'y'
+test_Jeicha_segye_daejeon_rr: fail 'y'
+test_Jeicha_segye_daejeon_rrr: fail 'y'
+test_Jeicha_segye_daejeon_yr: fail 'y'
+test_Joguk_haebang_jeonjaeng_ipa: fail 'y'
+test_Joguk_haebang_jeonjaeng_mr: fail 'y'
+test_Joguk_haebang_jeonjaeng_ph: fail 'y'
+test_Joguk_haebang_jeonjaeng_rr: fail 'y'
+test_Joguk_haebang_jeonjaeng_rrr: fail 'y'
+test_Joguk_haebang_jeonjaeng_yr: fail 'y'
+test_Joseon_minjujuui_inmin_gonghwaguk_ipa: fail 'y'
+test_Joseon_minjujuui_inmin_gonghwaguk_mr: fail 'y'
+test_Joseon_minjujuui_inmin_gonghwaguk_ph: fail 'y'
+test_Joseon_minjujuui_inmin_gonghwaguk_rr: fail 'y'
+test_Joseon_minjujuui_inmin_gonghwaguk_rrr: fail 'y'
+test_Joseon_minjujuui_inmin_gonghwaguk_yr: fail 'y'
+test_Konggo_gonghwaguk_ipa: fail 'y'
+test_Konggo_gonghwaguk_mr: fail 'y'
+test_Konggo_gonghwaguk_ph: fail 'y'
+test_Konggo_gonghwaguk_rr: fail 'y'
+test_Konggo_gonghwaguk_rrr: fail 'y'
+test_Konggo_gonghwaguk_yr: fail 'y'
+test_Namapeurika_gonghwaguk_ipa: fail 'y'
+test_Namapeurika_gonghwaguk_mr: fail 'y'
+test_Namapeurika_gonghwaguk_ph: fail 'y'
+test_Namapeurika_gonghwaguk_rr: fail 'y'
+test_Namapeurika_gonghwaguk_rrr: fail 'y'
+test_Namapeurika_gonghwaguk_yr: fail 'y'
+test_Nikollaseu_ipa: success
+test_Nikollaseu_mr: fail can only concatenate str (not "int") to str
+test_Nikollaseu_ph: success
+test_Nikollaseu_rr: success
+test_Nikollaseu_rrr: success
+test_Nikollaseu_yr: success
+test_Noseuweseuteu_junju_ipa: fail 'y'
+test_Noseuweseuteu_junju_mr: fail 'y'
+test_Noseuweseuteu_junju_ph: fail 'y'
+test_Noseuweseuteu_junju_rr: fail 'y'
+test_Noseuweseuteu_junju_rrr: fail 'y'
+test_Noseuweseuteu_junju_yr: fail 'y'
+test_Paldo_ipa: success
+test_Paldo_mr: fail can only concatenate str (not "int") to str
+test_Paldo_ph: success
+test_Paldo_rr: success
+test_Paldo_rrr: success
+test_Paldo_yr: success
+test_Pyeongyang_ipa: success
+test_Pyeongyang_mr: success
+test_Pyeongyang_ph: success
+test_Pyeongyang_rr: success
+test_Pyeongyang_rrr: success
+test_Pyeongyang_yr: success
+test_Reunesangseu_ipa: success
+test_Reunesangseu_mr: fail can only concatenate str (not "int") to str
+test_Reunesangseu_ph: success
+test_Reunesangseu_rr: success
+test_Reunesangseu_rrr: success
+test_Reunesangseu_yr: success
+test_Roseuaenjelleseu_ipa: success
+test_Roseuaenjelleseu_mr: fail can only concatenate str (not "int") to str
+test_Roseuaenjelleseu_ph: success
+test_Roseuaenjelleseu_rr: success
+test_Roseuaenjelleseu_rrr: success
+test_Roseuaenjelleseu_yr: success
+test_Saudi_ipa: success
+test_Saudi_mr: fail can only concatenate str (not "int") to str
+test_Saudi_ph: success
+test_Saudi_rr: success
+test_Saudi_rrr: success
+test_Saudi_yr: success
+test_Seonggyeong_ipa: fail expected [ˈsʰɘ(ː)ŋɡjʌ̹ŋ] but received [ˈsʰʌ̹(ː)ŋɡjʌ̹ŋ]
+test_Seonggyeong_mr: success
+test_Seonggyeong_ph: success
+test_Seonggyeong_rr: success
+test_Seonggyeong_rrr: success
+test_Seonggyeong_yr: success
+test_Seoul_gonghwaguk_ipa: fail 'y'
+test_Seoul_gonghwaguk_mr: fail 'y'
+test_Seoul_gonghwaguk_ph: fail 'y'
+test_Seoul_gonghwaguk_rr: fail 'y'
+test_Seoul_gonghwaguk_rrr: fail 'y'
+test_Seoul_gonghwaguk_yr: fail 'y'
+test_Seuwiseu_ipa: success
+test_Seuwiseu_mr: fail can only concatenate str (not "int") to str
+test_Seuwiseu_ph: success
+test_Seuwiseu_rr: success
+test_Seuwiseu_rrr: success
+test_Seuwiseu_yr: success
+test_Sinuiju_ipa: fail expected [sinɰid͡zu] but received [ɕʰinɰid͡ʑu] ~ [ɕʰinid͡ʑu]
+test_Sinuiju_mr: success
+test_Sinuiju_ph: success
+test_Sinuiju_rr: success
+test_Sinuiju_rrr: success
+test_Sinuiju_yr: success
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_ipa: fail 'y'
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_mr: fail 'y'
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_ph: fail 'y'
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_rr: fail 'y'
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_rrr: fail 'y'
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_yr: fail 'y'
+test_Sollomon_jedo_ipa: success
+test_Sollomon_jedo_mr: fail can only concatenate str (not "int") to str
+test_Sollomon_jedo_ph: success
+test_Sollomon_jedo_rr: success
+test_Sollomon_jedo_rrr: success
+test_Sollomon_jedo_yr: success
+test_Sollomonui_jihye_ipa: success
+test_Sollomonui_jihye_mr: success
+test_Sollomonui_jihye_ph: success
+test_Sollomonui_jihye_rr: success
+test_Sollomonui_jihye_rrr: success
+test_Sollomonui_jihye_yr: success
+test_Suragan_ipa: success
+test_Suragan_mr: fail can only concatenate str (not "int") to str
+test_Suragan_ph: success
+test_Suragan_rr: success
+test_Suragan_rrr: success
+test_Suragan_yr: success
+test_Taepyeongnyang_ipa: success
+test_Taepyeongnyang_mr: success
+test_Taepyeongnyang_ph: success
+test_Taepyeongnyang_rr: success
+test_Taepyeongnyang_rrr: success
+test_Taepyeongnyang_yr: success
+test_Ulsan_ipa: success
+test_Ulsan_mr: fail can only concatenate str (not "int") to str
+test_Ulsan_ph: success
+test_Ulsan_rr: success
+test_Ulsan_rrr: success
+test_Ulsan_yr: success
+test_Yeongnyeonbang_ipa: success
+test_Yeongnyeonbang_mr: success
+test_Yeongnyeonbang_ph: success
+test_Yeongnyeonbang_rr: success
+test_Yeongnyeonbang_rrr: success
+test_Yeongnyeonbang_yr: success
+test_Yugio_jeonjaeng_ipa: fail 'y'
+test_Yugio_jeonjaeng_mr: fail 'y'
+test_Yugio_jeonjaeng_ph: fail 'y'
+test_Yugio_jeonjaeng_rr: fail 'y'
+test_Yugio_jeonjaeng_rrr: fail 'y'
+test_Yugio_jeonjaeng_yr: fail 'y'
+test_allaguija_ipa: success
+test_allaguija_mr: success
+test_allaguija_ph: success
+test_allaguija_rr: success
+test_allaguija_rrr: success
+test_allaguija_yr: success
+test_anda_ipa: success
+test_anda_mr: success
+test_anda_ph: success
+test_anda_rr: success
+test_anda_rrr: success
+test_anda_yr: success
+test_badanmulgogi_ipa: success
+test_badanmulgogi_mr: success
+test_badanmulgogi_ph: success
+test_badanmulgogi_rr: success
+test_badanmulgogi_rrr: success
+test_badanmulgogi_yr: success
+test_badatga_ipa: success
+test_badatga_mr: success
+test_badatga_ph: success
+test_badatga_rr: success
+test_badatga_rrr: success
+test_badatga_yr: success
+test_bakkadeoreun_ipa: success
+test_bakkadeoreun_mr: success
+test_bakkadeoreun_ph: success
+test_bakkadeoreun_rr: success
+test_bakkadeoreun_rrr: success
+test_bakkadeoreun_yr: success
+test_bamsae_bamssae_ipa: fail expected [pa̠msʰɛ] ~ [pa̠msʰe̞] ~ [pa̠ms͈ɛ] ~ [pa̠ms͈e̞] but received [pa̠ms͈ɛ] ~ [pa̠ms͈e̞]
+test_bamsae_bamssae_mr: fail expected pamsae/pamssae but received pamssae
+test_bamsae_bamssae_ph: fail expected 밤새/밤세/밤쌔/밤쎄 but received 밤쌔/밤쎄
+test_bamsae_bamssae_rr: fail expected bamsae/bamssae but received bamssae
+test_bamsae_bamssae_rrr: fail expected bamsae/bamssae but received bamssae
+test_bamsae_bamssae_yr: fail expected pamsay/pamssay but received pamssay
+test_banjiseongjuui_ipa: success
+test_banjiseongjuui_mr: success
+test_banjiseongjuui_ph: success
+test_banjiseongjuui_rr: success
+test_banjiseongjuui_rrr: success
+test_banjiseongjuui_yr: success
+test_bansinbanin_ipa: fail 'y'
+test_bansinbanin_mr: fail 'y'
+test_bansinbanin_ph: fail 'y'
+test_bansinbanin_rr: fail 'y'
+test_bansinbanin_rrr: fail 'y'
+test_bansinbanin_yr: fail 'y'
+test_bansinbanui_ipa: fail 'y'
+test_bansinbanui_mr: fail 'y'
+test_bansinbanui_ph: fail 'y'
+test_bansinbanui_rr: fail 'y'
+test_bansinbanui_rrr: fail 'y'
+test_bansinbanui_yr: fail 'y'
+test_beomsinnon_ipa: fail expected [ˈpɘ(ː)mɕʰinno̞n] but received [ˈpʌ̹(ː)mɕʰinno̞n]
+test_beomsinnon_mr: success
+test_beomsinnon_ph: success
+test_beomsinnon_rr: success
+test_beomsinnon_rrr: success
+test_beomsinnon_yr: success
+test_beoseu_ipa: success
+test_beoseu_mr: success
+test_beoseu_ph: success
+test_beoseu_rr: success
+test_beoseu_rrr: success
+test_beoseu_yr: success
+test_boon_jangchi_ipa: success
+test_boon_jangchi_mr: success
+test_boon_jangchi_ph: success
+test_boon_jangchi_rr: success
+test_boon_jangchi_rrr: success
+test_boon_jangchi_yr: success
+test_cheolgapsangeo_ipa: fail expected [t͡ɕʰʌ̹ɭɡa̠ps͈a̠ŋʌ̹] but received [t͡ɕʰʌ̹ɭɡa̠p̚ sʰa̠ŋʌ̹]
+test_cheolgapsangeo_mr: fail expected ch'ŏlgapsangŏ but received ch'ŏlgap sangŏ
+test_cheolgapsangeo_ph: fail expected 철갑쌍어 but received 철갑 상어
+test_cheolgapsangeo_rr: fail expected cheolgapsang'eo but received cheolgap sang'eo
+test_cheolgapsangeo_rrr: fail expected cheolgabsang'eo but received cheolgab sang'eo
+test_cheolgapsangeo_yr: fail expected chel.kap.sange but received chel.kap sange
+test_choejeo_imgeum_ipa: fail 'y'
+test_choejeo_imgeum_mr: fail 'y'
+test_choejeo_imgeum_ph: fail 'y'
+test_choejeo_imgeum_rr: fail 'y'
+test_choejeo_imgeum_rrr: fail 'y'
+test_choejeo_imgeum_yr: fail 'y'
+test_chulsannyul_ipa: success
+test_chulsannyul_mr: success
+test_chulsannyul_ph: success
+test_chulsannyul_rr: success
+test_chulsannyul_rrr: success
+test_chulsannyul_yr: fail expected chwulqsannyul but received chwulqsannyu<sup>l</sup>
+test_dakeuseokeul_ipa: success
+test_dakeuseokeul_mr: success
+test_dakeuseokeul_ph: success
+test_dakeuseokeul_rr: success
+test_dakeuseokeul_rrr: success
+test_dakeuseokeul_yr: success
+test_dakgalbi_ipa: success
+test_dakgalbi_mr: success
+test_dakgalbi_ph: success
+test_dakgalbi_rr: success
+test_dakgalbi_rrr: success
+test_dakgalbi_yr: success
+test_dambaetdae_ipa: success
+test_dambaetdae_mr: success
+test_dambaetdae_ph: success
+test_dambaetdae_rr: success
+test_dambaetdae_rrr: success
+test_dambaetdae_yr: success
+test_deobeullyu_ipa: success
+test_deobeullyu_mr: success
+test_deobeullyu_ph: success
+test_deobeullyu_rr: success
+test_deobeullyu_rrr: success
+test_deobeullyu_yr: success
+test_duppulkoppulso_ipa: success
+test_duppulkoppulso_mr: success
+test_duppulkoppulso_ph: success
+test_duppulkoppulso_rr: success
+test_duppulkoppulso_rrr: success
+test_duppulkoppulso_yr: success
+test_dwitdari_ipa: success
+test_dwitdari_mr: success
+test_dwitdari_ph: success
+test_dwitdari_rr: success
+test_dwitdari_rrr: success
+test_dwitdari_yr: success
+test_gabot_ipa: success
+test_gabot_mr: success
+test_gabot_ph: success
+test_gabot_rr: success
+test_gabot_rrr: success
+test_gabot_yr: success
+test_ganeungseong_ipa: success
+test_ganeungseong_mr: success
+test_ganeungseong_ph: success
+test_ganeungseong_rr: success
+test_ganeungseong_rrr: success
+test_ganeungseong_yr: success
+test_gayatgo_ipa: fail 'y'
+test_gayatgo_mr: fail 'y'
+test_gayatgo_ph: fail 'y'
+test_gayatgo_rr: fail 'y'
+test_gayatgo_rrr: fail 'y'
+test_gayatgo_yr: fail 'y'
+test_geondal_ipa: success
+test_geondal_mr: success
+test_geondal_ph: success
+test_geondal_rr: success
+test_geondal_rrr: success
+test_geondal_yr: success
+test_geongang_yeomnyeojeung_ipa: fail 'y'
+test_geongang_yeomnyeojeung_mr: fail 'y'
+test_geongang_yeomnyeojeung_ph: fail 'y'
+test_geongang_yeomnyeojeung_rr: fail 'y'
+test_geongang_yeomnyeojeung_rrr: fail 'y'
+test_geongang_yeomnyeojeung_yr: fail 'y'
+test_geonmangjeung_ipa: fail expected [ˈkɘ(ː)nma̠ŋt͡ɕ͈ɯŋ] but received [ˈkʌ̹(ː)nma̠ŋt͡ɕ͈ɯŋ]
+test_geonmangjeung_mr: success
+test_geonmangjeung_ph: success
+test_geonmangjeung_rr: success
+test_geonmangjeung_rrr: success
+test_geonmangjeung_yr: success
+test_geupjinjeok_yeoseongjuui_ipa: success
+test_geupjinjeok_yeoseongjuui_mr: success
+test_geupjinjeok_yeoseongjuui_ph: success
+test_geupjinjeok_yeoseongjuui_rr: success
+test_geupjinjeok_yeoseongjuui_rrr: success
+test_geupjinjeok_yeoseongjuui_yr: success
+test_geurimui_tteok_ipa: success
+test_geurimui_tteok_mr: success
+test_geurimui_tteok_ph: success
+test_geurimui_tteok_rr: success
+test_geurimui_tteok_rrr: success
+test_geurimui_tteok_yr: success
+test_gollibwonchuri_ipa: success
+test_gollibwonchuri_mr: success
+test_gollibwonchuri_ph: success
+test_gollibwonchuri_rr: success
+test_gollibwonchuri_rrr: success
+test_gollibwonchuri_yr: success
+test_gom_ipa: success
+test_gom_mr: success
+test_gom_ph: success
+test_gom_rr: success
+test_gom_rrr: success
+test_gom_yr: success
+test_gongsanjuui_ipa: success
+test_gongsanjuui_mr: success
+test_gongsanjuui_ph: success
+test_gongsanjuui_rr: success
+test_gongsanjuui_rrr: success
+test_gongsanjuui_yr: success
+test_goso_gongpojeung_ipa: fail 'y'
+test_goso_gongpojeung_mr: fail 'y'
+test_goso_gongpojeung_ph: fail 'y'
+test_goso_gongpojeung_rr: fail 'y'
+test_goso_gongpojeung_rrr: fail 'y'
+test_goso_gongpojeung_yr: fail 'y'
+test_goui_sagu_ipa: fail 'y'
+test_goui_sagu_mr: fail 'y'
+test_goui_sagu_ph: fail 'y'
+test_goui_sagu_rr: fail 'y'
+test_goui_sagu_rrr: fail 'y'
+test_goui_sagu_yr: fail 'y'
+test_gungihullyeon_ipa: fail 'y'
+test_gungihullyeon_mr: fail 'y'
+test_gungihullyeon_ph: fail 'y'
+test_gungihullyeon_rr: fail 'y'
+test_gungihullyeon_rrr: fail 'y'
+test_gungihullyeon_yr: fail 'y'
+test_gwigatgil_ipa: success
+test_gwigatgil_mr: success
+test_gwigatgil_ph: success
+test_gwigatgil_rr: success
+test_gwigatgil_rrr: success
+test_gwigatgil_yr: success
+test_gyoui_ipa: success
+test_gyoui_mr: success
+test_gyoui_ph: success
+test_gyoui_rr: success
+test_gyoui_rrr: success
+test_gyoui_yr: success
+test_hagyotgil_ipa: success
+test_hagyotgil_mr: success
+test_hagyotgil_ph: success
+test_hagyotgil_rr: success
+test_hagyotgil_rrr: success
+test_hagyotgil_yr: success
+test_hando_kkeutdo_eopda_ipa: fail 'y'
+test_hando_kkeutdo_eopda_mr: fail 'y'
+test_hando_kkeutdo_eopda_ph: fail 'y'
+test_hando_kkeutdo_eopda_rr: fail 'y'
+test_hando_kkeutdo_eopda_rrr: fail 'y'
+test_hando_kkeutdo_eopda_yr: fail 'y'
+test_hangon_dongmul_ipa: fail 'y'
+test_hangon_dongmul_mr: fail 'y'
+test_hangon_dongmul_ph: fail 'y'
+test_hangon_dongmul_rr: fail 'y'
+test_hangon_dongmul_rrr: fail 'y'
+test_hangon_dongmul_yr: fail 'y'
+test_hoeui_ipa: fail expected [ˈɸwe̞(ː)ɰi] ~ [ˈɸwe̞(ː)ɰi] ~ [ˈhø̞(ː)ɰi] ~ [ˈhø̞(ː)i] but received [ˈɸwe̞(ː)ɰi] ~ [ˈhø̞(ː)ɰi] ~ [ˈɸwe̞(ː)i] ~ [ˈhø̞(ː)i]
+test_hoeui_mr: success
+test_hoeui_ph: fail expected 훼(ː)의/훼(ː)의/회(ː)의/회(ː)이 but received 훼(ː)의/회(ː)의/훼(ː)이/회(ː)이
+test_hoeui_rr: success
+test_hoeui_rrr: success
+test_hoeui_yr: success
+test_hoheup_gyetong_ipa: fail 'y'
+test_hoheup_gyetong_mr: fail 'y'
+test_hoheup_gyetong_ph: fail 'y'
+test_hoheup_gyetong_rr: fail 'y'
+test_hoheup_gyetong_rrr: fail 'y'
+test_hoheup_gyetong_yr: fail 'y'
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_ipa: fail 'y'
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_mr: fail 'y'
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_ph: fail 'y'
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_rr: fail 'y'
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_rrr: fail 'y'
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_yr: fail 'y'
+test_hubang_juui_ipa: fail 'y'
+test_hubang_juui_mr: fail 'y'
+test_hubang_juui_ph: fail 'y'
+test_hubang_juui_rr: fail 'y'
+test_hubang_juui_rrr: fail 'y'
+test_hubang_juui_yr: fail 'y'
+test_huinnimagireogi_ipa: success
+test_huinnimagireogi_mr: success
+test_huinnimagireogi_ph: success
+test_huinnimagireogi_rr: success
+test_huinnimagireogi_rrr: success
+test_huinnimagireogi_yr: success
+test_hwahak_jeondal_muljil_ipa: success
+test_hwahak_jeondal_muljil_mr: success
+test_hwahak_jeondal_muljil_ph: success
+test_hwahak_jeondal_muljil_rr: success
+test_hwahak_jeondal_muljil_rrr: success
+test_hwahak_jeondal_muljil_yr: success
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ipa: fail expected [ˈɸwa̠(ː)sʰʌ̹k̚ jʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ɡjʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ŋɲʌ̹ʎʎo] but received [ˈɸwa̠(ː)sʰʌ̹ŋɲʌ̹ʎʎo]
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_mr: fail expected hwasŏk yŏllyo/hwasŏgyŏllyo/hwasŏngnyŏllyo but received hwasŏngnyŏllyo
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ph: fail expected 화(ː)석 열료/화(ː)서결료/화(ː)성녈료 but received 화(ː)성녈료
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rr: fail expected hwaseok yeollyo/hwaseogyeollyo/hwaseongnyeollyo but received hwaseongnyeollyo
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rrr: fail expected hwaseog yeonlyo/hwaseog'yeonlyo/hwaseognyeonlyo but received hwaseognyeonlyo
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_yr: fail expected hwāsek yenlyo/hwāsek.yenlyo/hwāseknyenlyo but received hwāseknyenlyo
+test_ijo_ipa: fail 'y'
+test_ijo_mr: fail 'y'
+test_ijo_ph: fail 'y'
+test_ijo_rr: fail 'y'
+test_ijo_rrr: fail 'y'
+test_ijo_yr: fail 'y'
+test_ilsinnon_ipa: success
+test_ilsinnon_mr: success
+test_ilsinnon_ph: success
+test_ilsinnon_rr: success
+test_ilsinnon_rrr: success
+test_ilsinnon_yr: success
+test_imgeum_ipa: fail 'y'
+test_imgeum_mr: fail 'y'
+test_imgeum_ph: fail 'y'
+test_imgeum_rr: fail 'y'
+test_imgeum_rrr: fail 'y'
+test_imgeum_yr: fail 'y'
+test_imiji_ipa: success
+test_imiji_mr: success
+test_imiji_ph: success
+test_imiji_rr: success
+test_imiji_rrr: success
+test_imiji_yr: success
+test_ingicheok_ipa: success
+test_ingicheok_mr: success
+test_ingicheok_ph: success
+test_ingicheok_rr: success
+test_ingicheok_rrr: success
+test_ingicheok_yr: success
+test_jat_ipa: success
+test_jat_mr: success
+test_jat_ph: success
+test_jat_rr: success
+test_jat_rrr: success
+test_jat_yr: success
+test_jeomjeomjeom_ipa: success
+test_jeomjeomjeom_mr: success
+test_jeomjeomjeom_ph: success
+test_jeomjeomjeom_rr: success
+test_jeomjeomjeom_rrr: success
+test_jeomjeomjeom_yr: success
+test_jeoneun_hanguk_saramieyo_ipa: fail 'y'
+test_jeoneun_hanguk_saramieyo_mr: fail 'y'
+test_jeoneun_hanguk_saramieyo_ph: fail 'y'
+test_jeoneun_hanguk_saramieyo_rr: fail 'y'
+test_jeoneun_hanguk_saramieyo_rrr: fail 'y'
+test_jeoneun_hanguk_saramieyo_yr: fail 'y'
+test_jeongjeom_ipa: fail 'y'
+test_jeongjeom_mr: fail 'y'
+test_jeongjeom_ph: fail 'y'
+test_jeongjeom_rr: fail 'y'
+test_jeongjeom_rrr: fail 'y'
+test_jeongjeom_yr: fail 'y'
+test_jeongsik_ipa: fail 'y'
+test_jeongsik_mr: fail 'y'
+test_jeongsik_ph: fail 'y'
+test_jeongsik_rr: fail 'y'
+test_jeongsik_rrr: fail 'y'
+test_jeongsik_yr: fail 'y'
+test_jeongsin_bunyeoljeung_ipa: success
+test_jeongsin_bunyeoljeung_mr: success
+test_jeongsin_bunyeoljeung_ph: success
+test_jeongsin_bunyeoljeung_rr: success
+test_jeongsin_bunyeoljeung_rrr: success
+test_jeongsin_bunyeoljeung_yr: success
+test_jeongsingwaui_ipa: success
+test_jeongsingwaui_mr: success
+test_jeongsingwaui_ph: success
+test_jeongsingwaui_rr: success
+test_jeongsingwaui_rrr: success
+test_jeongsingwaui_yr: success
+test_jeotgarak_ipa: success
+test_jeotgarak_mr: success
+test_jeotgarak_ph: success
+test_jeotgarak_rr: success
+test_jeotgarak_rrr: success
+test_jeotgarak_yr: success
+test_jeoui_ipa: success
+test_jeoui_mr: success
+test_jeoui_ph: success
+test_jeoui_rr: success
+test_jeoui_rrr: success
+test_jeoui_yr: success
+test_jiseongimyeon_gamcheonida_ipa: fail 'y'
+test_jiseongimyeon_gamcheonida_mr: fail 'y'
+test_jiseongimyeon_gamcheonida_ph: fail 'y'
+test_jiseongimyeon_gamcheonida_rr: fail 'y'
+test_jiseongimyeon_gamcheonida_rrr: fail 'y'
+test_jiseongimyeon_gamcheonida_yr: fail 'y'
+test_jungibyeong_ipa: success
+test_jungibyeong_mr: success
+test_jungibyeong_ph: success
+test_jungibyeong_rr: success
+test_jungibyeong_rrr: success
+test_jungibyeong_yr: success
+test_kareul_ppobasseumyeon_murado_sseoreora_ipa: fail 'y'
+test_kareul_ppobasseumyeon_murado_sseoreora_mr: fail 'y'
+test_kareul_ppobasseumyeon_murado_sseoreora_ph: fail 'y'
+test_kareul_ppobasseumyeon_murado_sseoreora_rr: fail 'y'
+test_kareul_ppobasseumyeon_murado_sseoreora_rrr: fail 'y'
+test_kareul_ppobasseumyeon_murado_sseoreora_yr: fail 'y'
+test_keurim_ipa: fail 'y'
+test_keurim_mr: fail 'y'
+test_keurim_ph: fail 'y'
+test_keurim_rr: fail 'y'
+test_keurim_rrr: fail 'y'
+test_keurim_yr: fail 'y'
+test_kkamagwitgwa_ipa: success
+test_kkamagwitgwa_mr: success
+test_kkamagwitgwa_ph: success
+test_kkamagwitgwa_rr: success
+test_kkamagwitgwa_rrr: success
+test_kkamagwitgwa_yr: success
+test_koenihiseubereukeu_ipa: success
+test_koenihiseubereukeu_mr: success
+test_koenihiseubereukeu_ph: success
+test_koenihiseubereukeu_rr: success
+test_koenihiseubereukeu_rrr: success
+test_koenihiseubereukeu_yr: success
+test_kong_simeun_de_kong_nago_pat_simeun_de_pat_nanda_ipa: fail 'y'
+test_kong_simeun_de_kong_nago_pat_simeun_de_pat_nanda_mr: fail 'y'
+test_kong_simeun_de_kong_nago_pat_simeun_de_pat_nanda_ph: fail 'y'
+test_kong_simeun_de_kong_nago_pat_simeun_de_pat_nanda_rr: fail 'y'
+test_kong_simeun_de_kong_nago_pat_simeun_de_pat_nanda_rrr: fail 'y'
+test_kong_simeun_de_kong_nago_pat_simeun_de_pat_nanda_yr: fail 'y'
+test_koronabaireoseu_ipa: success
+test_koronabaireoseu_mr: success
+test_koronabaireoseu_ph: success
+test_koronabaireoseu_rr: success
+test_koronabaireoseu_rrr: success
+test_koronabaireoseu_yr: success
+test_kyual_kodeu_ipa: success
+test_kyual_kodeu_mr: success
+test_kyual_kodeu_ph: success
+test_kyual_kodeu_rr: success
+test_kyual_kodeu_rrr: success
+test_kyual_kodeu_yr: success
+test_maikeuropeuroseseo_ipa: success
+test_maikeuropeuroseseo_mr: success
+test_maikeuropeuroseseo_ph: success
+test_maikeuropeuroseseo_rr: success
+test_maikeuropeuroseseo_rrr: success
+test_maikeuropeuroseseo_yr: success
+test_mareukeuseujuui_ipa: success
+test_mareukeuseujuui_mr: success
+test_mareukeuseujuui_ph: success
+test_mareukeuseujuui_rr: success
+test_mareukeuseujuui_rrr: success
+test_mareukeuseujuui_yr: success
+test_masitge_deuseyo_ipa: success
+test_masitge_deuseyo_mr: success
+test_masitge_deuseyo_ph: success
+test_masitge_deuseyo_rr: success
+test_masitge_deuseyo_rrr: success
+test_masitge_deuseyo_yr: success
+test_mije_sageon_ipa: fail 'y'
+test_mije_sageon_mr: fail 'y'
+test_mije_sageon_ph: fail 'y'
+test_mije_sageon_rr: fail 'y'
+test_mije_sageon_rrr: fail 'y'
+test_mije_sageon_yr: fail 'y'
+test_minibeoseu_ipa: success
+test_minibeoseu_mr: success
+test_minibeoseu_ph: success
+test_minibeoseu_rr: success
+test_minibeoseu_rrr: success
+test_minibeoseu_yr: success
+test_modeun_ipa: success
+test_modeun_mr: success
+test_modeun_ph: success
+test_modeun_rr: success
+test_modeun_rrr: success
+test_modeun_yr: success
+test_mokjeokgyeok_josa_ipa: fail 'y'
+test_mokjeokgyeok_josa_mr: fail 'y'
+test_mokjeokgyeok_josa_ph: fail 'y'
+test_mokjeokgyeok_josa_rr: fail 'y'
+test_mokjeokgyeok_josa_rrr: fail 'y'
+test_mokjeokgyeok_josa_yr: fail 'y'
+test_motae_sollo_ipa: success
+test_motae_sollo_mr: success
+test_motae_sollo_ph: success
+test_motae_sollo_rr: success
+test_motae_sollo_rrr: success
+test_motae_sollo_yr: success
+test_mujeongbujuui_ipa: success
+test_mujeongbujuui_mr: success
+test_mujeongbujuui_ph: success
+test_mujeongbujuui_rr: success
+test_mujeongbujuui_rrr: success
+test_mujeongbujuui_yr: success
+test_musinnon_ipa: success
+test_musinnon_mr: success
+test_musinnon_ph: success
+test_musinnon_rr: success
+test_musinnon_rrr: success
+test_musinnon_yr: success
+test_naetga_ipa: success
+test_naetga_mr: success
+test_naetga_ph: success
+test_naetga_rr: success
+test_naetga_rrr: success
+test_naetga_yr: success
+test_nakcheonjuuija_ipa: success
+test_nakcheonjuuija_mr: success
+test_nakcheonjuuija_ph: success
+test_nakcheonjuuija_rr: success
+test_nakcheonjuuija_rrr: success
+test_nakcheonjuuija_yr: success
+test_namapeurikaui_oechim_ipa: fail expected [na̠ma̠pʰɯɾikʰa̠ɰi we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠ɰi we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠ɰi ø̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠e̞ ø̞t͡ɕʰim] but received [na̠ma̠pʰɯɾikʰa̠ɰi we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠ɰi ø̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠e̞ we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠e̞ ø̞t͡ɕʰim]
+test_namapeurikaui_oechim_mr: success
+test_namapeurikaui_oechim_ph: fail expected 나마프리카의 웨침/나마프리카의 웨침/나마프리카의 외침/나마프리카에 외침 but received 나마프리카의 웨침/나마프리카의 외침/나마프리카에 웨침/나마프리카에 외침
+test_namapeurikaui_oechim_rr: success
+test_namapeurikaui_oechim_rrr: success
+test_namapeurikaui_oechim_yr: success
+test_nambuk_ipa: success
+test_nambuk_mr: success
+test_nambuk_ph: success
+test_nambuk_rr: success
+test_nambuk_rrr: success
+test_nambuk_yr: success
+test_namjonnyeobi_ipa: success
+test_namjonnyeobi_mr: success
+test_namjonnyeobi_ph: success
+test_namjonnyeobi_rr: success
+test_namjonnyeobi_rrr: success
+test_namjonnyeobi_yr: success
+test_nansenseu_ipa: success
+test_nansenseu_mr: success
+test_nansenseu_ph: success
+test_nansenseu_rr: success
+test_nansenseu_rrr: success
+test_nansenseu_yr: success
+test_naui_ipa: success
+test_naui_mr: success
+test_naui_ph: success
+test_naui_rr: success
+test_naui_rrr: success
+test_naui_yr: success
+test_onnain_ipa: success
+test_onnain_mr: success
+test_onnain_ph: success
+test_onnain_rr: success
+test_onnain_rrr: success
+test_onnain_yr: success
+test_onsil_sogui_hwacho_ipa: success
+test_onsil_sogui_hwacho_mr: success
+test_onsil_sogui_hwacho_ph: success
+test_onsil_sogui_hwacho_rr: success
+test_onsil_sogui_hwacho_rrr: success
+test_onsil_sogui_hwacho_yr: success
+test_pyouimunja_ipa: success
+test_pyouimunja_mr: success
+test_pyouimunja_ph: success
+test_pyouimunja_rr: success
+test_pyouimunja_rrr: success
+test_pyouimunja_yr: success
+test_saengsallyeotalgwon_ipa: success
+test_saengsallyeotalgwon_mr: success
+test_saengsallyeotalgwon_ph: success
+test_saengsallyeotalgwon_rr: success
+test_saengsallyeotalgwon_rrr: success
+test_saengsallyeotalgwon_yr: success
+test_sageonui_jipyeongseon_ipa: success
+test_sageonui_jipyeongseon_mr: success
+test_sageonui_jipyeongseon_ph: success
+test_sageonui_jipyeongseon_rr: success
+test_sageonui_jipyeongseon_rrr: success
+test_sageonui_jipyeongseon_yr: success
+test_sagwa_ipa: fail 'y'
+test_sagwa_mr: fail 'y'
+test_sagwa_ph: fail 'y'
+test_sagwa_rr: fail 'y'
+test_sagwa_rrr: fail 'y'
+test_sagwa_yr: fail 'y'
+test_samga_goinui_myeongbogeul_bimnida_ipa: fail 'y'
+test_samga_goinui_myeongbogeul_bimnida_mr: fail 'y'
+test_samga_goinui_myeongbogeul_bimnida_ph: fail 'y'
+test_samga_goinui_myeongbogeul_bimnida_rr: fail 'y'
+test_samga_goinui_myeongbogeul_bimnida_rrr: fail 'y'
+test_samga_goinui_myeongbogeul_bimnida_yr: fail 'y'
+test_samyeongdangui_sacheotbang_ipa: success
+test_samyeongdangui_sacheotbang_mr: success
+test_samyeongdangui_sacheotbang_ph: success
+test_samyeongdangui_sacheotbang_rr: success
+test_samyeongdangui_sacheotbang_rrr: success
+test_samyeongdangui_sacheotbang_yr: success
+test_sangho_hwaksil_pagoe_ipa: fail 'y'
+test_sangho_hwaksil_pagoe_mr: fail 'y'
+test_sangho_hwaksil_pagoe_ph: fail 'y'
+test_sangho_hwaksil_pagoe_rr: fail 'y'
+test_sangho_hwaksil_pagoe_rrr: fail 'y'
+test_sangho_hwaksil_pagoe_yr: fail 'y'
+test_sarangui_mae_ipa: success
+test_sarangui_mae_mr: success
+test_sarangui_mae_ph: success
+test_sarangui_mae_rr: success
+test_sarangui_mae_rrr: success
+test_sarangui_mae_yr: success
+test_sasangui_jipyeongseon_ipa: success
+test_sasangui_jipyeongseon_mr: success
+test_sasangui_jipyeongseon_ph: success
+test_sasangui_jipyeongseon_rr: success
+test_sasangui_jipyeongseon_rrr: success
+test_sasangui_jipyeongseon_yr: success
+test_selpeu_diseu_ipa: success
+test_selpeu_diseu_mr: success
+test_selpeu_diseu_ph: success
+test_selpeu_diseu_rr: success
+test_selpeu_diseu_rrr: success
+test_selpeu_diseu_yr: success
+test_seobiseu_ipa: success
+test_seobiseu_mr: success
+test_seobiseu_ph: success
+test_seobiseu_rr: success
+test_seobiseu_rrr: success
+test_seobiseu_yr: success
+test_seongeullaseu_ipa: success
+test_seongeullaseu_mr: success
+test_seongeullaseu_ph: success
+test_seongeullaseu_rr: success
+test_seongeullaseu_rrr: success
+test_seongeullaseu_yr: success
+test_seonmudangi_saram_jamneunda_ipa: fail 'y'
+test_seonmudangi_saram_jamneunda_mr: fail 'y'
+test_seonmudangi_saram_jamneunda_ph: fail 'y'
+test_seonmudangi_saram_jamneunda_rr: fail 'y'
+test_seonmudangi_saram_jamneunda_rrr: fail 'y'
+test_seonmudangi_saram_jamneunda_yr: fail 'y'
+test_seuteureseu_ipa: success
+test_seuteureseu_mr: success
+test_seuteureseu_ph: success
+test_seuteureseu_rr: success
+test_seuteureseu_rrr: success
+test_seuteureseu_yr: success
+test_seworeun_sarameul_gidaryeo_juji_anneunda_ipa: fail 'y'
+test_seworeun_sarameul_gidaryeo_juji_anneunda_mr: fail 'y'
+test_seworeun_sarameul_gidaryeo_juji_anneunda_ph: fail 'y'
+test_seworeun_sarameul_gidaryeo_juji_anneunda_rr: fail 'y'
+test_seworeun_sarameul_gidaryeo_juji_anneunda_rrr: fail 'y'
+test_seworeun_sarameul_gidaryeo_juji_anneunda_yr: fail 'y'
+test_siljonjuui_ipa: success
+test_siljonjuui_mr: success
+test_siljonjuui_ph: success
+test_siljonjuui_rr: success
+test_siljonjuui_rrr: success
+test_siljonjuui_yr: success
+test_simsannyugok_ipa: success
+test_simsannyugok_mr: success
+test_simsannyugok_ph: success
+test_simsannyugok_rr: success
+test_simsannyugok_rrr: success
+test_simsannyugok_yr: success
+test_sin_ipa: success
+test_sin_mr: success
+test_sin_ph: success
+test_sin_rr: success
+test_sin_rrr: success
+test_sin_yr: success
+test_siseutem_ipa: success
+test_siseutem_mr: success
+test_siseutem_ph: success
+test_siseutem_rr: success
+test_siseutem_rrr: success
+test_siseutem_yr: success
+test_sonagineun_pihaneun_ge_sangchaek_ipa: fail 'y'
+test_sonagineun_pihaneun_ge_sangchaek_mr: fail 'y'
+test_sonagineun_pihaneun_ge_sangchaek_ph: fail 'y'
+test_sonagineun_pihaneun_ge_sangchaek_rr: fail 'y'
+test_sonagineun_pihaneun_ge_sangchaek_rrr: fail 'y'
+test_sonagineun_pihaneun_ge_sangchaek_yr: fail 'y'
+test_suhaeng_pyeongga_ipa: fail 'y'
+test_suhaeng_pyeongga_mr: fail 'y'
+test_suhaeng_pyeongga_ph: fail 'y'
+test_suhaeng_pyeongga_rr: fail 'y'
+test_suhaeng_pyeongga_rrr: fail 'y'
+test_suhaeng_pyeongga_yr: fail 'y'
+test_syuteukeiseu_ipa: success
+test_syuteukeiseu_mr: success
+test_syuteukeiseu_ph: success
+test_syuteukeiseu_rr: success
+test_syuteukeiseu_rrr: success
+test_syuteukeiseu_yr: success
+test_torandae_ipa: fail 'y'
+test_torandae_mr: fail 'y'
+test_torandae_ph: fail 'y'
+test_torandae_rr: fail 'y'
+test_torandae_rrr: fail 'y'
+test_torandae_yr: fail 'y'
+test_ttwieonada_ipa: success
+test_ttwieonada_mr: success
+test_ttwieonada_ph: success
+test_ttwieonada_rr: success
+test_ttwieonada_rrr: success
+test_ttwieonada_yr: success
+test_ttwieoneomda_ipa: success
+test_ttwieoneomda_mr: success
+test_ttwieoneomda_ph: success
+test_ttwieoneomda_rr: success
+test_ttwieoneomda_rrr: success
+test_ttwieoneomda_yr: success
+test_tupiseu_ipa: fail 'y'
+test_tupiseu_mr: fail 'y'
+test_tupiseu_ph: fail 'y'
+test_tupiseu_rr: fail 'y'
+test_tupiseu_rrr: fail 'y'
+test_tupiseu_yr: fail 'y'
+test_unjeon_myeonheojeung_ipa: success
+test_unjeon_myeonheojeung_mr: success
+test_unjeon_myeonheojeung_ph: success
+test_unjeon_myeonheojeung_rr: success
+test_unjeon_myeonheojeung_rrr: success
+test_unjeon_myeonheojeung_yr: success
+test_wennil_ipa: success
+test_wennil_mr: success
+test_wennil_ph: success
+test_wennil_rr: success
+test_wennil_rrr: success
+test_wennil_yr: fail expected wēynnil but received wēynni<sup>l</sup>
+test_yagu_dongnyeongsang_ipa: fail 'y'
+test_yagu_dongnyeongsang_mr: fail 'y'
+test_yagu_dongnyeongsang_ph: fail 'y'
+test_yagu_dongnyeongsang_rr: fail 'y'
+test_yagu_dongnyeongsang_rrr: fail 'y'
+test_yagu_dongnyeongsang_yr: fail 'y'
+test_yasaeng_dongmul_ipa: fail 'y'
+test_yasaeng_dongmul_mr: fail 'y'
+test_yasaeng_dongmul_ph: fail 'y'
+test_yasaeng_dongmul_rr: fail 'y'
+test_yasaeng_dongmul_rrr: fail 'y'
+test_yasaeng_dongmul_yr: fail 'y'
+test_yennieung_ipa: success
+test_yennieung_mr: success
+test_yennieung_ph: success
+test_yennieung_rr: success
+test_yennieung_rrr: success
+test_yennieung_yr: success
+test_yeogwon_ipa: fail expected [ˈjɘ(ː)k͈wʌ̹n] but received [ˈjʌ̹(ː)k͈wʌ̹n]
+test_yeogwon_mr: success
+test_yeogwon_ph: success
+test_yeogwon_rr: success
+test_yeogwon_rrr: success
+test_yeogwon_yr: success
+test_yuga_jeunggwon_ipa: success
+test_yuga_jeunggwon_mr: success
+test_yuga_jeunggwon_ph: success
+test_yuga_jeunggwon_rr: success
+test_yuga_jeunggwon_rrr: success
+test_yuga_jeunggwon_yr: success
