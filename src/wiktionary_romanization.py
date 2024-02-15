@@ -401,7 +401,7 @@ class WiktionaryRomanization:
                                 if index == 0:
                                     categories.append("Korean terms with long vowels in the first syllable")
 
-                        if len(p["l"]) > 0 and (p["l"]["y"] or p["l"][1]) and index == -1 and system_index == 5 and len(decomposed_syllables) > 1:
+                        if len(p["l"]) > 0 and (p["l"].get("y", "") or p["l"].get("1", "")) and index == -1 and system_index == 5 and len(decomposed_syllables) > 1:
                             vowel += "ˈ"
 
                         # TODO I think p["cap"]["y"] will likely have an exception. I think my change probably fixes it.
