@@ -407,8 +407,9 @@ class WiktionaryRomanization:
                         if len(p["com"]) > 0 and p["com"].get(index + 1, False):
                             junction = re.sub(r"(.)$", lambda m: (("q" if system_index == 4 else "") + (WiktionaryRomanization.com_mc.get(m.group(1), m.group(1)) if system_index == 3 else m.group(1))), junction)
 
-                        if len(p["ni"]) > 0 and p.get("ni", {}).get(next_index, False) and system_index == 4:
-                            junction = re.sub(r"([nl])$", r"<sup>\1</sup>", junction)
+                        # We don't care about superscript
+                        # if len(p["ni"]) > 0 and p.get("ni", {}).get(next_index, False) and system_index == 4:
+                        #     junction = re.sub(r"([nl])$", r"<sup>\1</sup>", junction)
 
                         final_cons, initial_cons = re.match(r"^(.*);(.*)$", junction).groups() if ";" in junction else (junction, "")
                         # if not final_cons:

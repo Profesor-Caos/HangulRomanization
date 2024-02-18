@@ -196,7 +196,7 @@ test_Seuwiseu_ph: success
 test_Seuwiseu_rr: success
 test_Seuwiseu_rrr: success
 test_Seuwiseu_yr: success
-test_Sinuiju_ipa: fail expected [sinɰid͡zu] but received [ɕʰinɰid͡ʑu] ~ [ɕʰinid͡ʑu]
+test_Sinuiju_ipa: success
 test_Sinuiju_mr: success
 test_Sinuiju_ph: success
 test_Sinuiju_rr: success
@@ -333,7 +333,7 @@ test_chulsannyul_mr: success
 test_chulsannyul_ph: success
 test_chulsannyul_rr: success
 test_chulsannyul_rrr: success
-test_chulsannyul_yr: fail expected chwulqsannyul but received chwulqsannyu<sup>l</sup>
+test_chulsannyul_yr: success
 test_dakeuseokeul_ipa: success
 test_dakeuseokeul_mr: success
 test_dakeuseokeul_ph: success
@@ -945,7 +945,7 @@ test_wennil_mr: success
 test_wennil_ph: success
 test_wennil_rr: success
 test_wennil_rrr: success
-test_wennil_yr: fail expected wēynnil but received wēynni<sup>l</sup>
+test_wennil_yr: success
 test_yagu_dongnyeongsang_ipa: success
 test_yagu_dongnyeongsang_mr: success
 test_yagu_dongnyeongsang_ph: success

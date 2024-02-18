@@ -18,17 +18,6 @@ for article in articles:
                 stripped_pronunciation = stripped_pronunciation.replace(hm, '')
             pronunciation_dict[stripped_pronunciation] = { "article": article, "original": pronunciation, "index": i }
 
-def get_vals_from_pron_span(pronunciation_span):
-    ipa_text = pronunciation_span.find_next('span', class_='IPA').text
-    ph_li = pronunciation_span.find_next('li', class_='ko-pron__ph')
-    ph_text = ph_li.find_next('span', class_="Kore").text.strip('[]')
-    romanizations_table = pronunciation_span.find_next('table', class_="ko-pron")
-    rr = romanizations_table.find_next("td", class_="IPA")
-    rrr = rr.find_next("td", class_="IPA")
-    mr = rrr.find_next("td", class_="IPA")
-    yc = mr.find_next("td", class_="IPA")
-    return (ipa_text, ph_text, rr.text, rrr.text, mr.text, yc.text)
-
 with open("tests/test_unique_db_cases.py", "w", encoding="utf-8") as f:
     print('''import inspect
 import unittest
@@ -51,10 +40,12 @@ class TestUniqueDBCases(unittest.TestCase):
         vals = []
         # I found this looking for this to be the most consistent way of finding pronunciations, as the labeling
         # of headers was not consistent
-        ipa_span = korean_header.find_next('span', class_='IPA')
+        sk_standard_link = korean_header.find_next('a', {"title":'w:South Korean standard language'}, text="SK Standard")
+        ipa_span = sk_standard_link.find_next('span', class_='IPA')
         for i in range(0, value["index"] + 1):
             if i != 0:
-                ipa_span = ipa_span.find_next('span', class_='IPA')
+                sk_standard_link = ipa_span.find_next('a', {"title":'w:South Korean standard language'}, text="SK Standard")
+                ipa_span = sk_standard_link.find_next('span', class_='IPA')
             # find the pronunciation span with the correct index
             if i != value["index"]:
                 continue

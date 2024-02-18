@@ -1112,7 +1112,7 @@ class TestUniqueDBCases(unittest.TestCase):
 	def test_Sinuiju_yr(self):
 		self.run_test("신의주", "{{ko-IPA|cap=y|ui=2}}", "sin.uycwu", "yr")
 	def test_Sinuiju_ipa(self):
-		self.run_test("신의주", "{{ko-IPA|cap=y|ui=2}}", "[sinɰid͡zu]", "ipa")
+		self.run_test("신의주", "{{ko-IPA|cap=y|ui=2}}", "[ɕʰinɰid͡ʑu] ~ [ɕʰinid͡ʑu]", "ipa")
 
 	def test_Sollomonui_jihye_ph(self):
 		self.run_test("솔로몬의 지혜", "{{ko-IPA|cap=y|uie=4}}", "솔로모늬 지혜/솔로모네 지혜/솔로모늬 지헤/솔로모네 지헤", "ph")
