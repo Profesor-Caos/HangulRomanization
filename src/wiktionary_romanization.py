@@ -386,7 +386,7 @@ class WiktionaryRomanization:
                                 a, b = re.match(r"^(ng%-?)(.?)$", junction) or re.match(r"^(.?%-?)(.*)$", junction)
                                 junction = ("".join([formatting_position.get(pos, "") for pos in range(pos_format_start, pos_format_end)]) + (a or "") + (b or "")) if re.match(r"^Ø?[ᄀ-ᄒ]$", syllable["final"] + next_syllable["initial"]) else ((a or "") + "".join([formatting_position.get(pos, "") for pos in range(pos_format_start, pos_format_end)]) + (b or ""))
 
-                        if len(p["l"]) > 0 and (p["l"].get(index, False) or (p["l"].get("y", False) and index == 0)):
+                        if len(p["l"]) > 0 and (p["l"].get(index + 1, False) or (p["l"].get("y", False) and index == 0)):
                             # FIXME, verify this code still works with final/initial cons changes
                             if system_index == 0:
                                 if len(junction) == 0:
