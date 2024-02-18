@@ -139,7 +139,7 @@ class WiktionaryRomanization:
         return ''.join(w)
 
     def tidy_ipa(ipa):
-        ipa = re.sub("ʌ̹%(ː%)", "ɘ(ː)", ipa)  # TODO: [[멀다]] really should be [ˈmʌ̹ɭda̠] ~ [ˈmɘːɭda̠] instead of [ˈmɘ(ː)ɭda̠]
+        ipa = re.sub(r"ʌ̹\(ː\)", r"ɘ(ː)", ipa)  # TODO: [[멀다]] really should be [ˈmʌ̹ɭda̠] ~ [ˈmɘːɭda̠] instead of [ˈmɘ(ː)ɭda̠]
         ipa = re.sub("ɭɭi", "ʎʎi", ipa)
         ipa = re.sub("ɭɭj", "ʎʎ", ipa)
         ipa = re.sub("s([ʰ͈])ɥi", "ʃ\\1ɥi", ipa)
@@ -401,7 +401,7 @@ class WiktionaryRomanization:
                                 if index == 0:
                                     categories.append("Korean terms with long vowels in the first syllable")
 
-                        if len(p["l"]) > 0 and (p["l"].get("y", "") or p["l"].get("1", "")) and index == -1 and system_index == 5 and len(decomposed_syllables) > 1:
+                        if len(p["l"]) > 0 and (p["l"].get("y", "") or p["l"].get(1, "")) and index == -1 and system_index == 5 and len(decomposed_syllables) > 1:
                             vowel += "ˈ"
 
                         if len(p["com"]) > 0 and p["com"].get(index + 1, False):

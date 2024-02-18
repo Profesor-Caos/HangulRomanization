@@ -70,19 +70,19 @@ test_Geuriseudoui_jeok_ph: success
 test_Geuriseudoui_jeok_rr: success
 test_Geuriseudoui_jeok_rrr: success
 test_Geuriseudoui_jeok_yr: success
-test_Guyak_seonggyeong_ipa: fail expected [ˈku(ː)ja̠k̚ sʰɘ(ː)ŋɡjʌ̹ŋ] but received [ku(ː)ja̠k̚ sʰʌ̹(ː)ŋɡjʌ̹ŋ]
+test_Guyak_seonggyeong_ipa: success
 test_Guyak_seonggyeong_mr: success
 test_Guyak_seonggyeong_ph: success
 test_Guyak_seonggyeong_rr: success
 test_Guyak_seonggyeong_rrr: success
 test_Guyak_seonggyeong_yr: success
-test_Guyugoseullabia_makedonia_gonghwaguk_ipa: fail expected [ˈku(ː)juɡo̞sʰɯɭɭa̠bia̠ ma̠kʰe̞do̞nia̠ ko̞(ː)ŋβwa̠ɡuk̚] but received [ku(ː)juɡo̞sʰɯɭɭa̠bia̠ ma̠kʰe̞do̞nia̠ ko̞(ː)ŋβwa̠ɡuk̚]
+test_Guyugoseullabia_makedonia_gonghwaguk_ipa: success
 test_Guyugoseullabia_makedonia_gonghwaguk_mr: success
 test_Guyugoseullabia_makedonia_gonghwaguk_ph: success
 test_Guyugoseullabia_makedonia_gonghwaguk_rr: success
 test_Guyugoseullabia_makedonia_gonghwaguk_rrr: success
 test_Guyugoseullabia_makedonia_gonghwaguk_yr: success
-test_Hanguk_jeonjaeng_ipa: fail expected [ˈha̠(ː)nɡuk̚ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [ˈha̠(ː)nɡuk̚ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ] but received [ha̠(ː)nɡuk̚ t͡ɕʌ̹(ː)ɲd͡ʑɛŋ] ~ [ha̠(ː)nɡuk̚ t͡ɕʌ̹(ː)ɲd͡ʑe̞ŋ]
+test_Hanguk_jeonjaeng_ipa: success
 test_Hanguk_jeonjaeng_mr: success
 test_Hanguk_jeonjaeng_ph: success
 test_Hanguk_jeonjaeng_rr: success
@@ -106,13 +106,13 @@ test_Jang_ph: success
 test_Jang_rr: success
 test_Jang_rrr: success
 test_Jang_yr: success
-test_Jeicha_segye_daejeon_ipa: fail expected [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n] but received [t͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [t͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [t͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [t͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n]
+test_Jeicha_segye_daejeon_ipa: fail expected [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n] but received [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n]
 test_Jeicha_segye_daejeon_mr: success
 test_Jeicha_segye_daejeon_ph: fail expected 제(ː)이차 세(ː)계 대(ː)전/제(ː)이차 세(ː)게 대(ː)전/제(ː)이차 세(ː)계 데(ː)전/제(ː)이차 세(ː)게 데(ː)전 but received 제(ː)이차 세(ː)계 대(ː)전/제(ː)이차 세(ː)계 데(ː)전/제(ː)이차 세(ː)게 대(ː)전/제(ː)이차 세(ː)게 데(ː)전
 test_Jeicha_segye_daejeon_rr: success
 test_Jeicha_segye_daejeon_rrr: success
 test_Jeicha_segye_daejeon_yr: success
-test_Joguk_haebang_jeonjaeng_ipa: fail expected [t͡ɕo̞ɡuk̚ hɛ(ː)ba̠ŋ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [t͡ɕo̞ɡuk̚ he̞(ː)ba̠ŋ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ] but received [t͡ɕo̞ɡuk̚ hɛ(ː)ba̠ŋ t͡ɕʌ̹(ː)ɲd͡ʑɛŋ] ~ [t͡ɕo̞ɡuk̚ he̞(ː)ba̠ŋ t͡ɕʌ̹(ː)ɲd͡ʑe̞ŋ]
+test_Joguk_haebang_jeonjaeng_ipa: success
 test_Joguk_haebang_jeonjaeng_mr: success
 test_Joguk_haebang_jeonjaeng_ph: success
 test_Joguk_haebang_jeonjaeng_rr: success
@@ -178,7 +178,7 @@ test_Saudi_ph: success
 test_Saudi_rr: success
 test_Saudi_rrr: success
 test_Saudi_yr: success
-test_Seonggyeong_ipa: fail expected [ˈsʰɘ(ː)ŋɡjʌ̹ŋ] but received [ˈsʰʌ̹(ː)ŋɡjʌ̹ŋ]
+test_Seonggyeong_ipa: success
 test_Seonggyeong_mr: success
 test_Seonggyeong_ph: success
 test_Seonggyeong_rr: success
@@ -244,7 +244,7 @@ test_Yeongnyeonbang_ph: success
 test_Yeongnyeonbang_rr: success
 test_Yeongnyeonbang_rrr: success
 test_Yeongnyeonbang_yr: success
-test_Yugio_jeonjaeng_ipa: fail expected [juɡio̞ t͡ɕɘ(ː)ɲd͡ʑɛŋ] ~ [juɡio̞ t͡ɕɘ(ː)ɲd͡ʑe̞ŋ] but received [juɡio̞ t͡ɕʌ̹(ː)ɲd͡ʑɛŋ] ~ [juɡio̞ t͡ɕʌ̹(ː)ɲd͡ʑe̞ŋ]
+test_Yugio_jeonjaeng_ipa: success
 test_Yugio_jeonjaeng_mr: success
 test_Yugio_jeonjaeng_ph: success
 test_Yugio_jeonjaeng_rr: success
@@ -292,19 +292,19 @@ test_banjiseongjuui_ph: success
 test_banjiseongjuui_rr: success
 test_banjiseongjuui_rrr: success
 test_banjiseongjuui_yr: success
-test_bansinbanin_ipa: fail expected [ˈpa̠(ː)nɕʰinba̠(ː)nin] but received [pa̠(ː)nɕʰinba̠(ː)nin]
+test_bansinbanin_ipa: success
 test_bansinbanin_mr: success
 test_bansinbanin_ph: success
 test_bansinbanin_rr: success
 test_bansinbanin_rrr: success
 test_bansinbanin_yr: success
-test_bansinbanui_ipa: fail expected [ˈpa̠(ː)nɕʰinba̠(ː)nɰi] ~ [ˈpa̠(ː)nɕʰinba̠(ː)ni] but received [pa̠(ː)nɕʰinba̠(ː)nɰi] ~ [pa̠(ː)nɕʰinba̠(ː)ni]
+test_bansinbanui_ipa: success
 test_bansinbanui_mr: success
 test_bansinbanui_ph: success
 test_bansinbanui_rr: success
 test_bansinbanui_rrr: success
 test_bansinbanui_yr: success
-test_beomsinnon_ipa: fail expected [ˈpɘ(ː)mɕʰinno̞n] but received [ˈpʌ̹(ː)mɕʰinno̞n]
+test_beomsinnon_ipa: success
 test_beomsinnon_mr: success
 test_beomsinnon_ph: success
 test_beomsinnon_rr: success
@@ -322,7 +322,7 @@ test_boon_jangchi_ph: success
 test_boon_jangchi_rr: success
 test_boon_jangchi_rrr: success
 test_boon_jangchi_yr: success
-test_choejeo_imgeum_ipa: fail expected [ˈt͡ɕʰwe̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] ~ [ˈt͡ɕʰø̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] but received [t͡ɕʰwe̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] ~ [t͡ɕʰø̞(ː)d͡ʑʌ̹ i(ː)mɡɯm]
+test_choejeo_imgeum_ipa: success
 test_choejeo_imgeum_mr: success
 test_choejeo_imgeum_ph: success
 test_choejeo_imgeum_rr: success
@@ -394,13 +394,13 @@ test_geondal_ph: success
 test_geondal_rr: success
 test_geondal_rrr: success
 test_geondal_yr: success
-test_geongang_yeomnyeojeung_ipa: fail expected [ˈkɘ(ː)nɡa̠ŋ jɘ(ː)mɲʌ̹t͡ɕ͈ɯŋ] but received [kʌ̹(ː)nɡa̠ŋ jʌ̹(ː)mɲʌ̹t͡ɕ͈ɯŋ]
+test_geongang_yeomnyeojeung_ipa: success
 test_geongang_yeomnyeojeung_mr: success
 test_geongang_yeomnyeojeung_ph: success
 test_geongang_yeomnyeojeung_rr: success
 test_geongang_yeomnyeojeung_rrr: success
 test_geongang_yeomnyeojeung_yr: success
-test_geonmangjeung_ipa: fail expected [ˈkɘ(ː)nma̠ŋt͡ɕ͈ɯŋ] but received [ˈkʌ̹(ː)nma̠ŋt͡ɕ͈ɯŋ]
+test_geonmangjeung_ipa: success
 test_geonmangjeung_mr: success
 test_geonmangjeung_ph: success
 test_geonmangjeung_rr: success
@@ -442,7 +442,7 @@ test_goso_gongpojeung_ph: success
 test_goso_gongpojeung_rr: success
 test_goso_gongpojeung_rrr: success
 test_goso_gongpojeung_yr: success
-test_goui_sagu_ipa: fail expected [ˈko̞(ː)ɰi sʰa̠(ː)ɡu] ~ [ˈko̞(ː)i sʰa̠(ː)ɡu] but received [ko̞(ː)ɰi sʰa̠(ː)ɡu] ~ [ko̞(ː)i sʰa̠(ː)ɡu]
+test_goui_sagu_ipa: success
 test_goui_sagu_mr: success
 test_goui_sagu_ph: success
 test_goui_sagu_rr: success
@@ -472,7 +472,7 @@ test_hagyotgil_ph: success
 test_hagyotgil_rr: success
 test_hagyotgil_rrr: success
 test_hagyotgil_yr: success
-test_hando_kkeutdo_eopda_ipa: fail expected [ˈha̠(ː)ndo̞ k͈ɯt̚t͈o̞ ɘ(ː)p̚t͈a̠] but received [ha̠(ː)ndo̞ k͈ɯt̚t͈o̞ ɡʌ̹(ː)p̚t͈a̠]
+test_hando_kkeutdo_eopda_ipa: fail expected [ˈha̠(ː)ndo̞ k͈ɯt̚t͈o̞ ɘ(ː)p̚t͈a̠] but received [ˈha̠(ː)ndo̞ k͈ɯt̚t͈o̞ ɡɘ(ː)p̚t͈a̠]
 test_hando_kkeutdo_eopda_mr: fail expected hando kkŭtto ŏpta but received hando kkŭtto gŏpta
 test_hando_kkeutdo_eopda_ph: fail expected 한(ː)도 끋또 업(ː)따 but received 한(ː)도 끋또 겁(ː)따
 test_hando_kkeutdo_eopda_rr: fail expected hando kkeutdo eopda but received hando kkeutdo geopda
@@ -496,13 +496,13 @@ test_hoheup_gyetong_ph: success
 test_hoheup_gyetong_rr: success
 test_hoheup_gyetong_rrr: success
 test_hoheup_gyetong_yr: success
-test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_ipa: fail expected [ˈɸʷo̞(ː)ɾa̠ŋinɯn t͡ɕuɡʌ̹sʰʌ̹ ka̠d͡ʑuɡɯɭ na̠(ː)mɡiɡo̞ sʰa̠(ː)ɾa̠mɯn t͡ɕuɡʌ̹sʰʌ̹ iɾɯmɯɭ na̠mɡinda̠] but received [ɸʷo̞(ː)ɾa̠ŋinɯn t͡ɕuɡʌ̹sʰʌ̹ ka̠d͡ʑuɡɯɭ na̠(ː)mɡiɡo̞ sʰa̠(ː)ɾa̠mɯn t͡ɕuɡʌ̹sʰʌ̹ iɾɯmɯɭ na̠mɡinda̠]
+test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_ipa: success
 test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_mr: success
 test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_ph: success
 test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_rr: success
 test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_rrr: success
 test_horangineun_jugeoseo_gajugeul_namgigo_sarameun_jugeoseo_ireumeul_namginda_yr: success
-test_hubang_juui_ipa: fail expected [ˈɸʷu(ː)ba̠ŋ t͡ɕu(ː)ɰi] ~ [ˈɸʷu(ː)ba̠ŋ t͡ɕu(ː)i] but received [ɸʷu(ː)ba̠ŋ t͡ɕu(ː)ɰi] ~ [ɸʷu(ː)ba̠ŋ t͡ɕu(ː)i]
+test_hubang_juui_ipa: success
 test_hubang_juui_mr: success
 test_hubang_juui_ph: success
 test_hubang_juui_rr: success
@@ -526,7 +526,7 @@ test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ph: fail expected 화(ː)�
 test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rr: fail expected hwaseok yeollyo/hwaseogyeollyo/hwaseongnyeollyo but received hwaseongnyeollyo
 test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rrr: fail expected hwaseog yeonlyo/hwaseog'yeonlyo/hwaseognyeonlyo but received hwaseognyeonlyo
 test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_yr: fail expected hwāsek yenlyo/hwāsek.yenlyo/hwāseknyenlyo but received hwāseknyenlyo
-test_ijo_ipa: fail expected [ˈi(ː)t͡ɕ͈o̞] but received [i(ː)t͡ɕ͈o̞]
+test_ijo_ipa: success
 test_ijo_mr: success
 test_ijo_ph: success
 test_ijo_rr: success
@@ -580,7 +580,7 @@ test_jeongjeom_ph: success
 test_jeongjeom_rr: success
 test_jeongjeom_rrr: success
 test_jeongjeom_yr: success
-test_jeongsik_ipa: fail expected [ˈt͡ɕɘ(ː)ŋɕʰik̚] but received [t͡ɕʌ̹(ː)ŋɕʰik̚]
+test_jeongsik_ipa: success
 test_jeongsik_mr: success
 test_jeongsik_ph: success
 test_jeongsik_rr: success
@@ -682,7 +682,7 @@ test_masitge_deuseyo_ph: success
 test_masitge_deuseyo_rr: success
 test_masitge_deuseyo_rrr: success
 test_masitge_deuseyo_yr: success
-test_mije_sageon_ipa: fail expected [ˈmi(ː)d͡ʑe̞ sʰa̠(ː)k͈ʌ̹n] but received [mi(ː)d͡ʑe̞ sʰa̠(ː)k͈ʌ̹n]
+test_mije_sageon_ipa: success
 test_mije_sageon_mr: success
 test_mije_sageon_ph: success
 test_mije_sageon_rr: success
@@ -850,7 +850,7 @@ test_seongeullaseu_ph: success
 test_seongeullaseu_rr: success
 test_seongeullaseu_rrr: success
 test_seongeullaseu_yr: success
-test_seonmudangi_saram_jamneunda_ipa: fail expected [ˈsʰɘ(ː)nmuda̠ŋi sʰa̠(ː)ɾa̠m t͡ɕa̠mnɯnda̠] but received [sʰʌ̹(ː)nmuda̠ŋi sʰa̠(ː)ɾa̠m t͡ɕa̠mnɯnda̠]
+test_seonmudangi_saram_jamneunda_ipa: success
 test_seonmudangi_saram_jamneunda_mr: success
 test_seonmudangi_saram_jamneunda_ph: success
 test_seonmudangi_saram_jamneunda_rr: success
@@ -862,7 +862,7 @@ test_seuteureseu_ph: success
 test_seuteureseu_rr: success
 test_seuteureseu_rrr: success
 test_seuteureseu_yr: success
-test_seworeun_sarameul_gidaryeo_juji_anneunda_ipa: fail expected [ˈsʰe̞(ː)wʌ̹ɾɯn sʰa̠(ː)ɾa̠mɯɭ kida̠ɾjʌ̹ t͡ɕud͡ʑi a̠nnɯnda̠] but received [sʰe̞(ː)wʌ̹ɾɯn sʰa̠(ː)ɾa̠mɯɭ kida̠ɾjʌ̹ t͡ɕud͡ʑi a̠nnɯnda̠]
+test_seworeun_sarameul_gidaryeo_juji_anneunda_ipa: success
 test_seworeun_sarameul_gidaryeo_juji_anneunda_mr: success
 test_seworeun_sarameul_gidaryeo_juji_anneunda_ph: success
 test_seworeun_sarameul_gidaryeo_juji_anneunda_rr: success
@@ -898,7 +898,7 @@ test_sonagineun_pihaneun_ge_sangchaek_ph: success
 test_sonagineun_pihaneun_ge_sangchaek_rr: success
 test_sonagineun_pihaneun_ge_sangchaek_rrr: success
 test_sonagineun_pihaneun_ge_sangchaek_yr: success
-test_suhaeng_pyeongga_ipa: fail expected [sʰuɦɛŋ pʰjɘ(ː)ŋk͈a̠] ~ [sʰuɦe̞ŋ pʰjɘ(ː)ŋk͈a̠] but received [sʰuɦɛŋ pʰjʌ̹(ː)ŋk͈a̠] ~ [sʰuɦe̞ŋ pʰjʌ̹(ː)ŋk͈a̠]
+test_suhaeng_pyeongga_ipa: success
 test_suhaeng_pyeongga_mr: success
 test_suhaeng_pyeongga_ph: success
 test_suhaeng_pyeongga_rr: success
@@ -928,7 +928,7 @@ test_ttwieoneomda_ph: success
 test_ttwieoneomda_rr: success
 test_ttwieoneomda_rrr: success
 test_ttwieoneomda_yr: success
-test_tupiseu_ipa: fail expected [ˈtʰu(ː)pʰi(ː)sʰɯ] but received [tʰu(ː)pʰi(ː)sʰɯ]
+test_tupiseu_ipa: success
 test_tupiseu_mr: success
 test_tupiseu_ph: success
 test_tupiseu_rr: success
@@ -946,13 +946,13 @@ test_wennil_ph: success
 test_wennil_rr: success
 test_wennil_rrr: success
 test_wennil_yr: fail expected wēynnil but received wēynni<sup>l</sup>
-test_yagu_dongnyeongsang_ipa: fail expected [ˈja̠(ː)ɡu to̞(ː)ŋɲʌ̹ŋsʰa̠ŋ] but received [ja̠(ː)ɡu to̞(ː)ŋɲʌ̹ŋsʰa̠ŋ]
+test_yagu_dongnyeongsang_ipa: success
 test_yagu_dongnyeongsang_mr: success
 test_yagu_dongnyeongsang_ph: success
 test_yagu_dongnyeongsang_rr: success
 test_yagu_dongnyeongsang_rrr: success
 test_yagu_dongnyeongsang_yr: success
-test_yasaeng_dongmul_ipa: fail expected [ˈja̠(ː)sʰɛŋ to̞(ː)ŋmuɭ] ~ [ˈja̠(ː)sʰe̞ŋ to̞(ː)ŋmuɭ] but received [ja̠(ː)sʰɛŋ to̞(ː)ŋmuɭ] ~ [ja̠(ː)sʰe̞ŋ to̞(ː)ŋmuɭ]
+test_yasaeng_dongmul_ipa: success
 test_yasaeng_dongmul_mr: success
 test_yasaeng_dongmul_ph: success
 test_yasaeng_dongmul_rr: success
@@ -964,7 +964,7 @@ test_yennieung_ph: success
 test_yennieung_rr: success
 test_yennieung_rrr: success
 test_yennieung_yr: success
-test_yeogwon_ipa: fail expected [ˈjɘ(ː)k͈wʌ̹n] but received [ˈjʌ̹(ː)k͈wʌ̹n]
+test_yeogwon_ipa: success
 test_yeogwon_mr: success
 test_yeogwon_ph: success
 test_yeogwon_rr: success
