@@ -11,7 +11,7 @@ test_Bakgeunhye_rr: success
 test_Bakgeunhye_rrr: success
 test_Bakgeunhye_yr: success
 test_Banggeulladesi_ipa: success
-test_Banggeulladesi_mr: fail can only concatenate str (not "int") to str
+test_Banggeulladesi_mr: success
 test_Banggeulladesi_ph: success
 test_Banggeulladesi_rr: success
 test_Banggeulladesi_rrr: success
@@ -23,7 +23,7 @@ test_Buhwal_juil_rr: success
 test_Buhwal_juil_rrr: success
 test_Buhwal_juil_yr: success
 test_Buhwaljeol_ipa: success
-test_Buhwaljeol_mr: fail can only concatenate str (not "int") to str
+test_Buhwaljeol_mr: success
 test_Buhwaljeol_ph: success
 test_Buhwaljeol_rr: success
 test_Buhwaljeol_rrr: success
@@ -89,7 +89,7 @@ test_Hanguk_jeonjaeng_rr: success
 test_Hanguk_jeonjaeng_rrr: success
 test_Hanguk_jeonjaeng_yr: fail expected hānkwuk cēn.cayng but received hankwūk cen.cāyng
 test_Hwaiteuhoseu_ipa: success
-test_Hwaiteuhoseu_mr: fail can only concatenate str (not "int") to str
+test_Hwaiteuhoseu_mr: success
 test_Hwaiteuhoseu_ph: success
 test_Hwaiteuhoseu_rr: success
 test_Hwaiteuhoseu_rrr: success
@@ -137,19 +137,19 @@ test_Namapeurika_gonghwaguk_rr: success
 test_Namapeurika_gonghwaguk_rrr: success
 test_Namapeurika_gonghwaguk_yr: fail expected nam.a.phuli.kha kōnghwakwuk but received nam.a.phuli.kha konghwākwuk
 test_Nikollaseu_ipa: success
-test_Nikollaseu_mr: fail can only concatenate str (not "int") to str
+test_Nikollaseu_mr: success
 test_Nikollaseu_ph: success
 test_Nikollaseu_rr: success
 test_Nikollaseu_rrr: success
 test_Nikollaseu_yr: success
 test_Noseuweseuteu_junju_ipa: fail expected [no̞s͈ɯwe̞sʰɯtʰɯ t͡ɕu(ː)ɲd͡ʑu] but received [no̞s͈ɯwe̞sʰɯtʰɯ t͡ɕuɲd͡ʑu(ː)]
-test_Noseuweseuteu_junju_mr: fail can only concatenate str (not "int") to str
+test_Noseuweseuteu_junju_mr: success
 test_Noseuweseuteu_junju_ph: fail expected 노쓰웨스트 준(ː)주 but received 노쓰웨스트 준주(ː)
 test_Noseuweseuteu_junju_rr: success
 test_Noseuweseuteu_junju_rrr: success
 test_Noseuweseuteu_junju_yr: fail expected noqsuweysu.thu cwūn.cwu but received noqsuweysu.thu cwun.cwū
 test_Paldo_ipa: success
-test_Paldo_mr: fail can only concatenate str (not "int") to str
+test_Paldo_mr: success
 test_Paldo_ph: success
 test_Paldo_rr: success
 test_Paldo_rrr: success
@@ -161,19 +161,19 @@ test_Pyeongyang_rr: success
 test_Pyeongyang_rrr: success
 test_Pyeongyang_yr: success
 test_Reunesangseu_ipa: success
-test_Reunesangseu_mr: fail can only concatenate str (not "int") to str
+test_Reunesangseu_mr: success
 test_Reunesangseu_ph: success
 test_Reunesangseu_rr: success
 test_Reunesangseu_rrr: success
 test_Reunesangseu_yr: success
 test_Roseuaenjelleseu_ipa: success
-test_Roseuaenjelleseu_mr: fail can only concatenate str (not "int") to str
+test_Roseuaenjelleseu_mr: success
 test_Roseuaenjelleseu_ph: success
 test_Roseuaenjelleseu_rr: success
 test_Roseuaenjelleseu_rrr: success
 test_Roseuaenjelleseu_yr: success
 test_Saudi_ipa: success
-test_Saudi_mr: fail can only concatenate str (not "int") to str
+test_Saudi_mr: success
 test_Saudi_ph: success
 test_Saudi_rr: success
 test_Saudi_rrr: success
@@ -191,7 +191,7 @@ test_Seoul_gonghwaguk_rr: success
 test_Seoul_gonghwaguk_rrr: success
 test_Seoul_gonghwaguk_yr: fail expected sewul kōnghwakwuk but received sewul konghwākwuk
 test_Seuwiseu_ipa: success
-test_Seuwiseu_mr: fail can only concatenate str (not "int") to str
+test_Seuwiseu_mr: success
 test_Seuwiseu_ph: success
 test_Seuwiseu_rr: success
 test_Seuwiseu_rrr: success
@@ -209,7 +209,7 @@ test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_rr: success
 test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_rrr: success
 test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_yr: fail expected sopiey.thu sahoycwuuy kōnghwakwuk yenpang but received sopiey.thu sahoycwuuy konghwākwuk yenpang
 test_Sollomon_jedo_ipa: success
-test_Sollomon_jedo_mr: fail can only concatenate str (not "int") to str
+test_Sollomon_jedo_mr: success
 test_Sollomon_jedo_ph: success
 test_Sollomon_jedo_rr: success
 test_Sollomon_jedo_rrr: success
@@ -221,7 +221,7 @@ test_Sollomonui_jihye_rr: success
 test_Sollomonui_jihye_rrr: success
 test_Sollomonui_jihye_yr: success
 test_Suragan_ipa: success
-test_Suragan_mr: fail can only concatenate str (not "int") to str
+test_Suragan_mr: success
 test_Suragan_ph: success
 test_Suragan_rr: success
 test_Suragan_rrr: success
@@ -233,7 +233,7 @@ test_Taepyeongnyang_rr: success
 test_Taepyeongnyang_rrr: success
 test_Taepyeongnyang_yr: success
 test_Ulsan_ipa: success
-test_Ulsan_mr: fail can only concatenate str (not "int") to str
+test_Ulsan_mr: success
 test_Ulsan_ph: success
 test_Ulsan_rr: success
 test_Ulsan_rrr: success
@@ -322,12 +322,6 @@ test_boon_jangchi_ph: success
 test_boon_jangchi_rr: success
 test_boon_jangchi_rrr: success
 test_boon_jangchi_yr: success
-test_cheolgapsangeo_ipa: fail expected [t͡ɕʰʌ̹ɭɡa̠ps͈a̠ŋʌ̹] but received [t͡ɕʰʌ̹ɭɡa̠p̚ sʰa̠ŋʌ̹]
-test_cheolgapsangeo_mr: fail expected ch'ŏlgapsangŏ but received ch'ŏlgap sangŏ
-test_cheolgapsangeo_ph: fail expected 철갑쌍어 but received 철갑 상어
-test_cheolgapsangeo_rr: fail expected cheolgapsang'eo but received cheolgap sang'eo
-test_cheolgapsangeo_rrr: fail expected cheolgabsang'eo but received cheolgab sang'eo
-test_cheolgapsangeo_yr: fail expected chel.kap.sange but received chel.kap sange
 test_choejeo_imgeum_ipa: fail expected [ˈt͡ɕʰwe̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] ~ [ˈt͡ɕʰø̞(ː)d͡ʑʌ̹ i(ː)mɡɯm] but received [t͡ɕʰwe̞d͡ʑʌ̹(ː) imɡɯ(ː)m] ~ [t͡ɕʰø̞d͡ʑʌ̹(ː) imɡɯ(ː)m]
 test_choejeo_imgeum_mr: success
 test_choejeo_imgeum_ph: fail expected 췌(ː)저 임(ː)금/최(ː)저 임(ː)금 but received 췌저(ː) 임금(ː)/최저(ː) 임금(ː)

@@ -404,9 +404,8 @@ class WiktionaryRomanization:
                         if len(p["l"]) > 0 and (p["l"].get("y", "") or p["l"].get("1", "")) and index == -1 and system_index == 5 and len(decomposed_syllables) > 1:
                             vowel += "ˈ"
 
-                        # TODO I think p["cap"]["y"] will likely have an exception. I think my change probably fixes it.
                         if len(p["com"]) > 0 and p["com"].get(index + 1, False):
-                            junction = re.sub(r"(.)$", lambda m: ("q" if system_index == 4 else "") + (WiktionaryRomanization.com_mc.get((m.group(1) + (p.get("cap", {}).get("y", "") or "")), WiktionaryRomanization.com_mc.get(m.group(1), m.group(1))) if system_index == 3 else m.group(1)), junction)
+                            junction = re.sub(r"(.)$", lambda m: (("q" if system_index == 4 else "") + (WiktionaryRomanization.com_mc.get(m.group(1), m.group(1)) if system_index == 3 else m.group(1))), junction)
 
                         if len(p["ni"]) > 0 and p.get("ni", {}).get(next_index, False) and system_index == 4:
                             junction = re.sub(r"([nl])$", r"<sup>\1</sup>", junction)
