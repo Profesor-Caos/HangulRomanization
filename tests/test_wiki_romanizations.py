@@ -182,7 +182,7 @@ class TestWikiRomanizations(unittest.TestCase):
     def test_saehae_bongmani_badeuseyo_saehae_bok_mani_badeuseyo_yr(self):
             self.run_test("새해 복 많이 받으세요", "{{ko-IPA|새해 복많이 받으세요|새해 복 많이 받으세요}}", "sayhay pokmanh.i pat.useyyo/sayhay pok manh.i pat.useyyo", "yr")
     def test_saehae_bongmani_badeuseyo_saehae_bok_mani_badeuseyo_ipa(self):
-            self.run_test("새해 복 많이 받으세요", "{{ko-IPA|새해 복많이 받으세요|새해 복 많이 받으세요}}", "[sʰɛɦɛ po̞ŋma̠ni pa̠dɯsʰe̞jo] ~ [sʰe̞ɦe̞ po̞ŋma̠ni pa̠dɯsʰe̞jo] ~ [sʰɛɦɛ po̞k̚ ma̠nipa̠dɯsʰe̞jo] ~ [sʰe̞ɦe̞ po̞k̚ ma̠ni pa̠dɯsʰe̞jo]", "ipa")
+            self.run_test("새해 복 많이 받으세요", "{{ko-IPA|새해 복많이 받으세요|새해 복 많이 받으세요}}", "[sʰɛɦɛ po̞ŋma̠ni pa̠dɯsʰe̞jo] ~ [sʰe̞ɦe̞ po̞ŋma̠ni pa̠dɯsʰe̞jo] ~ [sʰɛɦɛ po̞k̚ ma̠ni pa̠dɯsʰe̞jo] ~ [sʰe̞ɦe̞ po̞k̚ ma̠ni pa̠dɯsʰe̞jo]", "ipa")
 
     def test_Hanguk_ph(self):
             self.run_test("한국", "{{ko-IPA|l=y|cap=y}}", "한(ː)국", "ph")
