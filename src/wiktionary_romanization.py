@@ -321,7 +321,7 @@ class WiktionaryRomanization:
                             if index != -1 and this_syllable_text == "밟" and next_syllable["initial"] not in "ᄋᄒ":
                                 syllable["final"] = "ᆸ"
 
-                            if next_syllable_text == "없":
+                            if next_syllable_text == "없" and syllable["final"]:
                                 if syllable["final"] in "ᆩᆪᆰᆿ":
                                     syllable["final"] = "ᆨ"
                                 elif syllable["final"] in "ᆬᆭ":

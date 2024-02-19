@@ -472,10 +472,10 @@ test_hagyotgil_ph: success
 test_hagyotgil_rr: success
 test_hagyotgil_rrr: success
 test_hagyotgil_yr: success
-test_hando_kkeutdo_eopda_ipa: fail expected [ˈha̠(ː)ndo̞ k͈ɯt̚t͈o̞ ɘ(ː)p̚t͈a̠] but received [ˈha̠(ː)ndo̞ k͈ɯt̚t͈o̞ ɡɘ(ː)p̚t͈a̠]
-test_hando_kkeutdo_eopda_mr: fail expected hando kkŭtto ŏpta but received hando kkŭtto gŏpta
-test_hando_kkeutdo_eopda_ph: fail expected 한(ː)도 끋또 업(ː)따 but received 한(ː)도 끋또 겁(ː)따
-test_hando_kkeutdo_eopda_rr: fail expected hando kkeutdo eopda but received hando kkeutdo geopda
+test_hando_kkeutdo_eopda_ipa: success
+test_hando_kkeutdo_eopda_mr: success
+test_hando_kkeutdo_eopda_ph: success
+test_hando_kkeutdo_eopda_rr: success
 test_hando_kkeutdo_eopda_rrr: success
 test_hando_kkeutdo_eopda_yr: success
 test_hangon_dongmul_ipa: success
