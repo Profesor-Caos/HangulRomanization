@@ -234,7 +234,8 @@ class WiktionaryRomanization:
             add_respelling(s_variation, lambda x: chr(ord(x) - 12))
             add_respelling(iotation, lambda x: chr(ord(x) + 56))
             
-            for vowel_id, vowel_variation_increment in WiktionaryRomanization.vowel_variation.items():
+            # Modification - for some reason reversing the order is required to get the same result as iterating it in Lua
+            for vowel_id, vowel_variation_increment in reversed(WiktionaryRomanization.vowel_variation.items()):
                 if has_vowel.get(vowel_id) and WiktionaryRomanization.allowed_vowel_scheme.get(f"{vowel_id}-{system_index}"):
                     pre_length = len(word_set)
                     j = 0 # Modification - not sure how this worked in Lua, but if we're inserting in Python, our index 

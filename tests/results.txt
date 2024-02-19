@@ -106,9 +106,9 @@ test_Jang_ph: success
 test_Jang_rr: success
 test_Jang_rrr: success
 test_Jang_yr: success
-test_Jeicha_segye_daejeon_ipa: fail expected [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n] but received [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡje̞ te̞(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ tɛ(ː)d͡ʑʌ̹n] ~ [ˈt͡ɕe̞(ː)it͡ɕʰa̠ sʰe̞(ː)ɡe̞ te̞(ː)d͡ʑʌ̹n]
+test_Jeicha_segye_daejeon_ipa: success
 test_Jeicha_segye_daejeon_mr: success
-test_Jeicha_segye_daejeon_ph: fail expected 제(ː)이차 세(ː)계 대(ː)전/제(ː)이차 세(ː)게 대(ː)전/제(ː)이차 세(ː)계 데(ː)전/제(ː)이차 세(ː)게 데(ː)전 but received 제(ː)이차 세(ː)계 대(ː)전/제(ː)이차 세(ː)계 데(ː)전/제(ː)이차 세(ː)게 대(ː)전/제(ː)이차 세(ː)게 데(ː)전
+test_Jeicha_segye_daejeon_ph: success
 test_Jeicha_segye_daejeon_rr: success
 test_Jeicha_segye_daejeon_rrr: success
 test_Jeicha_segye_daejeon_yr: success
