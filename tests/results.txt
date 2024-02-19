@@ -280,12 +280,12 @@ test_bakkadeoreun_ph: success
 test_bakkadeoreun_rr: success
 test_bakkadeoreun_rrr: success
 test_bakkadeoreun_yr: success
-test_bamsae_bamssae_ipa: fail expected [pa̠msʰɛ] ~ [pa̠msʰe̞] ~ [pa̠ms͈ɛ] ~ [pa̠ms͈e̞] but received [pa̠ms͈ɛ] ~ [pa̠ms͈e̞]
-test_bamsae_bamssae_mr: fail expected pamsae/pamssae but received pamssae
-test_bamsae_bamssae_ph: fail expected 밤새/밤세/밤쌔/밤쎄 but received 밤쌔/밤쎄
-test_bamsae_bamssae_rr: fail expected bamsae/bamssae but received bamssae
-test_bamsae_bamssae_rrr: fail expected bamsae/bamssae but received bamssae
-test_bamsae_bamssae_yr: fail expected pamsay/pamssay but received pamssay
+test_bamsae_bamssae_ipa: success
+test_bamsae_bamssae_mr: success
+test_bamsae_bamssae_ph: success
+test_bamsae_bamssae_rr: success
+test_bamsae_bamssae_rrr: success
+test_bamsae_bamssae_yr: success
 test_banjiseongjuui_ipa: success
 test_banjiseongjuui_mr: success
 test_banjiseongjuui_ph: success
@@ -520,12 +520,12 @@ test_hwahak_jeondal_muljil_ph: success
 test_hwahak_jeondal_muljil_rr: success
 test_hwahak_jeondal_muljil_rrr: success
 test_hwahak_jeondal_muljil_yr: success
-test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ipa: fail expected [ˈɸwa̠(ː)sʰʌ̹k̚ jʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ɡjʌ̹ʎʎo] ~ [ˈɸwa̠(ː)sʰʌ̹ŋɲʌ̹ʎʎo] but received [ˈɸwa̠(ː)sʰʌ̹ŋɲʌ̹ʎʎo]
-test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_mr: fail expected hwasŏk yŏllyo/hwasŏgyŏllyo/hwasŏngnyŏllyo but received hwasŏngnyŏllyo
-test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ph: fail expected 화(ː)석 열료/화(ː)서결료/화(ː)성녈료 but received 화(ː)성녈료
-test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rr: fail expected hwaseok yeollyo/hwaseogyeollyo/hwaseongnyeollyo but received hwaseongnyeollyo
-test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rrr: fail expected hwaseog yeonlyo/hwaseog'yeonlyo/hwaseognyeonlyo but received hwaseognyeonlyo
-test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_yr: fail expected hwāsek yenlyo/hwāsek.yenlyo/hwāseknyenlyo but received hwāseknyenlyo
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ipa: success
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_mr: success
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_ph: success
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rr: success
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_rrr: success
+test_hwaseok_yeollyo_hwaseogyeollyo_hwaseongnyeollyo_yr: success
 test_ijo_ipa: success
 test_ijo_mr: success
 test_ijo_ph: success

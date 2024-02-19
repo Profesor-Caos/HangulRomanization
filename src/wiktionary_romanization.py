@@ -175,9 +175,7 @@ class WiktionaryRomanization:
         
         return ipa
 
-    def romanize(system_index, args):
-        text_param = args[1]
-
+    def romanize(system_index, text_param, args):
         p, optional_params = {}, ["nn", "l", "com", "cap", "ni"]
         for pm in optional_params:
             p[pm] = {}
@@ -521,23 +519,34 @@ class WiktionaryRomanization:
             "iot": {},
         }
         args = self.process_params(params)
-        return WiktionaryRomanization.romanize(self.system_lookup[system_name], args)
+        result = ''
+        for text in args[1]:
+            result += (WiktionaryRomanization.system_list[WiktionaryRomanization.system_lookup[system_name]]["separator"] if result else '') + WiktionaryRomanization.romanize(self.system_lookup[system_name], text, args)
+        return result
 
     def process_params(self, params):
         pattern = r'\{\{\s*ko-ipa\s*(.*?)\s*\}\}'
         matches = re.findall(pattern, self.input_string, re.IGNORECASE)
+        to_romanize = []
 
         if matches:
             parameters_string = matches[0]
             parameters_list = parameters_string.split('|')
 
-            for param in parameters_list:
+            for i, param in enumerate(parameters_list):
                 if '=' in param:
                     key, value = param.split('=')
                     params[key.strip()] = value.strip()
                 elif param:
                     # parameter is the string to romanize
-                    params[1] = param
-                # TODO: make taking a different string to romanize as a parameter work
+                    to_romanize.append(param)
+                elif not param and i > 0 and self.title not in to_romanize:
+                    # there are some entries that have || in them, and the wiki
+                    # adds the title along with other romanizations to those
+                    # so this makes it do that as well
+                    to_romanize.append(self.title)
         
+        if len(to_romanize) == 0:
+            to_romanize.append(self.title)
+        params[1] = to_romanize
         return params
