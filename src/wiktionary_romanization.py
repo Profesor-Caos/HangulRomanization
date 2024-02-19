@@ -238,19 +238,17 @@ class WiktionaryRomanization:
             for vowel_id, vowel_variation_increment in reversed(WiktionaryRomanization.vowel_variation.items()):
                 if has_vowel.get(vowel_id) and WiktionaryRomanization.allowed_vowel_scheme.get(f"{vowel_id}-{system_index}"):
                     pre_length = len(word_set)
-                    j = 0 # Modification - not sure how this worked in Lua, but if we're inserting in Python, our index 
-                    # gets messed up, so we need to be able to modify the index we're grabbing and inserting into.
                     for i in range(pre_length):
-                        item = list(word_set[j])
+                        item = list(word_set[i])
                         for num, it in enumerate(item):
                             if math.floor(((ord(it) - 0xAC00) % 588) / 28) == vowel_id:
                                 item[num] = chr(ord(it) + vowel_variation_increment)
                         if vowel_id == 11:
-                            word_set.insert(j, "".join(item))
-                            j += 1
+                            # TODO - the wiki code is actually incorrect here, since we're inserting our index gets messed up
+                            # - so we end up with a duplicate instead of another unique variation
+                            word_set.insert(i, "".join(item))
                         else:
                             word_set.append("".join(item))
-                        j += 1
 
             word_set_romanizations = []
             for respelling in word_set:

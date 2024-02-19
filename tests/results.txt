@@ -202,9 +202,9 @@ test_Sinuiju_ph: success
 test_Sinuiju_rr: success
 test_Sinuiju_rrr: success
 test_Sinuiju_yr: success
-test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_ipa: fail expected [sʰo̞bie̞tʰɯ sʰa̠βwe̞d͡ʑuɰi ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] ~ [sʰo̞bie̞tʰɯ sʰa̠βwe̞d͡ʑuɰi ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] ~ [sʰo̞bie̞tʰɯ sʰa̠ɦø̞d͡ʑuɰi ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] ~ [sʰo̞bie̞tʰɯ sʰa̠ɦø̞d͡ʑui ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] but received [sʰo̞bie̞tʰɯ sʰa̠βwe̞d͡ʑuɰi ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] ~ [sʰo̞bie̞tʰɯ sʰa̠ɦø̞d͡ʑuɰi ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] ~ [sʰo̞bie̞tʰɯ sʰa̠βwe̞d͡ʑui ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ] ~ [sʰo̞bie̞tʰɯ sʰa̠ɦø̞d͡ʑui ko̞(ː)ŋβwa̠ɡuk̚ jʌ̹nba̠ŋ]
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_ipa: success
 test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_mr: success
-test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_ph: fail expected 소비에트 사훼주의 공(ː)화국 연방/소비에트 사훼주의 공(ː)화국 연방/소비에트 사회주의 공(ː)화국 연방/소비에트 사회주이 공(ː)화국 연방 but received 소비에트 사훼주의 공(ː)화국 연방/소비에트 사회주의 공(ː)화국 연방/소비에트 사훼주이 공(ː)화국 연방/소비에트 사회주이 공(ː)화국 연방
+test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_ph: success
 test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_rr: success
 test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_rrr: success
 test_Sobieteu_sahoejuui_gonghwaguk_yeonbang_yr: success
@@ -484,9 +484,9 @@ test_hangon_dongmul_ph: success
 test_hangon_dongmul_rr: success
 test_hangon_dongmul_rrr: success
 test_hangon_dongmul_yr: success
-test_hoeui_ipa: fail expected [ˈɸwe̞(ː)ɰi] ~ [ˈɸwe̞(ː)ɰi] ~ [ˈhø̞(ː)ɰi] ~ [ˈhø̞(ː)i] but received [ˈɸwe̞(ː)ɰi] ~ [ˈhø̞(ː)ɰi] ~ [ˈɸwe̞(ː)i] ~ [ˈhø̞(ː)i]
+test_hoeui_ipa: success
 test_hoeui_mr: success
-test_hoeui_ph: fail expected 훼(ː)의/훼(ː)의/회(ː)의/회(ː)이 but received 훼(ː)의/회(ː)의/훼(ː)이/회(ː)이
+test_hoeui_ph: success
 test_hoeui_rr: success
 test_hoeui_rrr: success
 test_hoeui_yr: success
@@ -736,9 +736,9 @@ test_nakcheonjuuija_ph: success
 test_nakcheonjuuija_rr: success
 test_nakcheonjuuija_rrr: success
 test_nakcheonjuuija_yr: success
-test_namapeurikaui_oechim_ipa: fail expected [na̠ma̠pʰɯɾikʰa̠ɰi we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠ɰi we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠ɰi ø̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠e̞ ø̞t͡ɕʰim] but received [na̠ma̠pʰɯɾikʰa̠ɰi we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠ɰi ø̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠e̞ we̞t͡ɕʰim] ~ [na̠ma̠pʰɯɾikʰa̠e̞ ø̞t͡ɕʰim]
+test_namapeurikaui_oechim_ipa: success
 test_namapeurikaui_oechim_mr: success
-test_namapeurikaui_oechim_ph: fail expected 나마프리카의 웨침/나마프리카의 웨침/나마프리카의 외침/나마프리카에 외침 but received 나마프리카의 웨침/나마프리카의 외침/나마프리카에 웨침/나마프리카에 외침
+test_namapeurikaui_oechim_ph: success
 test_namapeurikaui_oechim_rr: success
 test_namapeurikaui_oechim_rrr: success
 test_namapeurikaui_oechim_yr: success
