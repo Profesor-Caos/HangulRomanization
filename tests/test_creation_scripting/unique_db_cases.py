@@ -37,7 +37,6 @@ class TestUniqueDBCases(unittest.TestCase):
         html = page.read().decode("utf-8")
         soup = BeautifulSoup(html, 'html.parser')
         korean_header = soup.find('span', id="Korean")
-        vals = []
         # I found this looking for this to be the most consistent way of finding pronunciations, as the labeling
         # of headers was not consistent
         sk_standard_link = korean_header.find_next('a', {"title":'w:South Korean standard language'}, text="SK Standard")
