@@ -418,7 +418,7 @@ class WiktionaryRomanization:
                         #     initial_cons = ""
                         
                         if system_index == 1:
-                            romanization.append(vowel + final_cons + ("-" if saw_hyphen_after else "") + initial_cons)
+                            romanization.append(vowel + final_cons + initial_cons)
                         else:
                             romanization.append(vowel + junction)
                 
