@@ -6,21 +6,23 @@ class KoArticle:
     page_title: str = ''
     page_text: str = ''
     pronunciation: str = ''
+    romanization: str = ''
 
-    def __init__(self, page_id, page_title, page_text, pronunciation):
+    def __init__(self, page_id, page_title, page_text, pronunciation, romanization):
         self.page_id = page_id
         self.page_title = page_title
         self.page_text = page_text
         self.pronunciation = pronunciation
+        self.romanization = romanization
 
     def write_to_database(self):
         try:
             self.db_connector = DatabaseConnector()
             self.db_connector.connect()
-            insert_sql = '''INSERT INTO ko_article (page_id, page_title, page_text, pronunciation) VALUES (%s, %s, %s, %s) as new
+            insert_sql = '''INSERT INTO ko_article (page_id, page_title, page_text, pronunciation, romanization) VALUES (%s, %s, %s, %s, %s) as new
                             ON DUPLICATE KEY UPDATE
-                            page_title = new.page_title, page_text = new.page_text, pronunciation = new.pronunciation'''
-            data = (self.page_id, self.page_title, self.page_text, self.pronunciation)
+                            page_title = new.page_title, page_text = new.page_text, pronunciation = new.pronunciation, romanization = new.romanization'''
+            data = (self.page_id, self.page_title, self.page_text, self.pronunciation, self.romanization)
             self.db_connector.execute_query(insert_sql, data)
         finally:
             self.db_connector.disconnect()
@@ -49,6 +51,6 @@ class KoArticles:
             results = self.db_connector.execute_query(query)
             self.db_connector.disconnect()
             for result in results:
-                self.collection.append(KoArticle(result["page_id"], result["page_title"], result["page_text"], result["pronunciation"]))
+                self.collection.append(KoArticle(result["page_id"], result["page_title"], result["page_text"], result["pronunciation"], result["romanization"]))
         finally:
             self.db_connector.disconnect()
