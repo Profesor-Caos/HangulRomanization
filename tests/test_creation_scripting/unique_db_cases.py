@@ -59,7 +59,7 @@ class TestUniqueDBCases(unittest.TestCase):
             if not original_params:
                 continue # This is probably a redirect page
             for name, expected in zip(["ph", "rr", "rrr", "mr", "yr", "ipa"], [ph_text, rr.text, rrr.text, mr.text, yc.text, ipa_span.text]):
-                print(f'''\tdef test_{rr.text.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\t\tself.run_test("{value["article"].page_title}", "{original_params}", "{expected}", "{name}")''', file=f)
+                print(f'''\tdef test_{rr.text.replace(' ', '_').replace("'", "").replace("/", "_")}_{name}(self):\n\t\treturn self.run_test("{value["article"].page_title}", "{original_params}", "{expected}", "{name}")''', file=f)
         print("", file=f)
     print('''
 \tdef run_test(self, hangul, param_string, expected, system_name):
@@ -68,8 +68,10 @@ class TestUniqueDBCases(unittest.TestCase):
 \t\t\ttry:
 \t\t\t\tvalue = wr.romanize_one(system_name)
 \t\t\t\tprint(f"{inspect.stack()[1].frame.f_code.co_name}: { 'success' if value == expected else f'fail expected {expected} but received {value}'}", file=self.file)
+\t\t\t\treturn value == expected
 \t\t\texcept Exception as e:
 \t\t\t\tprint(f"{inspect.stack()[1].frame.f_code.co_name}: fail {e}", file=self.file)
+\t\t\t\treturn False
 \t\telse:
 \t\t\tvalue = wr.romanize_one(system_name)
 \t\t\tself.assertEqual(value, expected)''', file=f)
